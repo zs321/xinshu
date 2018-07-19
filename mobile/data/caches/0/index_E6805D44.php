@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:71:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/index.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:86:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:93:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:88:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531985639;s:8:"maketime";i:1531983839;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:71:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/index.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:86:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:93:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:88:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531995729;s:8:"maketime";i:1531993929;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -454,6 +454,7 @@ TouchSlide({
         </div>
          </div><div class="flex flex-f-row">            </div>
 </section>
+<!--<div style="display:none;">-->
 <div class="blank2"></div>
 <section class="item_show_box1 box1 region">
     <h3>
@@ -466,54 +467,7 @@ TouchSlide({
     <div class="item_tags clearfix">
             </div>
 </section>
-<div class="blank2"></div>
-<section class="item_show_box1 box1 region">
-    <h3>
-      <a target="_top" href="category.php?id=2">
-        <span class="titmore"><i class="ico_16"></i></span>
-      </a>
-    </h3>
-        <div class="flex flex-f-row">
-            </div>
-    <div class="item_tags clearfix">
-            </div>
-</section>
-<div class="blank2"></div>
-<section class="item_show_box1 box1 region">
-    <h3>
-      <a target="_top" href="category.php?id=3">
-        <span class="titmore"><i class="ico_16"></i></span>
-      </a>
-    </h3>
-        <div class="flex flex-f-row">
-            </div>
-    <div class="item_tags clearfix">
-            </div>
-</section>
-<div class="blank2"></div>
-<section class="item_show_box1 box1 region">
-    <h3>
-      <a target="_top" href="category.php?id=4">
-        <span class="titmore"><i class="ico_16"></i></span>
-      </a>
-    </h3>
-        <div class="flex flex-f-row">
-            </div>
-    <div class="item_tags clearfix">
-            </div>
-</section>
-<div class="blank2"></div>
-<section class="item_show_box1 box1 region">
-    <h3>
-      <a target="_top" href="category.php?id=5">
-        <span class="titmore"><i class="ico_16"></i></span>
-      </a>
-    </h3>
-        <div class="flex flex-f-row">
-            </div>
-    <div class="item_tags clearfix">
-            </div>
-</section>
+<!--</div>-->
 </div>
 <div class="blank2"></div>
 <div class="mainCon">
@@ -678,9 +632,9 @@ $(function() {
   wx.config({
     debug: false,
     appId: '111',
-    timestamp: 1531983840,
-    nonceStr: 'OHIINYqdNH5CkX8x',
-    signature: '408889d47592bd2e76503d72012015d5cc3be275',
+    timestamp: 1531993930,
+    nonceStr: 'jvJdLfMCQQm6P1Vs',
+    signature: '69f54367b51e3f82d0d11036580ad74166344d77',
     jsApiList: [
         'onMenuShareTimeline',
         'onMenuShareAppMessage' 

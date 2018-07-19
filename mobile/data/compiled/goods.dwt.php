@@ -152,10 +152,10 @@ if ($this->_foreach['no']['total'] > 0):
     foreach ($_from AS $this->_var['picture']):
         $this->_foreach['no']['iteration']++;
 ?> 
-              <li><a href="javascript:showPic()"><img style="width:100%;height:auto;" src="<?php if ($this->_var['picture']['http']): ?><?php echo $this->_var['picture']['img_url']; ?><?php else: ?><?php echo $this->_var['site_url']; ?><?php echo $this->_var['picture']['img_url']; ?><?php endif; ?>" /></a></li>
+              <li><a href="javascript:showPic()"><img style="width:100%;height:auto;" src="/<?php if ($this->_var['picture']['http']): ?><?php echo $this->_var['picture']['img_url']; ?><?php else: ?><?php echo $this->_var['picture']['img_url']; ?><?php endif; ?>" /></a></li>
         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
         <?php else: ?>
-	      <li><a href="javascript:showPic()"><img alt="" src="<?php echo $this->_var['site_url']; ?><?php echo $this->_var['goods']['goods_img']; ?>"/></a></li>
+	      <li><a href="javascript:showPic()"><img alt="" src="/<?php echo $this->_var['goods']['goods_img']; ?>"/></a></li>
         <?php endif; ?>
       </ul>
     </div>
@@ -543,7 +543,7 @@ if ($this->_foreach['related_goods']['total'] > 0):
         $this->_foreach['related_goods']['iteration']++;
 ?> 
         <li class="flex_in  "   <?php if (($this->_foreach['related_goods']['iteration'] - 1) % 2 == 1): ?> style="float:right" <?php endif; ?> > <a href="<?php echo $this->_var['releated_goods_data']['url']; ?>">
-        <div class="summary radius5"> <img src="<?php echo $this->_var['site_url']; ?><?php echo $this->_var['releated_goods_data']['goods_thumb']; ?>" alt=""/>
+        <div class="summary radius5"> <img src="/<?php echo $this->_var['releated_goods_data']['goods_thumb']; ?>" alt=""/>
           <div class="price"> 
             
             <?php if ($this->_var['releated_goods_data']['promote_price'] != 0): ?> 
@@ -649,7 +649,7 @@ function changePriceResponse(res)
       title: '<?php echo $this->_var['goods']['goods_style_name']; ?>',
       desc: '<?php echo $this->_var['goods']['goods_style_name']; ?>',
       link: '<?php echo $this->_var['url']; ?>',
-      imgUrl: '<?php echo $this->_var['site_url']; ?><?php echo $this->_var['goods']['goods_thumb']; ?>',
+      imgUrl: '/<?php echo $this->_var['goods']['goods_thumb']; ?>',
       trigger: function (res) {
 		
 		<?php if ($this->_var['url']): ?>
@@ -677,7 +677,7 @@ function changePriceResponse(res)
       title: '<?php echo $this->_var['goods']['goods_style_name']; ?>',
       desc: '<?php echo $this->_var['goods']['goods_style_name']; ?>',
       link: '<?php echo $this->_var['url']; ?>',
-      imgUrl: '<?php echo $this->_var['site_url']; ?><?php echo $this->_var['goods']['goods_thumb']; ?>',
+      imgUrl: '/<?php echo $this->_var['goods']['goods_thumb']; ?>',
       trigger: function (res) {
 			
         <?php if ($this->_var['url']): ?>

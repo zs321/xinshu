@@ -22,7 +22,7 @@
   <h1> 会员中心 </h1>
 </header>
 <dl class="user_top">
-  <dt> <?php if ($this->_var['headimg']): ?><img src="../<?php echo $this->_var['headimg']; ?>"><?php else: ?><?php if ($this->_var['info']['avatar'] != ''): ?><img src="<?php echo $this->_var['info']['avatar']; ?>"><?php else: ?><img src="<?php echo $this->_var['ectouch_themes']; ?>/images/get_avatar.png"><?php endif; ?><?php endif; ?> </dt>
+  <dt> <?php if ($this->_var['headimg']): ?><img src="/<?php echo $this->_var['headimg']; ?>"><?php else: ?><?php if ($this->_var['info']['avatar'] != ''): ?><img src="/<?php echo $this->_var['info']['avatar']; ?>"><?php else: ?><img src="<?php echo $this->_var['ectouch_themes']; ?>/images/get_avatar.png"><?php endif; ?><?php endif; ?> </dt>
   <dd>
     <p><?php echo $this->_var['info']['username']; ?></p>
     <p><span><?php echo $this->_var['xkfla']; ?></span></p>
