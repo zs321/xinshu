@@ -1,6 +1,6 @@
 <?php
-// database host,´Ë´¦ÇÐ¼Ç±£ÁôÊý¾Ý¿â¶Ë¿Ú£¬¡¾:3306¡¿Ò»°ã²»×öÐÞ¸Ä
-$db_host   = "localhost:3306";
+// database host,ï¿½Ë´ï¿½ï¿½Ð¼Ç±ï¿½ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½Ë¿Ú£ï¿½ï¿½ï¿½:3306ï¿½ï¿½Ò»ï¿½ã²»ï¿½ï¿½ï¿½Þ¸ï¿½
+$db_host   = "47.104.178.115:3306";
 
 // database name
 $db_name   = "testshop";
@@ -30,6 +30,6 @@ define('AUTH_KEY', 'this is a key');
 
 define('OLD_AUTH_KEY', '');
 
-define('API_TIME', '2018-07-18 18:01:25');
+define('API_TIME', '2018-07-19 12:04:44');
 
 ?>

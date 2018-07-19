@@ -19,11 +19,12 @@
 <div id="page" style="right: 0px; left: 0px; display: block;">
   <header id="header" style="z-index:1">
     <div class="header_l"> <a class="ico_10" href="cat_all.php"> 返回 </a> </div>
-    <h1> 预售活动 </h1>
+    <h1> 杏树认购 </h1>
   </header>
-  <?php echo $this->fetch('library/pre_sale_list.lbi'); ?>
+  <?php echo $this->fetch('exchange_tree.dwt'); ?>
 </div>
-<?php echo $this->fetch('library/pages.lbi'); ?>
+
+
 <?php echo $this->fetch('library/page_footer.lbi'); ?> </div>
 <script type="text/javascript" src="<?php echo $this->_var['ectouch_themes']; ?>/js/jquery.more.js"></script> 
 <script type="text/javascript" src="<?php echo $this->_var['ectouch_themes']; ?>/js/ectouch.js"></script> 

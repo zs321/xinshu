@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:69:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/index.dwt";i:1;s:83:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:84:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:91:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:81:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:86:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:85:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:85:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:81:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:83:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531909788;s:8:"maketime";i:1531907988;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:69:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/index.dwt";i:1;s:83:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:84:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:91:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:81:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:86:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:85:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:85:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:81:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:83:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531993471;s:8:"maketime";i:1531991671;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -678,9 +678,9 @@ $(function() {
   wx.config({
     debug: false,
     appId: '111',
-    timestamp: 1531907990,
-    nonceStr: 'bPyBiyBsFrhlbAtM',
-    signature: 'a760b8552e2b27a268666e654ca29238705bf140',
+    timestamp: 1531991676,
+    nonceStr: 'VHFgUYh2OtmWxkHO',
+    signature: '3f27a3a59669b7fd56db0de905f189c9b5f3dabb',
     jsApiList: [
         'onMenuShareTimeline',
         'onMenuShareAppMessage' 
@@ -691,7 +691,7 @@ $(function() {
     wx.onMenuShareAppMessage({
       title: '杏树商城',
       desc: '杏树商城',
-      link: 'http://test666.com/mobile/index.php?u=257',
+      link: 'http://www.test777.com/mobile/index.php?u=257',
       imgUrl: '/mobile/home.jpg',
       trigger: function (res) {
 		
@@ -699,7 +699,7 @@ $(function() {
 				
       },
       success: function (res) {
-		        window.location.href="http://test666.com/mobile/re_url.php?user_id=257&type=1"; 
+		        window.location.href="http://www.test777.com/mobile/re_url.php?user_id=257&type=1"; 
 		      },
       cancel: function (res) {
         alert('很遗憾，您已取消分享');
@@ -711,14 +711,14 @@ $(function() {
 	//分享到朋友圈青蜂网络
     wx.onMenuShareTimeline({
       title: '杏树商城',
-      link: 'http://test666.com/mobile/index.php?u=257',
+      link: 'http://www.test777.com/mobile/index.php?u=257',
       imgUrl: '/mobile/home.jpg',
       trigger: function (res) {
 			
         			alert('恭喜！分享可以获取提成哦！');
 		      },
       success: function (res) {
-       	        window.location.href="http://test666.com/mobile/re_url.php?user_id=257&type=2"; 
+       	        window.location.href="http://www.test777.com/mobile/re_url.php?user_id=257&type=2"; 
 		      },
       cancel: function (res) {
          alert('很遗憾，您已取消分享');
