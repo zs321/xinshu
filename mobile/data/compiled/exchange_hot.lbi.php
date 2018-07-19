@@ -42,7 +42,7 @@ if ($this->_foreach['hot_goods']['total'] > 0):
     foreach ($_from AS $this->_var['goods']):
         $this->_foreach['hot_goods']['iteration']++;
 ?>
-  <li><div class="goods_thumb"><a href="<?php echo $this->_var['goods']['url']; ?>"><img src="<?php echo $this->_var['site_url']; ?><?php echo $this->_var['goods']['thumb']; ?>" /></a></div> 
+  <li><div class="goods_thumb"><a href="<?php echo $this->_var['goods']['url']; ?>"><img src="/<?php echo $this->_var['goods']['thumb']; ?>" /></a></div> 
     <div class="goods_title"> <a href="<?php echo $this->_var['goods']['url']; ?>" title="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>"><?php echo $this->_var['goods']['short_style_name']; ?> </a></div> 
     <div class="goods_price"> <?php echo $this->_var['lang']['exchange_integral']; ?><span class="price_s"><?php echo $this->_var['goods']['exchange_integral']; ?></span></div>  
   </li>

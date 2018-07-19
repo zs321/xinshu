@@ -735,8 +735,8 @@ Template Type: type_0
 	.filter{width:100%;text-align:center; height:2.4rem;background:#fff;border-bottom:1px solid #ebeced;}
 	.filter ul{display:table;width:100%;margin:0;padding:0;border-collapse:collapse}
 	.filter ul li{display:table-cell; padding:0.5rem 0}
-	.filter ul li.filter-cur{border-bottom:1px solid #EC5196}
-	.filter ul li.filter-cur a{color:#EC5196}
+	.filter ul li.filter-cur{border-bottom:1px solid green}
+	.filter ul li.filter-cur a{color:green}
 	.filter a{display:inline-block;width:100%; font-size:0.9rem;color:#666;text-decoration:none}
 	.filter a span{position:relative}
 	.filter a:hover{text-decoration:none}

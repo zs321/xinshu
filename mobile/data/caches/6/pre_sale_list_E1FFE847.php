@@ -1,8 +1,8 @@
-<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:77:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/pre_sale_list.dwt";i:1;s:85:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/pre_sale_list.lbi";i:2;s:77:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/pages.lbi";i:3;s:83:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531900484;s:8:"maketime";i:1531898684;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:4:{i:0;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/pre_sale_list.dwt";i:1;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/pre_sale_list.lbi";i:2;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/pages.lbi";i:3;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531985520;s:8:"maketime";i:1531983720;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
-<title>预售活动_化妆品商城</title>
+<title>预售活动_杏树商城</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -21,11 +21,11 @@
     <div class="header_l"> <a class="ico_10" href="cat_all.php"> 返回 </a> </div>
     <h1> 预售活动 </h1>
   </header>
-     	    <div id="J_ItemList" class="srp album flex-f-row" style="opacity:1;">
+      <div id="J_ItemList" class="srp album flex-f-row" style="opacity:1;">
        
             <div class="product flex_in single_item">
         <div class="pro-inner">
-          <div class="proImg-wrap"> <a href="pre_sale.php?id=1" style="display:block;font-size:0px;"> <img src="http://demo.0769web.net/ecshop/ecshop0541huazhuangpin/images/201707/thumb_img/75_thumb_G_1501045059963.jpg" alt="玫琳凯 心语香水29ml 女士香水 花果香型"> </a> </div>
+          <div class="proImg-wrap"> <a href="pre_sale.php?id=1" style="display:block;font-size:0px;"> <img src="/images/201707/thumb_img/75_thumb_G_1501045059963.jpg" alt="玫琳凯 心语香水29ml 女士香水 花果香型"> </a> </div>
           <div class="protime"><font id="ps_cd_75"></font><font id="ps_label_75" over="false">结束未处理</font></div>
 							<script type="text/javascript">
 				            $().ready(function(){
@@ -88,7 +88,7 @@
        
             <div class="product flex_in single_item">
         <div class="pro-inner">
-          <div class="proImg-wrap"> <a href="pre_sale.php?id=2" style="display:block;font-size:0px;"> <img src="http://demo.0769web.net/ecshop/ecshop0541huazhuangpin/images/201707/thumb_img/67_thumb_G_1501045783901.jpg" alt="Loreal欧莱雅 透明质酸洗护套装（洗发水400ml+护发素200ml）无硅油洗发"> </a> </div>
+          <div class="proImg-wrap"> <a href="pre_sale.php?id=2" style="display:block;font-size:0px;"> <img src="/images/201707/thumb_img/67_thumb_G_1501045783901.jpg" alt="Loreal欧莱雅 透明质酸洗护套装（洗发水400ml+护发素200ml）无硅油洗发"> </a> </div>
           <div class="protime"><font id="ps_cd_67"></font><font id="ps_label_67" over="false">后开始</font></div>
 							<script type="text/javascript">
 				            $().ready(function(){
@@ -151,7 +151,7 @@
        
             <div class="product flex_in single_item">
         <div class="pro-inner">
-          <div class="proImg-wrap"> <a href="pre_sale.php?id=3" style="display:block;font-size:0px;"> <img src="http://demo.0769web.net/ecshop/ecshop0541huazhuangpin/images/201707/thumb_img/64_thumb_G_1501045976727.jpg" alt="泊泉雅 马油保湿润肤身体乳 250g 滋润舒缓肌肤"> </a> </div>
+          <div class="proImg-wrap"> <a href="pre_sale.php?id=3" style="display:block;font-size:0px;"> <img src="/images/201707/thumb_img/64_thumb_G_1501045976727.jpg" alt="泊泉雅 马油保湿润肤身体乳 250g 滋润舒缓肌肤"> </a> </div>
           <div class="protime"><font id="ps_cd_64"></font><font id="ps_label_64" over="false">后结束</font></div>
 							<script type="text/javascript">
 				            $().ready(function(){
@@ -242,7 +242,7 @@
     </div>
 </section><div id="content" class="footer mr-t20">
   
-    <p class="region">&copy; 2012-2018 化妆品商城 版权所有，并保留所有权利。 </p>
+    <p class="region">&copy; 2012-2018 杏树商城 版权所有，并保留所有权利。 </p>
     <p class="region"> 
      
     ICP备案证书号: <a href="http://www.miibeian.gov.cn/" target="_blank"> 粤ICP备12061602号 </a> 

@@ -8,7 +8,7 @@ if ($this->_foreach['name']['total'] > 0):
       <?php if ($this->_var['pre_sale']['goods_name'] != ''): ?>
       <div class="product flex_in single_item">
         <div class="pro-inner">
-          <div class="proImg-wrap"> <a href="<?php echo $this->_var['pre_sale']['url']; ?>" style="display:block;font-size:0px;"> <img src="<?php echo $this->_var['site_url']; ?><?php echo $this->_var['pre_sale']['goods_thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['pre_sale']['goods_name']); ?>"> </a> </div>
+          <div class="proImg-wrap"> <a href="<?php echo $this->_var['pre_sale']['url']; ?>" style="display:block;font-size:0px;"> <img src="/<?php echo $this->_var['pre_sale']['goods_thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['pre_sale']['goods_name']); ?>"> </a> </div>
           <div class="protime"><font id="ps_cd_<?php echo $this->_var['pre_sale']['goods_id']; ?>"></font><font id="ps_label_<?php echo $this->_var['pre_sale']['goods_id']; ?>" over="false"><?php echo $this->_var['pre_sale']['cur_status']; ?></font></div>
 							<script type="text/javascript">
 				            $().ready(function(){
