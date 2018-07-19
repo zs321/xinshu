@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+
+<div id="wrapper">
+	<div class="BonuspageTitle">{insert name='ads' id=33 num=1}</div>
+	<div class="BonusList">
+		<!--{foreach name=bonus from=$bonus_list item=bonus}-->
+		{if $bonus.type_id}
+		<dl>
+			<dt>
+				<div class="jine">{$bonus.type_money}</div>
+				<a href="bonus.php?act=getBonus&type_id={$bonus.type_id}" class="getBonus">点击领取</a>
+			</dt>
+			<dd>
+				<div class="tiaojian">订单满<font class="j">{$bonus.min_goods_amount}</font>可用</div>
+				<div class="time"><font class="tt">{$bonus.use_start_date}</font>到<font class="tt">{$bonus.use_end_date}</font>使用</div>
+			</dd>
+			<div class="blank1"></div>
+		</dl>
+		{/if}
+		<!--{/foreach}--> 
+		<div class="clear"></div> 
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+<div class="blank"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>
+

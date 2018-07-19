@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="pre_spike.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+{insert_scripts files='jquery.countdown-2.5.3.min.js'}
+<div id="wrapper">
+<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+<div class="main cle">
+						<!--{foreach from=$ps_list item=pre_spike name=name key=key}-->
+						<!--{if $pre_spike.goods_name neq ''}-->
+						<div class="product" id="shijian_{$key}" {if $smarty.foreach.name.iteration %4 ==0 }style="margin-right: 0px;"{/if}>
+							<div class="pic" id="li_{$pre_spike.goods_id}">
+								<a href="{$pre_spike.url}" target="_blank"> <img title="{$pre_spike.goods_name|escape:html}" alt="{$pre_spike.goods_name|escape:html}" width=220 height=220 data-original="{$pre_spike.goods_thumb}" src="images/spacer.gif" class="loading pic_img_{$pre_spike.goods_id}"></a> {if $pre_spike.is_best}
+								<div class=t_icon_st></div>
+								{/if}
+							</div>
+							<div class="shijian" id="shijian1_{$key}">
+								 <span id="ps_labels_{$pre_spike.goods_id}" over="false"></span><span id="ps_cd_{$pre_spike.goods_id}"></span><span id="ps_labele_{$pre_spike.goods_id}" over="false"></span>
+							</div>
+<script type="text/javascript">
+				            $().ready(function(){
+				            	countdown.setLabels(
+				   	   				 '毫秒|秒|分|小时|天| 周| 月| 年| 十年| 世纪| 千年',
+				   	   				 '毫秒|秒|分|小时|天| 周| 月| 年| 十年| 世纪| 千年',
+				   	   				 '',//秒连接符
+				   	   				 '',//其他时间连接符
+				   	   				 'End',
+				   	   				 function(n){ return n.toString()
+				   	   			});
+				            	<!-- {if $pre_spike.gmt_start_time > $pre_spike.gmtime && $pre_spike.gmt_end_time > $pre_spike.gmtime} -->
+				   	           	var endDate = new Date({$pre_spike.gmt_start_time});
+				   	           	var status = "0";
+							$("#ps_labels_{$pre_spike.goods_id}").html("还有");
+							$("#ps_labele_{$pre_spike.goods_id}").html("开始");
+				            	<!-- {else} -->
+				   	           	var endDate = new Date({$pre_spike.gmt_end_time});
+				   	           	var status = "1";
+							$("#ps_labels_{$pre_spike.goods_id}").html("还剩");
+							$("#ps_labele_{$pre_spike.goods_id}").html("结束");
+				            	<!-- {/if} -->
+				            					   	           	//if({$pre_spike.goods_id} == 62){
+				   	           	//	endDate = new Date(2015, 6, 29, 12, 09);
+				   	           	//}
+				   	           	
+				   	           	
+				   	         	var timerId = null;
+				   	           	
+				   	           	function countdown_callback(ts){
+							//alert(ts);
+					   	           	$("#ps_cd_{$pre_spike.goods_id}").html(ts.toString());
+				   	    			//alert($("#ps_cd_{$pre_spike.goods_id}").html());
+				   	    			
+				   	    			if(status == 0){
+				   	    				//预热中-&gt;秒杀中
+				   	    				if(ts == "End"){
+			Ajax.call('index.php?act=clear_cache', 'POST', 'JSON');
+					   	    				window.clearInterval(timerId);
+					   	    				$("#ps_cd_{$pre_spike.goods_id}").html("");
+					   	    				//$("#ps_label_{$pre_spike.goods_id}").html("销售中");
+					   	    				$("#zhuangtai{$pre_spike.goods_id}").removeClass("weikaishi");
+					   	    				$("#zhuangtai{$pre_spike.goods_id}").addClass("jinxinzhong");
+					   	    				$("#ps_labels_{$pre_spike.goods_id}").attr("over", true);
+					   	    				$("#ps_labele_{$pre_spike.goods_id}").attr("over", true);
+							$("#ps_labels_{$pre_spike.goods_id}").html("还剩");
+							$("#ps_labele_{$pre_spike.goods_id}").html("结束");
+					   	    				status = 1;
+					   	    				endDate = new Date({$pre_spike.gmt_end_time});
+					   	    				timerId = countdown(countdown_callback, endDate, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
+					   	    			}
+				   	    			}else{
+				   	    				//秒杀中-&gt;活动已结束
+				   	    				if(ts == "End" || new Date().getTime() > endDate.getTime()){
+					   	    				window.clearInterval(timerId);
+					   	    				$("#ps_cd_{$pre_spike.goods_id}").html("");
+					   	    				$("#ps_labels_{$pre_spike.goods_id}").html("活动已结束");
+					   	    				$("#zhuangtai{$pre_spike.goods_id}").addClass("jieshu");
+					   	    				$("#ps_labele_{$pre_spike.goods_id}").html("");
+					   	    				$("#ps_labels_{$pre_spike.goods_id}").attr("over", true);
+					   	    				$("#ps_labele_{$pre_spike.goods_id}").attr("over", true);
+					   	    			}
+				   	    			}
+				   	           	}
+				   	           	
+				   	            timerId = countdown(countdown_callback, endDate, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
+				            });
+			            </script>
+							<div class="title">
+								<a title="{$pre_spike.goods_name|escape:html}" href="{$pre_spike.url}" target="_blank">{$pre_spike.goods_name}</a>
+							</div>
+							<div class="price3">
+								<div class="y-price">
+									<span>{$pre_spike.sale_price}</span><span class="yp">{$pre_spike.market_price}</span>
+								</div>
+								<span class="valid_order">{$pre_spike.sales_counts}人已购买</span>
+							</div>
+							<div class="buy3">
+								<div class="n-tg">
+									<a id="collect_{$pre_spike.goods_id}" href="javascript:collect({$pre_spike.goods_id});">收藏</a>
+								</div>
+								<div class="n-tg">
+									<a title="立即抢购" href="{$pre_spike.url}" target="_blank">立即抢购</a>
+								</div>
+							</div>
+						</div>
+						<!--{/if}-->
+						<!--{/foreach}-->
+
+	</div>
+	<!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+</div>
+<div style="clear:both"></div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+</html>

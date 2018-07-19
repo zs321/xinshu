@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="wrapper">
+  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+<div class="temai_box" style="margin-top:10px;">
+  <div class="temai_main">
+    <ul class="temai_list cle" id="temai_list">
+      <!-- {if $auction_list} 如果有拍卖活动 --> 
+      <!-- {foreach from=$auction_list item=auction} 循环拍卖活动开始 -->
+      <li class="show"> <a href="{$auction.url}" target="_blank">
+        <p class="pic"> <img src="{$auction.goods_thumb}" alt="{$auction.goods_name|escape:html}" style="display: inline;"> </p>
+        <h3>{$auction.goods_name|escape:html}</h3>
+        <p class="price"> {$lang.au_start_price}：<span class="bd"><strong>{$auction.formated_start_price}</strong> </span> </p>
+        </a> </li>
+      <!--{/foreach}--> 
+      <!--{/if}-->
+    </ul>
+  </div>
+  <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
+</div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $brand_list} -->
+<div class="w-main mb20">
+  <ul class="index_genghuan">
+    <!-- {foreach from=$brand_list item=brand name="brand_foreach"} -->
+	<li>
+	<a href="{$brand.url}">
+	<img alt="{$brand.brand_name|escape:html}"  title="{$brand.brand_name|escape:html}" src="data/brandlogo/{$brand.brand_logo}">
+	<span>{$brand.brand_name|escape:html}</span></a>
+	</li>
+    <!-- {/foreach} -->
+  </ul>
+</div>
+<!-- {/if} -->
+

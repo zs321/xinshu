@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$page_title}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link href="{$ectouch_themes}/images/touch-icon.png" rel="apple-touch-icon-precomposed" />
+<link href="{$ectouch_themes}/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="{$ectouch_css}" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$ectouch_themes}/js/TouchSlide.js"></script>
+<script type="text/javascript" src="{$ectouch_themes}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{$ectouch_themes}/js/jquery.mmenu.js"></script>
+<script type="text/javascript" src="{$ectouch_themes}/js/ectouch.js"></script>
+</head>
+<body style="background:#fff">
+<div id="page">
+  <header id="header" >
+    <div class="header_l"> <a class="ico_02" href="#menu"> 菜单栏 </a> </div>
+    <h1>红包优惠券</h1>
+    <div class="header_r"> <a class="ico_01" href="flow.php"> 购物车 </a> </div>
+  </header>
+</div>
+
+
+
+<div class="blank2"></div>
+	<div class="BonusList">
+		<!--{foreach name=bonus from=$bonus_list item=bonus}-->
+		{if $bonus.type_id}
+		<dl>
+			<dt>
+				<div class="jine">{$bonus.type_money}</div>
+				<a href="bonus.php?act=getBonus&type_id={$bonus.type_id}" class="getBonus">点击领取</a>
+			</dt>
+			<dd>
+				<div class="tiaojian">订单满<font class="j">{$bonus.min_goods_amount}</font>可用</div>
+				<div class="time"><font class="tt">{$bonus.use_start_date}</font>到<font class="tt">{$bonus.use_end_date}</font>使用</div>
+			</dd>
+			<div class="blank1"></div>
+		</dl>
+		{/if}
+		<!--{/foreach}--> 
+		<div class="blank2"></div> 
+	</div>
+<div class="blank2"></div>
+
+
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> 
+<nav id="menu" style="display:None">
+  <ul>
+    <!--{foreach from=$categories item=cat}-->
+    <li> <a href="{$cat.url}"> {$cat.name|escape:html} </a>
+      <ul>
+        <!--{foreach from=$cat.cat_id item=child}-->
+        <li> <a href="{$child.url}"> {$child.name|escape:html} </a>
+          <ul>
+            <!--{foreach from=$child.cat_id item=childer}-->
+            <li> <a href="{$childer.url}"> {$childer.name|escape:html} </a> </li>
+            <!--{/foreach}-->
+          </ul>
+        </li>
+        <!--{/foreach}-->
+      </ul>
+    </li>
+    <!--{/foreach}-->
+  </ul>
+</nav>
+<!--搜索弹出框-->
+<div id="main-search" class="main-search">
+	<div class="hd"> <span class="ico_08 close"> 关闭 </span> </div>
+	<div class="bd">
+		  <div class="search_box">
+			<form action="search.php" method="post" id="searchForm" name="searchForm">
+			  <div class="content">
+				<input class="text" type="search" name="keywords" id="keywordBox" autofocus />
+				<button class="ico_07" type="submit" value="搜 索" onclick="return check('keywordBox')"></button>
+			  </div>
+			</form>
+		  </div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+window.onload = function(){
+  $('#menu').css('display','');
+}
+$(function() {
+	$('nav#menu').mmenu();
+	$('#get_search_box').click(function(){
+		$(".mm-page").children('div').hide();
+		$("#main-search").css('position','fixed').css('top','0px').css('width','100%').css('z-index','999').show();
+		//$('#keywordBox').focus();
+	})
+	$("#main-search .close").click(function(){
+		$(".mm-page").children('div').show();
+		$("#main-search").hide();
+	})
+});
+</script>
+</body>
+</html>

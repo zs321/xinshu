@@ -1,0 +1,11 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $article_categories} -->
+                <div class="right_one">
+                    <h2>文章分类</h2>
+                    <ul>
+		    <!--{foreach from=$article_categories item=cat}-->
+                        <li{if $cat.id eq $cat_id} class="on"{/if}><a href="{$cat.url}">{$cat.name|escape:html}</a></li>
+ 		    <!--{/foreach}-->
+                   </ul>
+                </div>
+<!-- {/if} -->

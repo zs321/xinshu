@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>账号绑定</title>
+    <link href="css/app.min.css?v=20170524" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">var ROOT_URL = '/mobile/';</script>
+    <script src="css/app.min.js?v=20170524"></script>
+    </head>
+<body>
+<div class="con b-color-f">
+	<div class="user-center user-register of-hidden">
+		<div id="j-tab-con">
+			<div class="swiper-wrapper">
+				<section class="swiper-slide swiper-no-swiping">
+					<form class="login-form validform" action="accountbind.php?act=oath_register" method="post" onsubmit="return register_mobile();">
+						<div class="text-all dis-box j-text-all" name="usernamediv">
+							<div class="box-flex input-text">
+								<input class="j-input-text" name="username" type="text" datatype="s" nullmsg="请输入用户名" errormsg="不能输入特殊字符"   placeholder="用户名/手机号/邮箱" /> <i  class="iconfont icon-guanbi1 close-common j-is-null"></i>
+							</div>
+						</div>
+						<div class="text-all dis-box j-text-all" name="mobilediv" style="display:none;">
+							<div class="box-flex input-text">
+								<input class="j-input-text" name="mobile"  id="mobile" type="text"  placeholder="手机号码" /> <i  class="iconfont icon-guanbi1 close-common j-is-null"></i>
+							</div>
+						</div>
+						<!-- {if $_CFG['ecsdxt_mobile_reg']=='1'} -->
+					   <script>var ztime={$ztime};</script>
+					   {insert_scripts files='sms.js'}
+						<div class="text-all dis-box j-text-all" name="extend_field5div" style="display:none;">
+							<div class="box-flex input-text">
+								<input class="j-input-text" name="extend_field" type="text" placeholder="请输入验证码" maxlength="6" style="width:auto;" />
+								<input type="button" onclick="getverifycode1('mobile', '手机');" id="zphone" value="获取验证码" style="width:150px;background:none;cursor:pointer;">
+							</div>
+						</div>
+						{/if}
+						<div class="text-all dis-box j-text-all" name="passworddiv">
+							<div class="box-flex input-text">
+								<input class="j-input-text" name="password" type="password" datatype="*" nullmsg="请输入密码" placeholder="请输入密码" /> <i class="iconfont icon-guanbi1 close-common j-is-null"></i>
+							</div>
+							<i class="iconfont icon-yanjing is-yanjing j-yanjing disabled"></i>
+						</div>
+						<input type="hidden" name="back_url" value="{$back_url}" />
+						<input type="hidden" name="type" value="{$type}" />
+						<input type="submit" class="btn-submit" value="绑定商城帐号" />
+						<input name="bind_type" type="hidden" value="1" />
+						<div class="u-l-register fr">
+						没有帐号？您可以直接<a href="javascript:;" onclick="tabpage(2)" class="a-first" >注册绑定</a>
+						</div>
+					</form>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(":input").keyup(function() {
+		var box = this.name + "div";
+		var div = $("div[name=" + box + "]");
+		var value = div.attr("class").indexOf("active")
+		if (value > 0) {
+			div.removeClass("active");
+		}
+	});
+
+	$(".j-tab-title li").on('touchstart mousedown', function(e) {
+		e.preventDefault()
+		$(".j-tab-title .active").removeClass('active')
+		$(this).addClass('active')
+		tabsSwiper.slideTo($(this).index())
+	})
+	$(".j-tab-title li").click(function(e) {
+		e.preventDefault()
+	})
+
+	function tabpage(type){
+		if ( type===1 )
+		{
+			$("div[name='extend_field5div']").hide();
+			$("div[name='mobilediv']").hide();
+			$(".btn-submit").val("绑定商城帐号");
+			$("input[name='username']").attr('placeholder',"用户名/手机号/邮箱");
+			$("input[name='bind_type']").val("1");
+			$(".u-l-register").html('没有帐号？您可以直接<a href="javascript:;" onclick="tabpage(2)" class="a-first" >注册绑定</a>');
+		}
+		else
+		{
+			$("div[name='extend_field5div']").show();
+			$("div[name='mobilediv']").show();
+			$(".btn-submit").val("注册绑定账号");
+			$("input[name='bind_type']").val("2");
+			$("input[name='username']").attr('placeholder',"用户名");
+			$(".u-l-register").html('已有帐号,直接<a href="javascript:;" onclick="tabpage(1)" class="a-first" >绑定</a>');
+		}
+	}
+	tabpage(1);
+
+
+	function register_mobile(){
+
+		var username = $("form[name='login-form'] :input[name='username']").val();
+		var password = $("form[name='login-form'] :input[name='password']").val();
+
+		if (username.length == 0)
+		{
+			alert("用户名不能为空");
+			return false;
+		}
+		if (password.length == 0)
+		{
+			alert("密码不能为空");
+			return false;
+		}
+		return true;
+	};
+</script>
+</body>
+</html>

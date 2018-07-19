@@ -1,0 +1,232 @@
+{if $consignee_list}
+<ul>
+<!-- {foreach from=$consignee_list item=consignee key=sn} -->
+<li {if $consignee.def_addr eq 1}class="curr"{/if}  onmouseover="showAddressEdit(this);" onmouseout="showAddressEdit(this);" >
+<div style="width:100%;height:100%;" onclick="selAddress(this, {$consignee.address_id});"  >
+<table cellpadding=0 cellspacing=0 width="100%">
+<tr><td>{$consignee.address_short_name}</td></tr>
+</table>
+</div>
+<div  class="edit_addr" id="address_edit_{$sn}"><a  href="javascript:AddressEdit({$consignee.address_id});">修改</a> <a  href="javascript:del_Address({$consignee.address_id});" onclick="return confirm('您确认要删除吗？');">删除</a></div>
+</li>
+<!-- {/foreach} -->
+</ul>
+<div style="clear:both"></div>
+{if $smarty.session.user_id gt 0}
+<div class="address_jm_add" onclick="AddressEdit(0);">使用新地址</div>
+{/if}
+{else}
+<table cellpadding=4 cellspacing=4 width="100%" style="clear:both;margin-top:20px;">
+<tr><td style="text-align:right;width:10%"><font color=#ff3300>*</font>收件人</td><td><input type="text" name="consignee" value="{$address.consignee}" class="input_addr2"></td></tr>
+<!-- {if $real_goods_count gt 0} -->
+<tr><td style="text-align:right;"><font color=#ff3300>*</font>所在地区</td>
+<td>
+<input type="hidden" name="country" value="{$countryid}">
+<select name="province" id="selProvinces" onchange="region.changed(this, 2, 'selCities');"  style="width:155px;height:30px;border:1px solid #ccc;">
+<option value="0">{$lang.please_select}{$name_of_region[1]}</option>
+ <!-- {foreach from=$province_list item=province} -->
+        <option value="{$province.region_id}" {if $address.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+        <!-- {/foreach} -->
+      </select>
+      <select name="city" id="selCities" onchange="region.changed(this, 3, 'selDistricts');" style="width:155px;height:30px;border:1px solid #ccc;">
+        <option value="0">{$lang.please_select}{$name_of_region[2]}</option>
+        <!-- {foreach from=$city_list item=city} -->
+        <option value="{$city.region_id}" {if $address.city eq $city.region_id}selected{/if}>{$city.region_name}</option>
+        <!-- {/foreach} -->
+      </select>
+      <select name="district" id="selDistricts"  style="{if !$district_list}display:none;{/if}width:155px;height:30px;border:1px solid #ccc;" >
+        <option value="0">{$lang.please_select}{$name_of_region[3]}</option>
+        <!-- {foreach from=$district_list item=district} -->
+        <option value="{$district.region_id}" {if $address.district eq $district.region_id}selected{/if}>{$district.region_name}</option>
+        <!-- {/foreach} -->
+      </select>
+</td></tr>
+<tr><td style="text-align:right;"><font color=#ff3300>*</font>街道地址</td><td><input type="text" name="address" value="{$address.address}" class="input_addr1"></td></tr>
+{/if}
+<tr><td style="text-align:right;"><!-- <font color=#ff3300>*</font> -->电子邮箱</td><td><input type="text" name="email" value="{$address.email}" class="input_addr1" value="{$address.email}"></td></tr>
+<tr><td style="text-align:right;"><font color=#ff3300>*</font>手机号码</td><td><input type="text" name="mobile" value="{$address.mobile}" class="input_addr2"></td></tr>
+<tr><td></td><td style="padding-top:10px;">
+<input type="hidden" name="address_id" value="{$address.address_id}" >
+<input type="hidden" name="closediv" value="0" >
+<input type="button" class="BonusButton" value=" 确定 " onclick="submitAddress()">&nbsp;&nbsp;<input type="button" class="Button_reset" value=" 取消 " onclick="closePopDiv()"></td></tr>
+</table>
+
+{/if}
+    <script type="text/javascript">
+	{literal}
+	function AddressEdit(aid)
+	{	
+		Ajax.call('flow.php?act=EditAddress', 'address_id=' + aid, AddressEdit_Response, 'GET', 'JSON');
+	}
+	function AddressEdit_Response(result)
+	{
+		var PopAddressCon=document.getElementById('PopAddressCon');
+		PopAddressCon.innerHTML= result.content;
+		document.getElementById('popDiv').style.display='block';
+		document.getElementById('opendivbg').style.display='block';
+	}
+
+	function showPopDiv()
+	{
+		document.getElementById('popDiv').style.display='block';
+		document.getElementById('opendivbg').style.display='block';
+	}
+	function closePopDiv()
+	{
+		document.getElementById('popDiv').style.display='none';
+		document.getElementById('opendivbg').style.display='none';
+	}
+
+	function showAddressEdit(obj)
+	{
+		if (obj.className!='curr')
+		{
+			obj.className = obj.className == 'xxxxxx' ? '' : 'xxxxxx';
+		}
+	}
+	function selAddress(obj, address_id)
+	{
+		var addrParent = obj.parentNode;
+		var addrYeye = addrParent.parentNode;
+		var addrList = addrYeye.getElementsByTagName('li');
+		for (i=0;i<addrList.length;i++)
+		{
+			addrList[i].className='';
+		}
+		addrParent.className='curr';
+		Ajax.call('flow.php?act=selAddress', 'address_id=' + address_id, selAddress_response, 'GET', 'JSON');
+	}
+	function selAddress_response(result)
+	{
+		top.location.href = top.location.href;
+	}
+
+	function del_Address(address_id)
+	{
+		Ajax.call('flow.php?act=delAddress', 'address_id=' + address_id, delAddressResponse, 'GET', 'JSON');
+	}
+	function delAddressResponse(result)
+	{
+		 if (result.message)
+		{
+			alert(result.message);
+		}
+
+		if (result.error == 0)
+		{
+			 var layer = document.getElementById('AddressList');
+
+			if (layer)
+			{
+				layer.innerHTML = result.content;
+			}
+		}
+	}
+
+/**
+  * 提交地址信息--实体商品
+*/
+function submitAddress()
+{
+  var frm = document.forms['theForm'];
+  var cmt = new Object;
+  cmt.address_id       = frm.elements['address_id'].value;
+  cmt.consignee       = frm.elements['consignee'].value;
+  cmt.email           = frm.elements['email'].value;
+  cmt.mobile         =      frm.elements['mobile'].value;
+  {if $real_goods_count gt 0}
+  cmt.address         = frm.elements['address'].value;
+  cmt.country              = frm.elements['country'].value;
+  cmt.province           = frm.elements['province'].value;
+  cmt.city         =      frm.elements['city'].value;
+  cmt.district         =      frm.elements['district'].value;
+  cmt.optionlength = frm.elements['district'].length;
+  {/if}
+  cmt.closediv	   = frm.elements['closediv'].value;
+
+  if (cmt.consignee.length == 0)
+   {
+	alert('收件人不能为空！');
+	return false;
+   }
+   {if $real_goods_count gt 0}
+   if(cmt.optionlength > 1)
+   {
+	   if (cmt.province == '0' ||  cmt.city == '0'  || cmt.district == '0' )
+	   {
+		alert('所在地区不完整！');
+		return false;
+	   }
+   }
+   else
+   {
+	   if (cmt.province == '0' ||  cmt.city == '0' )
+	   {
+		alert('所在地区不完整！');
+		return false;
+	   }
+
+   }
+   {/if}
+   /* 邮箱不是必填项
+   if (cmt.email.length == 0)
+   {
+		alert('邮箱地址不能为空');
+		return false;
+   }
+   */
+   if (cmt.email.length > 0 && (!Utils.isEmail(cmt.email)))
+   {
+		alert('邮箱地址不正确');
+		return false;
+   }
+   {if $real_goods_count gt 0}
+   if (cmt.address.length == 0)
+   {
+	alert('街道地址不能为空！');
+	return false;
+   }
+   {/if}
+   if (cmt.mobile.length == 0)
+   {
+	alert('手机号码不能为空！');
+	return false;
+   }
+   if (cmt.mobile.length>0)
+  {
+    var reg = /^1[34578][0-9]\d{8}$/;
+    if (!reg.test(cmt.mobile))
+    {
+	alert('手机号码格式不正确！');
+	return false;
+    }
+  }
+   Ajax.call('flow.php?act=saveAddress', 'address=' + $.toJSON(cmt), addressResponse, 'POST', 'JSON');
+}
+
+/* 处理提交地址的反馈信息  */
+  function addressResponse(result)
+  {
+    if (result.message)
+    {
+      alert(result.message);
+    }else{
+	top.location.href = top.location.href;
+    }
+    /*
+    if (result.error == 0)
+    {
+	var layer = document.getElementById('AddressList');
+	if (layer)
+	{
+		layer.innerHTML = result.content;
+	}
+	if (result.closediv == '1')
+	{
+		closePopDiv();
+	}
+    }*/
+
+  }
+	{/literal}
+	</script> 

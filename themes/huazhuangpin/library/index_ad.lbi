@@ -1,0 +1,13 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <ul class="slidepic">
+        <!--{foreach from=get_flash_xml() name=myflash item=flash}-->
+	  <li style="background-image: url({$flash.src});"> <a target="_blank" href="{$flash.url}" ></a> </li>
+	<!--{/foreach}-->
+    </ul>
+    <div class="num">
+    	<ul>
+        <!--{foreach from=get_flash_xml() name=myflash item=flash}-->
+	  <li></li>
+	<!--{/foreach}-->
+	</ul>
+    </div>

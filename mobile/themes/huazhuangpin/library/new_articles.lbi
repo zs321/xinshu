@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="hao-gd-body fixed-Width">
+    <div class="component-typehao-img-con">
+        <img class="component-typehao-img" src="images/rd_w.png" height="40" width="auto">
+    </div>
+    <div class="rollTextMenus">
+    <ul>
+    <!--{foreach from=$new_articles item=article}-->
+	 <li><a href="{$article.url}">{$article.short_title}</a></li>
+    <!--{/foreach}-->
+    </ul>
+    </div>
+</div>
+<script type="text/javascript">
+  $(".hao-gd-body").slide({mainCell:".rollTextMenus ul" , effect:"top", autoPlay:true, vis:1 , autoPage:true});
+</script>

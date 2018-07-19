@@ -1,0 +1,109 @@
+/*秒杀页面开始*/
+.product {
+	BORDER: #ddd 1px solid;
+	PADDING: 10px;
+	BACKGROUND: #fff;
+	FLOAT: left;
+	MARGIN: 0px 12px 15px 0px;
+	OVERFLOW: hidden;
+	WIDTH: 268px;
+	HEIGHT: 355px;
+	text-align:center
+}
+.product .shijian {
+	height: 30px;
+	margin-top: 5px;
+	line-height: 30px;
+	background: rgb(110, 121, 146) none repeat scroll 0% 0%;
+	color: #fff;
+	text-align: center;
+	opacity: 0.8;
+	width: 270px;
+	overflow: hidden;
+}
+.product .shijian i {
+	display: block;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-top: 7px;
+	background: url(../images/pre_sale/2013110402.png) no-repeat;
+}
+.product .shijian span {
+	padding: 0px;
+}
+.product .shijian1 {
+	height: 30px;
+	float: left;
+	margin-top: 5px;
+	line-height: 30px;
+	padding: 0px 20px 0px 5px;
+	background: #6E7992;
+	color: #fff;
+	opacity: 0.8;
+}
+.product .title{
+	height:30px;
+	line-height:30px;
+	overflow:hidden	
+}
+.product .buy3{
+	height: 30px;
+	width:100%;
+	margin-top:5px;
+}
+.product .buy3 .n-tg {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: rgb(110, 121, 146) none repeat scroll 0% 0%;
+	margin-left:30px;
+	float:left
+}
+.product .buy3 .n-tg A {
+	DISPLAY: block;
+	color: #fff;
+	background: #F62648;
+	HEIGHT: 30px
+}
+.product .buy3 .n-tg A:hover {
+	text-decoration: none;
+	background: none;
+}
+.product .price3{
+	height:25px;
+	line-height:25px;
+}
+.product .price3 .y-price{
+	float:left;
+	margin-left:5px;
+}
+.product .price3 .valid_order{
+	float:right	;
+	margin-right:5px
+}
+.product .price3 .y-price SPAN {
+	display: block;
+	font-weight: normal;
+	color: #E6393B;
+	float: left;
+	margin-right: 15px;
+	font-size: 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.product .price3 .y-price SPAN.yp {
+	color: #999;
+	text-decoration: line-through;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-width: 50px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 0px !important;
+	overflow: hidden;
+	font-weight: normal;
+	font-size: 12px;
+}
+/*秒杀页面 结束*/

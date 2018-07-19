@@ -1,0 +1,191 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/jquery.json.js"></script>
+<script type="text/javascript" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/jquery-lazyload.js" ></script>
+<script type="text/javascript" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/transport_jquery.js"></script>
+<script type="text/javascript" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/utils.js"></script>
+<script type="text/javascript" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="themes/<?php echo $GLOBALS['_CFG']['template']; ?>/js/lizi_common.js"></script>
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js,jquery-lazyload.js,easydialog.min.js'}
+{insert_scripts files='transport_jquery.js,utils.js,jquery.SuperSlide.js,lizi_common.js'}
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?090f45997b7b0cf2271bce729f4c9349";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<div id="header" class="new_header">
+  <div class="site-topbar">
+	<div class="container">
+    	<div class="topbar-nav">
+        	Hi~欢迎来到{$shop_name}！
+        </div>
+	    <ul class="sn-quick-menu">
+	      <li class="sn-mytaobao menu-item j_MyTaobao">
+		<div class="sn-menu">
+		  <a aria-haspopup="menu-2" tabindex="0" class="menu-hd" href="user.php" target="_top" rel="nofollow">我的信息<b></b></a>
+		  <div id="menu-2" class="menu-bd">
+		    <div class="menu-bd-panel" id="myTaobaoPanel">
+		       <a href="user.php?act=order_list" target="_top" rel="nofollow">我的订单</a> 
+		       <a href="user.php?act=address_list" target="_top" rel="nofollow">我的地址</a>
+		       <a href="user.php?act=collection_list" target="_top" rel="nofollow">我的收藏</a>
+		    </div>
+		  </div>
+		</div>
+	      </li>
+	    </ul>
+        <div class="topbar-info J_userInfo" id="ECS_MEMBERZONE">
+        	{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info_top'}
+        </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    {literal}
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("{$lang.no_keywords}");
+            return false;
+        }
+    }
+    -->
+    {/literal}
+    </script>
+    <div class="logo-search">
+        <a class="logodiv" href="./" title="{$shop_name}"><div class="c-logo"></div></a>
+		<div class="c-slogan">
+		</div>
+		<div class="search-tab" >
+            <div class="search-form">
+	    <form action="search.php" method="get" id="searchForm" name="searchForm" onSubmit="return checkSearchForm()">
+                <div class="so-input-box">
+                	<input type="text" name="keywords" id="keyword" class="soinput" placeholder="请输入关键词" autocomplete="off" />
+			<input type="hidden" value="k1" name="dataBi">
+                </div>
+		<input id="searchBtn" type="submit" class="sobtn sogoods" value="搜 索" />
+		<div class="clear"></div>
+	    </form>
+            </div>
+            {if $searchkeywords}
+            <div class="search-tags"><span>热搜榜：</span>
+		{foreach from=$searchkeywords item=val}
+		<a href="search.php?keywords={$val|escape:url}" rel="nofollow">{$val}</a>
+		{/foreach}
+            </div>
+            {/if}
+            </div>
+            <div class="topbar-cart" id="ECS_CARTINFO_TOP">
+        	{insert name='cart_info_top'}
+            </div>
+    </div>
+    <div class="w-nav">
+        <div class="t-nav">
+        	<div class="nav-categorys j-allCate">
+                <div class="catetit">
+                    <h2><a href="javascript:;" rel="nofollow">商品分类<i class="c-icon"></i></a></h2>
+                </div>
+                <ul class="cate-item j-extendCate {if $script_name neq "index"}dis-n{/if}" {if $script_name neq "index"}style="height:auto;border-bottom:solid 2px #333"{/if}>
+                    <!--{foreach from=$categories item=cat name=foo}-->
+			{if $script_name eq "index"}
+					{if $smarty.foreach.foo.iteration < 6}
+					<li>
+								<div class="cateone cate{$smarty.foreach.foo.iteration}">
+									<a  {if $cat.cat_ico} style="background:url(data/cat_ico/{$cat.cat_ico}) 10px 0 no-repeat"{else}style="background:url(themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/cat_ico.png) 10px 0 no-repeat"{/if} href="{$cat.url}">{$cat.name|escape:html}<i class="iconfont">&#xe600;</i></a>
+							<div class="childer_hide"> 
+							<!--{foreach from=$cat.cat_id item=child name=child}-->
+						  <a href="{$child.url}" target="_blank">{$child.name|escape:html}</a>     
+						<!-- {/foreach} -->
+						</div>  
+		
+								</div>
+					{if $cat.cat_id}
+								<div class="catetwo">
+					  <div class="topMap clearfix">
+						<div class="subCat clearfix">
+						  <!--{foreach from=$cat.cat_id item=child name=namechild}-->
+						  <dl>
+						<dt><h3><a href="{$child.url}">{$child.name|escape:html}</a></h3></dt>
+							<dd class="goods-class">
+							  <!--{foreach from=$child.cat_id item=childer name=childername}-->
+							<a href="{$childer.url}">{$childer.name|escape:html}</a>
+							  <!--{/foreach}-->
+							</dd>
+						  </dl>
+						  <!--{/foreach}-->
+						</div>
+					  </div>
+								</div>
+					{/if}
+					</li>	
+					{/if}
+
+			
+			{else}
+			
+					<li>
+								<div class="cateone cate{$smarty.foreach.foo.iteration}">
+									<a  {if $cat.cat_ico} style="background:url(data/cat_ico/{$cat.cat_ico}) 10px 0 no-repeat"{else}style="background:url(themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/cat_ico.png) 10px 0 no-repeat"{/if} href="{$cat.url}">{$cat.name|escape:html}<i class="iconfont">&#xe600;</i></a>
+							<div class="childer_hide"> 
+							<!--{foreach from=$cat.cat_id item=child name=child}-->
+						  <a href="{$child.url}" target="_blank">{$child.name|escape:html}</a>     
+						<!-- {/foreach} -->
+						</div>  
+		
+								</div>
+					{if $cat.cat_id}
+								<div class="catetwo" {if $smarty.foreach.foo.iteration > 5}style=" margin-top:300px;"{/if}>
+					  <div class="topMap clearfix">
+						<div class="subCat clearfix">
+						  <!--{foreach from=$cat.cat_id item=child name=namechild}-->
+						  <dl>
+						<dt><h3><a href="{$child.url}">{$child.name|escape:html}</a></h3></dt>
+							<dd class="goods-class">
+							  <!--{foreach from=$child.cat_id item=childer name=childername}-->
+							<a href="{$childer.url}">{$childer.name|escape:html}</a>
+							  <!--{/foreach}-->
+							</dd>
+						  </dl>
+						  <!--{/foreach}-->
+						</div>
+					  </div>
+								</div>
+					{/if}
+							</li>
+					
+			
+			{/if}
+			
+
+			
+		    <!--{/foreach}-->
+					{if $script_name eq "index"}
+					<li class="see_all_cat">
+						<a href="catalog.php">查看所有分类</a>
+					</li>
+					{/if}
+					
+                    </ul>
+            </div>
+            <ul class="nav-items">
+	            	<li>
+	            		<a href="./" {if $script_name eq "index"} class="cur"{/if} rel="nofollow">首页</a>
+	            	</li>
+		<!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+	            	<li>
+	            		<a href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if}  {if $nav.active eq 1} class="cur"{/if} rel="nofollow">{$nav.name}</a>
+	            	</li>
+		<!-- {/foreach} -->
+            </ul>
+        </div>    
+    </div>
+</div>

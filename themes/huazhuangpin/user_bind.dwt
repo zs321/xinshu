@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="login.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,user.js'}
+{insert_scripts files='jquery-1.9.1.min.js,jquery.json.js'}
+{insert_scripts files='transport_jquery.js,utils.js,jquery.SuperSlide.js,lizi_common.js'}
+<body>
+<script>
+$(function(){
+	$(".input_box").click(function(){
+		$(this).find(".t_text").hide();	
+		$(this).find("input").focus();
+	})
+	
+	$(".input_box").focusin(function(){
+		$(this).find(".t_text").hide();
+	})
+
+	$(".input_box").focusout(function(){
+		if($(this).find("input").val() == "")
+		{
+			$(this).find(".t_text").show();
+		}
+	})
+	
+	$(".login_card").click(function(){
+		$(".login_card").addClass('on');
+		$(".login_user").removeClass('on');
+		$(".reg_cont1").hide();
+		$(".reg_cont2").show();
+		$("#mobilelogincaptcha").attr("src","captcha.php?is_login=1&"+Math.random())
+	})
+
+	$(".login_user").click(function(){
+		$(".login_user").addClass('on');
+		$(".login_card").removeClass('on');
+		$(".reg_cont1").show();
+		$(".reg_cont2").hide();
+		$("#userlogincaptcha").attr("src","captcha.php?is_login=1&"+Math.random())
+	})
+})
+</script> 
+
+<div class="reg_warp">
+  <div class="reg_header_top clearfix">
+  <div class="reg_header center clearfix">
+    <div class="lh_logo fl">
+      <a class="fl logo_link" href="./"><img src="images/logo.gif"></a>
+    </div>
+    <p class="reg_login_link fr f14">账号绑定</p>
+  </div>
+  </div>
+  <div class="reg_main center">
+    <ul class="reg_nav f18 t_c clearfix">
+      <li class="user_reg on login_user"><font class="iconfont">&#xe610;</font><font id="login_cat">已有账号，请绑定</font></li>
+      <li class="reg_success login_card"><font class="iconfont">&#xe615;</font>没用账号，请绑定</li>
+    </ul>
+    <div class="reg_cont reg_cont1 relative" style="">
+      <form name="formLogin" class="formLogin" action="user.php" method="post" >
+        <div class="register_infor">
+          <ul>
+            <li>
+				<div style=" color: #333;font-size: 14px;height: 28px;line-height: 28px; margin-bottom: 30px;">
+					<img style="border-radius: 30px;float: none;margin-right: 10px;display: inline-block;vertical-align: middle;" src="{if $info.figureurl_qq_2}{$info.figureurl_qq_2}{else}{$info.img}{/if}" width="28" height="28">
+					Hi,{$info.name} 欢迎来到 {$shop_name}
+				</div>
+            </li>
+            <li class="input_box">
+              <span class="t_text user_putong_card">用户名、手机、邮箱</span>
+              <input type="text" name="username" id="username" onblur="check_login_username(this.value,'login_username_notice');" onkeyup="check_login_username(this.value,'login_username_notice');" autocomplete="off">
+              <span class="error_icon"></span>
+            </li>
+            <li class="error_box" id="login_username_notice">
+              <em></em>
+            </li>
+            <li class="input_box">
+              <span class="t_text pass_putong_card">密码</span>
+              <input type="password" name="password" id="password" onblur="check_login_password(this.value,'login_password_notice');" onkeyup="check_login_password(this.value,'login_password_notice');" autocomplete="off">
+              <span class="error_icon"></span>
+            </li>
+            <li class="error_box" id="login_password_notice">
+              <em></em>
+            </li>
+            <!-- 判断是否启用验证码{if $login_captcha} -->
+            <li class="security_code input_box">
+              <span class="t_text">验证码</span>
+              <input type="text" class="code_input" name="captcha" maxlength="6" id="yzm" onblur="check_login_yzm(this.value,'login_yzm_notice');" onkeyup="check_login_yzm(this.value,'login_yzm_notice');">
+              <span class="error_icon"></span>
+              <img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" id="userlogincaptcha" /></li>
+            <li class="error_box" id="login_yzm_notice">
+              <em></em>
+            </li>
+            <!--{/if}-->
+            <li class="lizi_law">{if $_CFG['ecsdxt_mobile_pwd']=='1'}
+              <a class="forget_psd" href="user.php?act=mpassword_name">短信找回密码?</a>{else}
+              <a class="forget_psd" href="user.php?act=get_password">忘记密码?</a>{/if}
+              </li>
+            <li class="error_box">
+              <em></em>
+            </li>
+            <li class="go2register">
+				<input name="bind_type" type="hidden" value="1" />
+				<input name="type" type="hidden" value="{$type}" />
+				<input type="hidden" name="act" value="oath_register" />
+				<input type="button"  class="btn submit_btn" id="form-bound" value="立即绑定">
+			</li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    <div class="reg_cont reg_cont2 relative" style="display:none;">
+    {if $_CFG['ecsdxt_mobile_log']=='1'}
+      <form action="user.php" method="post" name="formUser" onsubmit="return register_mobile();">
+          <div class="register_infor">
+          <ul>
+            <li>
+				<div style=" color: #333;font-size: 14px;height: 28px;line-height: 28px; margin-bottom: 30px;">
+					<img style="border-radius: 30px;float: none;margin-right: 10px;display: inline-block;vertical-align: middle;" src="{if $info.figureurl_qq_2}{$info.figureurl_qq_2}{else}{$info.img}{/if}" width="28" height="28">
+					Hi,{$info.name} 欢迎来到 {$shop_name}
+				</div>
+            </li>
+            <li class="input_box">
+				<span class="t_text">用户名</span>
+				<input type="text" name="username" id="username" onblur="is_registered(this.value);" onkeyup="is_registered(this.value);"><span class="error_icon"></span>
+			</li>
+            <li class="error_box" id="username_notice"> <em></em> </li>
+
+            <!-- {foreach from=$extend_info_list item=field} --> 
+            <!-- {if $field.reg_field_name=='手机'} -->
+			<script>var ztime={$ztime};</script>
+			{insert_scripts files='global.js'}
+			{insert_scripts files='sms.js'}
+
+			<li class="input_box"> <span class="t_text" <!-- {if $field.is_need} -->id="extend_field{$field.id}i"<!--{/if}-->>{$field.reg_field_name}</span><input name="extend_field{$field.id}" id="extend_field{$field.id}" type="text"  onblur="is_mobile(this.value);" onkeyup="is_mobile(this.value);" /><span class="error_icon"></span></li>
+			<li class="error_box" id="mobile_notice"> <em></em> </li>
+			<li class="input_box" style="width: 280px;float:left;"> <span class="t_text" id="extend_field{$field.id+1}i">短信验证码</span><input name="extend_field{$field.id+1}" id="dxyzm" type="text" style="width: 145px;" maxlength="6" onblur="check_dxyzm(this.value);" onkeyup="check_dxyzm(this.value);" /><span class="error_icon"></span></li>
+			<li class="input_box" style="width: 93px;float:left;border-left:none;cursor:pointer;background: #f4f4f4;"><input type="button" onclick="getverifycode1('extend_field{$field.id}', '{$field.reg_field_name}');" value="获取验证码" id="zphone" style="width:100%;padding:0;margin:0;height:40px;background:none;cursor:pointer;"></li>
+			<li class="error_box" id="dxyzm_notice" style="clear:both;"> <em></em> </li>
+            <!-- {/if} --> 
+            <!-- {/foreach} --> 
+
+            <li class="input_box"> <span class="t_text">密码</span>
+              <input type="password" name="password" id="password1" onblur="check_password(this.value);" onkeyup="check_password(this.value);checkIntensity(this.value);">
+              <span class="error_icon"></span> </li>
+            <li class="error_box" id="password_notice"> <em></em> </li>
+            <li class="input_box"> <span class="t_text">确认密码</span>
+              <input name="confirm_password" type="password" id="conform_password" onblur="check_conform_password(this.value);" onkeyup="check_conform_password(this.value);">
+              <span class="error_icon"></span> </li>
+            <li class="error_box" id="conform_password_notice"> <em></em> </li>
+            
+            <!-- 判断是否启用验证码{if $enabled_captcha} -->
+            <li class="security_code input_box"> <span class="t_text">验证码</span>
+              <input type="text" class="code_input" name="captcha" maxlength="6" id="yzm" onblur="check_yzm(this.value);" onkeyup="check_yzm(this.value);">
+              <span class="error_icon"></span> <img src="captcha.php?{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()" /> </li>
+            <li class="error_box" id="yzm_notice"> <em></em> </li>
+            <!--{/if}-->
+            <li class="lizi_law">
+              <label>
+                <input name="agreement" type="checkbox" value="1" checked="checked"  tabindex="5" class="remember-me"/>
+                 我已看过并接受《<a href="article.php?cat_id=-1" style="color:blue" target="_blank">用户协议</a>}</label>
+            </li>
+            <li class="error_box"> <em></em> </li>
+			<li class="go2register"> 
+				<input name="bind_type" type="hidden" value="2" />
+				<input name="type" type="hidden" value="{$type}" />
+				<input type="hidden" name="act" value="oath_register" />
+				<input type="hidden" name="back_act" value="{$back_act}" />
+				<input id="form-register" type="submit" value="同意协议并注册" class="btn submit_btn">
+			</li>
+        </ul>
+        </div>
+      </form>
+    {else}
+      <div class="register_no">功能尚未开放，请选择用用户名和密码登录！</div>
+    {/if}
+    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript">
+
+var process_request = "{$lang.process_request}";
+{foreach from=$lang.passport_js item=item key=key}
+var {$key} = "{$item}";
+{/foreach}
+var username_exist = "{$lang.username_exist}";
+
+
+
+$("#form-bound").click(function(){
+
+	var username = $("form[name='formLogin'] :input[name='username']").val();
+	var password = $("form[name='formLogin'] :input[name='password']").val();
+	var captcha = $("form[name='formLogin'] :input[name='captcha']").val();
+
+	if (username.length == 0)
+	{
+		$("#login_username_notice em").html("用户名不能为空");
+		return false;
+	}
+	if (password.length == 0)
+	{
+		$("#login_password_notice em").html("密码不能为空");
+		return false;
+	}
+	{if $login_captcha}
+	if (captcha.length == 0)
+	{
+		$("#login_yzm_notice em").html("验证码不能为空");
+		return false;
+	}
+	{/if}
+
+	Ajax.call('user.php?act=is_user', 'username=' + username + '&password=' + password+"&captcha="+captcha, function(data){
+		if (data.result == "false")
+		{
+			alert(data.message)
+			return false;
+		}else{
+			$(".formLogin").submit();
+		}
+	} , 'GET', 'JSON', true, true);	
+	return false;
+
+});
+</script>
+</html>

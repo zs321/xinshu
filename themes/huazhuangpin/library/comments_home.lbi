@@ -1,0 +1,31 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <div class="hd">
+      <h4>最新评价</h4></div>
+    <div class="bd">
+    <ul>
+      <?php
+	$GLOBALS['smarty']->assign('new_comment', get_comment_diy(0, 9));
+      ?>
+      <!--{foreach from=$new_comment item=new_comment name=new_comment}-->
+      <li>
+      <dl class="comment-item dl-horizontal">
+        <dt>
+          <a href="{$new_comment.url}" target="_blank">
+            <img src="{$new_comment.goods_thumb}" class="img-thumbnail" width="37" height="38">{$new_comment.user_name}</a></dt>
+        <dd>
+          <div class="info">
+            <div class="rating">
+              <span class="ico-rating r{$new_comment.comment_rank}"></span>
+            </div>
+            <p class="cnt">
+              <a href="{$new_comment.url}" target="_blank">内容：{$new_comment.content|truncate:36}</a></p>
+          </div>
+          <div class="date">{$new_comment.time}</div></dd>
+      </dl>
+      </li>
+      <!--{/foreach}-->
+    </ul>
+    </div>
+<script type="text/javascript">
+	$(".comments").slide({mainCell:".bd ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:3,scroll:1,delayTime:1000});
+</script>

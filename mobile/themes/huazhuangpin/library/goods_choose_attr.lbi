@@ -1,0 +1,103 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<div class="f_title_attr">
+<img  id="ECS_GOODS_ATTR_THUMB" src="/{$goods.goods_thumb}" style=" float:left;">
+<div class="f_title_arr_r">
+<span>价格：<i id="ECS_GOODS_AMOUNT">0</i></span>
+<!-- {if $goods.goods_number neq "" and $cfg.show_goodsnumber} 商品库存--> 
+   <!-- {if $goods.goods_number eq 0} --> 
+     <span>库存：{$lang.stock_up} </span>
+   <!-- {else} --> 
+     <span>库存：<i id="shows_number">载入中···</i></span>
+   <!-- {/if} --> 
+<!-- {/if} -->
+<span>销量：<i>{$sales_count}</i></span>
+<span id="ECS_GOODS_ATTR"></span>
+</div>
+<a class="c_close_attr" href="javascript:void(0)" onclick="close_choose_attr();"></a>
+<div style="height:0px; line-height:0px; clear:both;"></div>
+</div>
+<div class="f_content_attr">
+<ul class="navContent" style="display:block;"> 
+              <!-- {* 开始循环所有可选属性 *} --> 
+              <!-- {foreach from=$specification item=spec key=spec_key} -->
+		<li>
+		<div class="title">{$spec.name}</div>
+                <div class="items"> 
+                  <!-- {* 判断属性是复选还是单选 *} --> 
+                  <!-- {if $spec.attr_type eq 1} --> 
+                  <!-- {if $cfg.goodsattr_style eq 1} --> 
+                  <!--代码修改_start  By www.0769web.net 注：将 if $cfg.goodsattr_style eq 1 与 对应else 之间的代码修改成下面这个样子-->
+                  <input type="hidden" name="spec_attr_type" value="{$spec_key}">
+                  <ul class="ys_xuan" id="xuan_{$spec_key}">
+                    <div class="catt" id="catt_{$spec_key}"> 
+                      <!-- {foreach from=$spec.values item=value key=key} --> 
+                      <a href="javascript:" {if $value.disabled}class="wuxiao"{else}{if $value.selected_key_mb5 eq '1'}class="cattsel"{/if}{/if} onclick="{if $value.disabled}{else}show_attr_status(this,{$goods.goods_id}{if $attr_id},{$attr_id}{/if});{if $spec_key eq $attr_id}get_gallery_attr({$id}, {$value.id});{/if}{/if}" name="{$value.id}" id="xuan_a_{$value.id}">
+		      <p {if $value.thumb_url}class="padd"{elseif $value.hex_color neq ''}style="background:#{$value.hex_color}; height:40px; width:40px"{else}style="padding:6px 10px;"{/if} title="{$value.label}">
+		      {if  $value.thumb_url}
+		      <img src="/{$value.img_url}" id="spec_img_{$value.id}" width="40" height="40" alt="{$value.label}">
+		      {elseif $value.hex_color}
+		      {else}
+                      <em>{$value.label}</em>
+                      {/if}
+                      <i></i>
+                      </p>
+                      <input style="display:none" id="spec_value_{$value.id}" type="radio" name="spec_{$spec_key}" value="{$value.id}" {if $value.selected_key_mb5 eq '1'}checked{/if} />
+                      </a> 
+                      <!-- {/foreach} --> 
+                    </div>
+                  </ul>
+                  <input type="hidden" name="spec_list" value="{$key}" />
+                  <!--代码修改_end  By www.0769web.net--> 
+                  <!-- {else} -->
+                  <select name="spec_{$spec_key}">
+                    <!-- {foreach from=$spec.values item=value key=key} -->
+                    <option label="{$value.label}" value="{$value.id}">{$value.label} {if $value.price gt 0}{$lang.plus}{elseif $value.price lt 0}{$lang.minus}{/if}{if $value.price neq 0}{$value.format_price}{/if}</option>
+                    <!-- {/foreach} -->
+                  </select>
+                  <input type="hidden" name="spec_list" value="{$key}" />
+                  <!-- {/if} --> 
+                  <!-- {else} --> 
+                  <!-- {foreach from=$spec.values item=value key=key} -->
+                  <label for="spec_value_{$value.id}">
+                    <input type="checkbox" name="spec_{$spec_key}" value="{$value.id}" id="spec_value_{$value.id}" onclick="changePrice()" />
+                    {$value.label} [{if $value.price gt 0}{$lang.plus}{elseif $value.price lt 0}{$lang.minus}{/if} {$value.format_price|abs}] </label>
+                  <br />
+                  <!-- {/foreach} -->
+                  <input type="hidden" name="spec_list" value="{$key}" />
+                  <!-- {/if} --> 
+                </div>
+              <!-- {/foreach} --> 
+              <!--代码修改_start  By www.0769web.net--> 
+              <script type="text/javascript">
+var myString=new Array();
+{literal}
+{foreach from=$prod_exist_arr key=pkey item=prod}
+myString[{$pkey}]="{$prod}";
+{/foreach}
+{/literal}
+</script> 
+              <!--代码修改_end  By www.0769web.net--> 
+              <!-- {* 结束循环可选属性 *} -->
+<li>
+        <div class="title1">数量</div>
+        <div class="item1">
+	   <span class="ui-number radius5" style="float:left;"> 
+            <!-- {if $goods.goods_id gt 0 && $goods.is_gift eq 0 && $goods.parent_id eq 0} 普通商品可修改数量 -->
+            <button type="button" class="decrease radius5" onclick="changenum(- 1)">-</button>
+            <input class="num" name="number" id="goods_number" autocomplete="off" value="1" min="1" max="{$goods.goods_number}" type="text" />
+            <button type="button" class="increase radius5" onclick="changenum(1)">+</button>
+            <!-- {else} --> 
+            {$goods.goods_number} 
+            <!-- {/if} --> 
+           </span>
+      </div>
+      
+    </li>        
+</ul>
+</div>
+<div class="f_foot">
+<input type="submit"  border="0" class="add_gift_attr" value="提交" />
+<div style=" height:30px"></div>
+</div>
+

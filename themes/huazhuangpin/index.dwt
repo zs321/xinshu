@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="baidu-site-verification" content="ZDhT9AzCSE" />
+<meta name="360-site-verification" content="b3ec2eb637fb409d5e19c32e51f8f1f8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+{* 包含脚本文件 *}
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+  function getLocalTime(nS) {
+    return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
+  }
+  function limitCount() {
+    var a = limitCount.doms = limitCount.doms || $("#JS_limit_table div.JS_leaveTime");
+    a.each(function() {
+      var c = $(this);
+      var b = c[0]._timeline = c[0]._timeline || c.data("timeline");
+      c.html(limitFormatTime(b - limitCount.unixTime));
+    });
+  }
+  function limitFormatTime(e) {
+    if (e < 0) {
+      e = 0;
+    }
+    var NowTime = new Date();
+    var t = e * 1000 + 28800000 - NowTime.getTime();
+    /*var d=Math.floor(t/1000/60/60/24);
+        t-=d*(1000*60*60*24);
+        var h=Math.floor(t/1000/60/60);
+        t-=h*60*60*1000;
+        var m=Math.floor(t/1000/60);
+        t-=m*60*1000;
+        var s=Math.floor(t/1000);*/
+
+    var d = Math.floor(t / 1000 / 60 / 60 / 24);
+    if (d<10){
+       d = '0' + d;
+    }
+    var h = Math.floor(t / 1000 / 60 / 60 % 24);
+    if (h<10){
+       h = '0' + h;
+    }
+    var m = Math.floor(t / 1000 / 60 % 60);
+    if (m<10){
+       m = '0' + m;
+    }
+    var s = Math.floor(t / 1000 % 60);
+    if (s<10){
+       s = '0' + s;
+    }
+
+    if (t < 0) {
+    return "活动结束";
+    }
+
+    return '剩余：<em>'+ d + '</em>天' + '<em>' + h + '</em>时<em>' + m + '</em>分<em>' + s + '</em>秒';
+  }
+  function _COMMON_UNIX_TIME() {
+    limitCount.unixTime = 0;
+    setInterval(limitCount, 1000);
+  }
+  _COMMON_UNIX_TIME();
+</script>
+{insert_scripts files='easydialog.min.js'}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<script type="text/javascript" src="js/lizi_index.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".j-hotTab").find("li:first").addClass('on');
+	$(".index-promotion-up").click(function(){
+		var num=$(this).parent().parent().find(".textgt").val();
+		var num_p=parseInt(num);
+		num_p=num_p+1;
+		$(this).parent().parent().find(".textgt").val(num_p);
+		});
+});
+</script>
+<div class="index-banner">
+    <div class="index-slide" id="index-slide">
+	<!--Banner切换-->
+	<!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem --> 
+	<!--Banner切换 END --> 
+    </div>
+</div>
+
+<script type="text/javascript">
+   var btn_buy = "{$lang.btn_buy}";
+   var is_cancel = "{$lang.is_cancel}";
+   var select_spe = "{$lang.select_spe}";
+</script>
+
+
+
+<div class="index_pro">
+	<div id="promenu">
+	<!--tag标题-->
+		<ul id="pronav">
+			<div class="ico"></div>
+			<li><a href="javascript:void(0)" class="selected">新品上市</a></li>
+			<div class="arr"></div>
+			<li><a href="javascript:void(0)" class="">精品推荐</a></li>
+			<div class="arr"></div>
+			<li><a href="javascript:void(0)" class="">热销商品</a></li>
+		</ul>
+	<!--二级菜单-->
+		<div id="promenu_con">
+			<dl class="promenutag" style="display:block">
+				<!-- #BeginLibraryItem "/library/recommend_new.lbi" --><!-- #EndLibraryItem -->					
+			 </dl> 
+			<dl class="promenutag" style="display:none">
+				<!-- #BeginLibraryItem "/library/recommend_best.lbi" --><!-- #EndLibraryItem -->	   
+			 </dl> 
+			<dl class="promenutag"  style="display:none">
+				<!-- #BeginLibraryItem "/library/recommend_hot.lbi" --><!-- #EndLibraryItem -->	
+			</dl> 
+	</div>
+	</div>
+	<script>
+	var tabs=function(){
+		function tag(name,elem){
+			return (elem||document).getElementsByTagName(name);
+		}
+		//获得相应ID的元素
+		function id(name){
+			return document.getElementById(name);
+		}
+		function first(elem){
+			elem=elem.firstChild;
+			return elem&&elem.nodeType==1? elem:next(elem);
+		}
+		function next(elem){
+			do{
+				elem=elem.nextSibling;  
+			}while(
+				elem&&elem.nodeType!=1  
+			)
+			return elem;
+		}
+		return {
+			set:function(elemId,tabId){
+				var elem=tag("li",id(elemId));
+				var tabs=tag("dl",id(tabId));
+				var listNum=elem.length;
+				var tabNum=tabs.length;
+				for(var i=0;i<listNum;i++){
+						elem[i].onclick=(function(i){
+							return function(){
+								for(var j=0;j<tabNum;j++){
+									if(i==j){
+										tabs[j].style.display="block";
+										//alert(elem[j].firstChild);
+										elem[j].firstChild.className="selected";
+									}
+									else{
+										tabs[j].style.display="none";
+										elem[j].firstChild.className="";
+									}
+								}
+							}
+						})(i)
+				}
+			}
+		}
+	}();
+	tabs.set("pronav","promenu_con");//执行
+	</script>
+</div>
+
+
+<div id="div_Recommend" class="tescol">
+	<div class="conTit small">
+		<h2 class="bold">
+		 <i class="iTit"></i><div class="tit color_pink">天天特卖</div></h2>
+		<span class="subTit">每天上新，天天低价，限时抢购</span></div>
+	<div class="tescolCon" id="JS_limit_table">
+		<ul>
+		<!-- {if $promotion_goods} -->
+		<!--{foreach from=$promotion_goods item=goods name=promotion_foreach}-->
+					<li>
+				
+					<a href="{$goods.url}"><img alt="{$goods.name|escape:html}" src="{$goods.thumb}"></a>
+					<div title="{$goods.name|escape:html}" class="name">
+						<font color="red"></font><a href="{$goods.url}">{$goods.name|truncate:12:"...":true}</a>					</div>
+					<div class="timedjs">
+						<div class="JS_leaveTime" data-timeline="{$goods.end_date}"><em>00</em>天<em>00</em>时<em>00</em>分<em>00</em>秒</div>
+					</div>
+
+					<p class="price">
+						<b class="tahoma">{$goods.promote_price}</b><s>{$goods.market_price}</s></p>
+					<p class="tescol-btn">
+						<a href="{$goods.url}"><span class="t-btn">马上抢<i class="r-arrow"></i></span></a><span class="t-num">已售 <span class="color_pink">{$goods.sales_volume_base}</span> 件</span></p>
+				</li>
+		<!--{/foreach}-->
+		<!-- {/if} -->
+		</ul>
+	</div>
+</div>
+
+
+
+<!-- 分类下商品 -->
+<div class="series_list"> 
+<!-- TemplateBeginEditable name="分类下商品区域" -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<?php
+$sortnum=$GLOBALS['smarty']->_var['sortnum'];
+if($sortnum=='')
+{
+ $sortnum==0;
+}
+$sortnum=$sortnum+1;
+$GLOBALS['smarty']->assign('sortnum',$sortnum);
+$catid=$GLOBALS['smarty']->_var['goods_cat']['id'];
+$catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
+?>
+<div class="cn-laytit">
+	<div class="title" style="background:url(data/cat_ico/{$goods_cat.cat_ico}) 0 center no-repeat; background-size:20px 20px">
+		<h3 class="floor_h{$sortnum}">{$goods_cat.name}</h3>
+	</div>
+	
+	<div class="link link{$sortnum}">
+		<!--{foreach from=get_child_tree($catid) item=child_tree name=child_tree}-->
+			<!-- {if $smarty.foreach.child_tree.index<12}--> 
+				<a href="{$child_tree.url}" title="{$child_tree.name}" target="_blank" {if $child_tree.is_show_hot == 1}class="hot"{/if}>{$child_tree.name}</a>
+			<!--{/if}-->
+		<!--{/foreach}-->
+		<a title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">更多....</a>
+	</div>
+</div>
+<div class="cn-fruit cn-fruit-{$sortnum}">
+
+  <div class="banner">
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品左侧广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="ban">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading" height="450" width="360"></a>
+		</div>
+    {/foreach}
+  </div>
+  <div class="goods">
+    <ul>
+    <!--{foreach from=$cat_goods item=goods name=goods}-->
+      <li id="li_{$goods.id}">
+        <div class="item">
+          <div class="img">
+            <a href="{$goods.url}">
+              <img data-original="{$goods.thumb}" src="images/spacer.gif" class="loading pic_img_{$goods.id}" height="150" width="150"></a>
+          </div>
+          <div class="tit">
+            <a href="{$goods.url}">{$goods.name|truncate:12:"...":true}</a></div>
+          <div class="btns">
+            <div class="pri j_comPrice">
+              <b class="j_sellPrice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></b></div>
+            <a class="addtocart j_addToCartAysn" href="javascript:addToCart({$goods.id})">加入购物车</a></div>
+        </div>
+      </li>
+    <!--{/foreach}-->
+    </ul>
+  </div>
+</div>
+
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品底部广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="cat_bottom_ad">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading"></a>
+		</div>
+    {/foreach}
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<?php
+$sortnum=$GLOBALS['smarty']->_var['sortnum'];
+if($sortnum=='')
+{
+ $sortnum==0;
+}
+$sortnum=$sortnum+1;
+$GLOBALS['smarty']->assign('sortnum',$sortnum);
+$catid=$GLOBALS['smarty']->_var['goods_cat']['id'];
+$catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
+?>
+<div class="cn-laytit">
+	<div class="title" style="background:url(data/cat_ico/{$goods_cat.cat_ico}) 0 center no-repeat; background-size:20px 20px">
+		<h3 class="floor_h{$sortnum}">{$goods_cat.name}</h3>
+	</div>
+	
+	<div class="link link{$sortnum}">
+		<!--{foreach from=get_child_tree($catid) item=child_tree name=child_tree}-->
+			<!-- {if $smarty.foreach.child_tree.index<12}--> 
+				<a href="{$child_tree.url}" title="{$child_tree.name}" target="_blank" {if $child_tree.is_show_hot == 1}class="hot"{/if}>{$child_tree.name}</a>
+			<!--{/if}-->
+		<!--{/foreach}-->
+		<a title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">更多....</a>
+	</div>
+</div>
+<div class="cn-fruit cn-fruit-{$sortnum}">
+
+  <div class="banner">
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品左侧广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="ban">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading" height="450" width="360"></a>
+		</div>
+    {/foreach}
+  </div>
+  <div class="goods">
+    <ul>
+    <!--{foreach from=$cat_goods item=goods name=goods}-->
+      <li id="li_{$goods.id}">
+        <div class="item">
+          <div class="img">
+            <a href="{$goods.url}">
+              <img data-original="{$goods.thumb}" src="images/spacer.gif" class="loading pic_img_{$goods.id}" height="150" width="150"></a>
+          </div>
+          <div class="tit">
+            <a href="{$goods.url}">{$goods.name|truncate:12:"...":true}</a></div>
+          <div class="btns">
+            <div class="pri j_comPrice">
+              <b class="j_sellPrice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></b></div>
+            <a class="addtocart j_addToCartAysn" href="javascript:addToCart({$goods.id})">加入购物车</a></div>
+        </div>
+      </li>
+    <!--{/foreach}-->
+    </ul>
+  </div>
+</div>
+
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品底部广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="cat_bottom_ad">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading"></a>
+		</div>
+    {/foreach}
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<?php
+$sortnum=$GLOBALS['smarty']->_var['sortnum'];
+if($sortnum=='')
+{
+ $sortnum==0;
+}
+$sortnum=$sortnum+1;
+$GLOBALS['smarty']->assign('sortnum',$sortnum);
+$catid=$GLOBALS['smarty']->_var['goods_cat']['id'];
+$catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
+?>
+<div class="cn-laytit">
+	<div class="title" style="background:url(data/cat_ico/{$goods_cat.cat_ico}) 0 center no-repeat; background-size:20px 20px">
+		<h3 class="floor_h{$sortnum}">{$goods_cat.name}</h3>
+	</div>
+	
+	<div class="link link{$sortnum}">
+		<!--{foreach from=get_child_tree($catid) item=child_tree name=child_tree}-->
+			<!-- {if $smarty.foreach.child_tree.index<12}--> 
+				<a href="{$child_tree.url}" title="{$child_tree.name}" target="_blank" {if $child_tree.is_show_hot == 1}class="hot"{/if}>{$child_tree.name}</a>
+			<!--{/if}-->
+		<!--{/foreach}-->
+		<a title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">更多....</a>
+	</div>
+</div>
+<div class="cn-fruit cn-fruit-{$sortnum}">
+
+  <div class="banner">
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品左侧广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="ban">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading" height="450" width="360"></a>
+		</div>
+    {/foreach}
+  </div>
+  <div class="goods">
+    <ul>
+    <!--{foreach from=$cat_goods item=goods name=goods}-->
+      <li id="li_{$goods.id}">
+        <div class="item">
+          <div class="img">
+            <a href="{$goods.url}">
+              <img data-original="{$goods.thumb}" src="images/spacer.gif" class="loading pic_img_{$goods.id}" height="150" width="150"></a>
+          </div>
+          <div class="tit">
+            <a href="{$goods.url}">{$goods.name|truncate:12:"...":true}</a></div>
+          <div class="btns">
+            <div class="pri j_comPrice">
+              <b class="j_sellPrice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></b></div>
+            <a class="addtocart j_addToCartAysn" href="javascript:addToCart({$goods.id})">加入购物车</a></div>
+        </div>
+      </li>
+    <!--{/foreach}-->
+    </ul>
+  </div>
+</div>
+
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品底部广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="cat_bottom_ad">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading"></a>
+		</div>
+    {/foreach}
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<?php
+$sortnum=$GLOBALS['smarty']->_var['sortnum'];
+if($sortnum=='')
+{
+ $sortnum==0;
+}
+$sortnum=$sortnum+1;
+$GLOBALS['smarty']->assign('sortnum',$sortnum);
+$catid=$GLOBALS['smarty']->_var['goods_cat']['id'];
+$catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
+?>
+<div class="cn-laytit">
+	<div class="title" style="background:url(data/cat_ico/{$goods_cat.cat_ico}) 0 center no-repeat; background-size:20px 20px">
+		<h3 class="floor_h{$sortnum}">{$goods_cat.name}</h3>
+	</div>
+	
+	<div class="link link{$sortnum}">
+		<!--{foreach from=get_child_tree($catid) item=child_tree name=child_tree}-->
+			<!-- {if $smarty.foreach.child_tree.index<12}--> 
+				<a href="{$child_tree.url}" title="{$child_tree.name}" target="_blank" {if $child_tree.is_show_hot == 1}class="hot"{/if}>{$child_tree.name}</a>
+			<!--{/if}-->
+		<!--{/foreach}-->
+		<a title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">更多....</a>
+	</div>
+</div>
+<div class="cn-fruit cn-fruit-{$sortnum}">
+
+  <div class="banner">
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品左侧广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="ban">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading" height="450" width="360"></a>
+		</div>
+    {/foreach}
+  </div>
+  <div class="goods">
+    <ul>
+    <!--{foreach from=$cat_goods item=goods name=goods}-->
+      <li id="li_{$goods.id}">
+        <div class="item">
+          <div class="img">
+            <a href="{$goods.url}">
+              <img data-original="{$goods.thumb}" src="images/spacer.gif" class="loading pic_img_{$goods.id}" height="150" width="150"></a>
+          </div>
+          <div class="tit">
+            <a href="{$goods.url}">{$goods.name|truncate:12:"...":true}</a></div>
+          <div class="btns">
+            <div class="pri j_comPrice">
+              <b class="j_sellPrice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></b></div>
+            <a class="addtocart j_addToCartAysn" href="javascript:addToCart({$goods.id})">加入购物车</a></div>
+        </div>
+      </li>
+    <!--{/foreach}-->
+    </ul>
+  </div>
+</div>
+
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品底部广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="cat_bottom_ad">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading"></a>
+		</div>
+    {/foreach}
+
+ <!-- #EndLibraryItem -->
+<!-- #BeginLibraryItem "/library/cat_goods.lbi" -->
+
+<?php
+$sortnum=$GLOBALS['smarty']->_var['sortnum'];
+if($sortnum=='')
+{
+ $sortnum==0;
+}
+$sortnum=$sortnum+1;
+$GLOBALS['smarty']->assign('sortnum',$sortnum);
+$catid=$GLOBALS['smarty']->_var['goods_cat']['id'];
+$catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
+?>
+<div class="cn-laytit">
+	<div class="title" style="background:url(data/cat_ico/{$goods_cat.cat_ico}) 0 center no-repeat; background-size:20px 20px">
+		<h3 class="floor_h{$sortnum}">{$goods_cat.name}</h3>
+	</div>
+	
+	<div class="link link{$sortnum}">
+		<!--{foreach from=get_child_tree($catid) item=child_tree name=child_tree}-->
+			<!-- {if $smarty.foreach.child_tree.index<12}--> 
+				<a href="{$child_tree.url}" title="{$child_tree.name}" target="_blank" {if $child_tree.is_show_hot == 1}class="hot"{/if}>{$child_tree.name}</a>
+			<!--{/if}-->
+		<!--{/foreach}-->
+		<a title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">更多....</a>
+	</div>
+</div>
+<div class="cn-fruit cn-fruit-{$sortnum}">
+
+  <div class="banner">
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品左侧广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="ban">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading" height="450" width="360"></a>
+		</div>
+    {/foreach}
+  </div>
+  <div class="goods">
+    <ul>
+    <!--{foreach from=$cat_goods item=goods name=goods}-->
+      <li id="li_{$goods.id}">
+        <div class="item">
+          <div class="img">
+            <a href="{$goods.url}">
+              <img data-original="{$goods.thumb}" src="images/spacer.gif" class="loading pic_img_{$goods.id}" height="150" width="150"></a>
+          </div>
+          <div class="tit">
+            <a href="{$goods.url}">{$goods.name|truncate:12:"...":true}</a></div>
+          <div class="btns">
+            <div class="pri j_comPrice">
+              <b class="j_sellPrice"><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></b></div>
+            <a class="addtocart j_addToCartAysn" href="javascript:addToCart({$goods.id})">加入购物车</a></div>
+        </div>
+      </li>
+    <!--{/foreach}-->
+    </ul>
+  </div>
+</div>
+
+    <?php
+	$GLOBALS['smarty']->assign('index_image',get_advlist('首页'.$sortnum.'F分类商品底部广告', 1));
+    ?>
+    {foreach from=$index_image item=ad name=index_image}
+		<div class="cat_bottom_ad">
+		  <a href="{$ad.url}" target="_blank"><img data-original="{$ad.image}" src="images/spacer.gif" class="loading"></a>
+		</div>
+    {/foreach}
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable --> 
+</div>
+<!-- 分类下商品 END -->	
+
+<!-- 文章及评论 -->
+<div class="w-main panel-wrapper">
+<!-- TemplateBeginEditable name="首页图片文章列表" -->
+<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
+
+  <div class="title_list">
+    <span class="tl_one">{$articles_cat.name|escape:html}</span>
+    <a class="more" href="{$articles_cat.url}">查看更多&gt;</a></div>
+  <div class="list2">
+  <!--{foreach from=$articles item=article_item name=article_item}-->
+    <div class="list_son"{if $smarty.foreach.article_item.iteration mod 4 eq 0} style="margin-right:0;"{/if}>
+      <div class="list_son_img">
+        <a href="{$article_item.url}">
+	  <img data-original="{$article_item.pic}" src="images/spacer.gif" alt="{$article_item.title|escape:html}" title="{$article_item.title|escape:html}" class="loading">
+        </a>
+      </div>
+      <div class="list_son_desc">
+        <p class="title">{$article_item.short_title}</p>
+        <p class="time">{$article_item.add_time}</p>
+        <p class="desc">{if $article_item.description}[摘要]{$article_item.description|truncate:40}{/if}</p></div>
+    </div>
+  <!--{/foreach}-->
+  </div>
+
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+<!-- 文章及评论 END -->	
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+<div class="add_ok" id="cart_show">
+    <div class="tip">
+        <i class="iconfont"></i>商品已成功加入购物车
+    </div>
+    <div class="go">
+        <a href="javascript:easyDialog.close();" class="back">&lt;&lt;继续购物</a>
+        <a href="flow.php" class="btn">去结算</a>
+    </div>
+</div>
+</body>
+</html>

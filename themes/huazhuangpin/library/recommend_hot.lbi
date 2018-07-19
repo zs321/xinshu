@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $hot_goods} -->
+<div class="primeProductList">
+  <ul class="prolist cls">
+<!--{foreach from=$hot_goods item=goods}-->	
+      <li>
+      <div class="img"> <a target="_blank" href="{$goods.url}"> <img alt="{$goods.name|escape:html}" src="{$goods.thumb}"></a> </div>
+      <p class="tit"> <a title="{$goods.name|escape:html}" target="_blank" href="{$goods.url}">{$goods.name|escape:html}</a> </p>
+      <p class="GoodsItem">
+	  	<!-- {if $goods.promote_price neq ""} --><span class="shop_price">{$goods.promote_price}</span><!-- {else}--><span class="shop_price">{$goods.shop_price}</span><!--{/if}-->  
+        <span class="market_price">{$goods.market_price}</span>
+	  </p>
+	  <p><span class="p-time">销量：{$goods.sales_volume_base} 件</span></p>
+
+	  
+	  
+    </li>
+<!--{/foreach}-->
+  </ul>
+</div>
+<!-- {/if} -->

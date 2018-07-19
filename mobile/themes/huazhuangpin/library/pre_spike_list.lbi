@@ -1,0 +1,79 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   	<!--{if $ps_list}-->
+    <div id="J_ItemList" class="srp album flex-f-row" style="opacity:1;">
+      <!--{foreach from=$ps_list item=pre_spike name=name key=key}--> 
+      <!-- {if $pre_spike.goods_name neq ''} -->
+      <div class="product flex_in single_item">
+        <div class="pro-inner">
+          <div class="proImg-wrap"> <a href="{$pre_spike.url}" style="display:block;font-size:0px;"> <img src="/{$pre_spike.goods_thumb}" alt="{$pre_spike.goods_name|escape:html}"> </a> </div>
+          <div class="protime"><font id="ps_cd_{$pre_spike.goods_id}"></font><font id="ps_label_{$pre_spike.goods_id}" over="false">{$pre_spike.cur_status}</font></div>
+							<script type="text/javascript">
+				            $().ready(function(){
+				            	countdown.setLabels(
+				   	   				 '毫秒|秒|分|小时|天| 周| 月| 年| 十年| 世纪| 千年',
+				   	   				 '毫秒|秒|分|小时|天| 周| 月| 年| 十年| 世纪| 千年',
+				   	   				 '',//秒连接符
+				   	   				 '',//其他时间连接符
+				   	   				 'End',
+				   	   				 function(n){ return n.toString()
+				   	   			});
+				            	<!-- {if $pre_spike.status == 0} -->
+				   	           	var endDate = new Date({$pre_spike.local_start_date});
+				            	<!-- {else} -->
+				   	           	var endDate = new Date({$pre_spike.local_end_date});
+				            	<!-- {/if} -->
+				   	           	//if({$pre_spike.goods_id} == 62){
+				   	           	//	endDate = new Date(2015, 6, 29, 12, 09);
+				   	           	//}
+				   	           	
+				   	           	var status = "{$pre_spike.status}";
+				   	           	
+				   	         	var timerId = null;
+				   	           	
+				   	           	function countdown_callback(ts){
+					   	           	$("#ps_cd_{$pre_spike.goods_id}").html(ts.toString());
+				   	    			
+				   	    			if(status == 0){
+				   	    				//预热中->预售中
+				   	    				if(ts == "End"){
+										Ajax.call('index.php?act=clear_cache', 'POST', 'JSON');
+					   	    				window.clearInterval(timerId);
+					   	    				$("#ps_cd_{$pre_spike.goods_id}").html("");
+					   	    				$("#ps_label_{$pre_spike.goods_id}").html("后结束");
+					   	    				$("#ps_label_{$pre_spike.goods_id}").attr("over", true);
+					   	    				status = 1;
+					   	    				endDate = new Date({$pre_spike.local_end_date});
+					   	    				timerId = countdown(countdown_callback, endDate, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
+					   	    			}
+				   	    			}else{
+				   	    				//预售中->活动已结束
+				   	    				if(ts == "End" || new Date().getTime() > endDate.getTime()){
+					   	    				window.clearInterval(timerId);
+					   	    				$("#ps_cd_{$pre_spike.goods_id}").html("");
+					   	    				$("#ps_label_{$pre_spike.goods_id}").html("活动已结束");
+					   	    				$("#ps_label_{$pre_spike.goods_id}").attr("over", true);
+					   	    			}
+				   	    			}
+				   	           	}
+				   	           	
+				   	            timerId = countdown(countdown_callback, endDate, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
+				            });
+			            </script>
+
+          <div class="proInfo-wrap">
+            <div class="proTitle"> <a href="{$pre_spike.url}" >{$pre_spike.goods_name}</a> </div>
+            <div class="proPrice"> 
+              <em>{$pre_spike.sale_price}</em> 
+            </div>
+            <div class="proSales"><em>{$pre_spike.sales_counts}</em>人已购买</div>
+          </div>
+        </div>
+      </div>
+      <!--{/if}--> 
+      <!--{/foreach}--> 
+    </div>
+    <!---{else}-->
+    <div id="J_ItemList" class="srp album flex-f-row" style="opacity:1;">
+    <p>找不到匹配条件的商品哦~ ~</p>
+    </div>
+    <!--{/if}-->

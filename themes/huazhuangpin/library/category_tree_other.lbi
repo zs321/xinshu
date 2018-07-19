@@ -1,0 +1,11 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<?php
+$category = $GLOBALS['smarty']->_var['category'];
+?>
+<dl>
+	<!--{foreach from=get_children_tree($category) item=cat}-->
+		<!--{foreach from=$cat.children item=child name=child}-->
+			<dd{if $category eq $child.id} class="current"{/if}><a href="{$child.url}">{$child.name|escape:html}</a></dd>
+		<!--{/foreach}-->
+	<!--{/foreach}-->
+</dl>

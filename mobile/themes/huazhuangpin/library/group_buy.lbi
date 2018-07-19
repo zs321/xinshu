@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $group_buy_goods} -->
+<div class="blank2"></div>
+<div class="item_show_box2 box1 region" style="overflow:hidden">
+    <h3>
+      <a target="_top" href="group_buy.php">
+        精品团购<span class="titmore"><i class="ico_16"></i></span>
+      </a>
+    </h3>
+    <div id="picScrol5" class="picScrol5">
+        <div class="bd">
+            <ul>
+                <!--{foreach from=$group_buy_goods item=goods name=hot_goods}-->
+                <li><div class="groupimg"><a href="{$goods.url}"><img src="/{$goods.thumb}" /></a></div>
+		<div class="grouptit">{$goods.goods_name|escape:html|truncate:12}</div>
+		<div class="groupprice"><span class="last_price">{$goods.last_price}</span><span class="zhekou">{$goods.zhekou}折</span></div>
+                </li>
+                <!--{if $smarty.foreach.hot_goods.iteration%2 eq 0 && $smarty.foreach.hot_goods.iteration neq $smarty.foreach.hot_goods.total}--></ul><ul><!--{/if}-->
+                <!--{/foreach}-->
+        </div>
+    </div>
+
+
+</div>
+<!-- {/if} -->

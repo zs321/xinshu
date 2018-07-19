@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="article.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js'}
+</head>
+<body class="article">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="wrapper"> 
+<!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
+  <div class="cle">
+    <div class="con yh overf">
+        <div class="conl lf overf">
+            <div class="wz overf">
+                <h1>{$article.title|escape:html}</h1>
+                <div class="sjy overf">时间: {$article.add_time}
+                    <font>来源：{$article.author|escape:html}</font></div>
+                <div class="contentat">{$article.content}</div>
+                <div class="tagright">
+                    <div class="bdsharebuttonbox bdshare-button-style0-32" data-bd-bind="1491396451648">
+                        <a href="#" class="bds_more" data-cmd="more"></a>
+                        <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                        <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+                        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                    </div>
+                    <script>window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "32"
+                            },
+                            "share": {},
+                            "image": {
+                                "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"],
+                                "viewText": "分享到：",
+                                "viewSize": "32"
+                            },
+                            "selectShare": {
+                                "bdContainerClass": null,
+                                "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+                            }
+                        };
+                        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~ ( - new Date() / 36e5)];</script>
+                    <font>分享到：</font></div>
+            </div>
+            <div class="bqk overf">
+                <div class="bql lf overf">
+                    <div class="wxlb overf">
+                        {if $next_article}
+			<p>上一篇:<a href="{$next_article.url}" title="{$next_article.title}">{$next_article.title}</a></p>
+			{else}
+                        <p>上一篇: 没有了</p>
+			{/if}
+                        {if $prev_article}
+			<p>下一篇:<a href="{$prev_article.url}" title="{$prev_article.title}">{$prev_article.title}</a></p>
+			{else}
+                        <p>下一篇: 没有了</p>
+			{/if}
+                    </div>
+                </div>
+            </div>
+	    {if $hot_goods}
+	    <div class="cxh jpzs overf">
+                <h3>热销商品</h3>
+                <div style="width:110%; height:auto; overflow:hidden;">
+		<!--{foreach from=$hot_goods item=goods name=goods}-->
+                    <a class="mka lf overf" href="{$goods.url}" target="_blank" title="{$goods.name}">
+                        <img data-original="{$goods.thumb}" src="images/spacer.gif" class="loading" alt="{$goods.name}">
+                        <h4 class="jg overf">
+                            <span><!-- {if $goods.promote_price neq ""} -->{$goods.promote_price}<!-- {else}-->{$goods.shop_price}<!--{/if}--></span>
+                            <em>{$goods.market_price}</em></h4>
+                        <p>{$goods.short_style_name}</p>
+                    </a>
+		<!--{/foreach}-->
+                </div>
+            </div>
+	    {/if}
+	    {if $promotion_goods}
+            <div class="cxh jpzs overf">
+                <h3>特价促销</h3>
+                <div style="width:110%; height:auto; overflow:hidden;">
+		<!--{foreach from=$promotion_goods item=goods name=goods}-->
+                    <a class="mka lf overf" href="{$goods.url}" target="_blank" title="{$goods.name}">
+                        <img data-original="{$goods.thumb}" src="images/spacer.gif" class="loading" alt="{$goods.name}">
+                        <h4 class="jg overf">
+                            <span>{$goods.promote_price}</span>
+                            <em>{$goods.market_price}</em></h4>
+                        <p>{$goods.short_style_name}</p>
+                    </a>
+		<!--{/foreach}-->
+                </div>
+            </div>
+	    {/if}
+        </div>
+        <div class="conr rt overf">
+	<!-- #BeginLibraryItem "/library/article_category_tree.lbi" --><!-- #EndLibraryItem -->
+            {if $new_articles}
+	    <div class="zjpd overf">
+                <div class="zjpd yd overf">
+                    <h1>最新资讯</h1>
+                    <div class="ula overf">
+		    <!--{foreach from=$new_articles item=article name=article}-->
+                        <a class="overf" href="{$article.url}" target="_blank" title="{$article.title|escape:html}">
+                            <span class="{if $smarty.foreach.article.iteration lt 4}qs {/if}lf">{$smarty.foreach.article.iteration}</span>
+                            <div class="wz overf">
+                                <em>{$article.short_title|truncate:30:"...":true}</em>
+                            </div>
+                        </a>
+		    <!--{/foreach}-->
+                </div>
+	    </div>
+            {/if}
+	    <!-- {if $related_goods} -->
+                <div class="zjpd yd overf cztj">
+                    <h1>大家都在看</h1>
+		    <!--{foreach from=$related_goods item=releated_goods_data}-->
+                    <div class="qgou">
+                        <div class="gw_cp">
+                            <a href="{$releated_goods_data.url}" target="_blank" title="{$releated_goods_data.goods_name}" class="cp_img">
+                                <img style="width:290px;height:290;" alt="{$releated_goods_data.goods_name}" data-original="{$releated_goods_data.goods_thumb}" src="images/spacer.gif" class="loading"></a>
+                            <p class="jge">
+                                <span><!-- {if $releated_goods_data.promote_price neq 0} -->{$releated_goods_data.formated_promote_price}<!-- {else} -->{$releated_goods_data.shop_price}<!-- {/if} --></span>
+                                <font class="yjia">{$releated_goods_data.market_price}</font></p>
+                            <a href="{$releated_goods_data.url}" target="_blank" title="{$releated_goods_data.goods_name}" class="cp_title">{$releated_goods_data.short_name}</a></div>
+                    </div>
+		    <!--{/foreach}-->
+                </div>
+	    <!-- {/if} -->
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

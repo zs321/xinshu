@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="detail_img" id="detail_img">
+  <div class="pic_view" id="li_{$goods.goods_id}"> <a href="{$pictures.0.img_url}" class="MagicZoomPlus" id="Zoomer" rel="hint-text: ; selectors-effect: false; selectors-class: current; zoom-distance: 10;zoom-width: 400; zoom-height: 400;"> <img id="J_prodImg"  alt="{$goods.goods_name|escape:html}" data-original="{if $pictures.0.img_url}{$pictures.0.img_url}{else}{$goods.goods_img}{/if}" src="images/spacer.gif" class="loading pic_img_{$goods.goods_id}"> </a> </div>
+  <div class="item-thumbs" id="item-thumbs">
+  <a class="prev" href="javascript:void(0);"></a>
+  <a class="next" href="javascript:void(0);"></a>
+    <div class="bd">
+    <ul class="cle">
+      <!-- {if $pictures}--> 
+      <!-- {foreach from=$pictures item=picture name=foo}-->
+      <li <!-- {if $smarty.foreach.foo.first}-->class="current"<!-- {/if}-->> <a href="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}" rel="zoom-id: Zoomer" rev="{if $picture.img_url}{$picture.img_url}{else}{$picture.thumb_url}{/if}"> <img data-original="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" src="images/spacer.gif" class="loading" alt="{$goods.goods_name}"> </a></li>
+      <!--{/foreach}--> 
+      <!-- {/if}-->
+    </ul>
+    </div>
+  </div>
+  <div class="baidu_share">
+<div class="bdsharebuttonbox"><p style="float:left;">分享商品：</p><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>  
+  </div>
+</div>

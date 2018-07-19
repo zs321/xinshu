@@ -1,0 +1,107 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="site-footer">
+
+  <div class="">
+  	<div class="footer-links-w">
+		<div class="footer-links clearfix"> 
+				  <!-- {foreach from=get_shop_help() item=help_cat name=no} -->
+				  <dl class="col-links {if $smarty.foreach.no.first}col-links-first{/if}">
+					<dt>{$help_cat.cat_name}</dt>
+					<!-- {foreach from=$help_cat.article name=foo item=item} -->
+				{if $smarty.foreach.foo.iteration < 5}
+					<dd><a rel="nofollow" href="{$item.url}" target="_blank">{$item.short_title}</a></dd>
+				{/if}
+					<!-- {/foreach} -->
+				  </dl>
+				  <!-- {/foreach} -->
+				  <dl class="col-links">
+					<dt>微信关注我们</dt>
+					  {foreach from=get_advlist_position_name_pc('微信二维码',0,1) item=ad name=index_image}
+						<dd><img src="{$ad.image}" width=85 height=85><br>微信扫一扫</dd>
+					  {/foreach}
+				   
+					
+				  </dl>
+				  
+				  <dl class="col-contact">
+					<dd class="phone">{$service_phone}</dd>
+					<!-- 邮件{if $service_email} -->
+				  	<dd class="email">{$service_email}</dd>
+				  <!-- 结束邮件{/if} -->
+					<!-- {if $shop_address} -->
+				  	<dd class="address">{$shop_address}</dd>
+				  <!-- {/if} -->
+					
+				  </dl>
+		</div>
+	</div>
+	
+	
+
+	
+	
+    <div class="footer-info clearfix" >
+      <div class="info-text">
+      <p>
+      {$copyright} {$shop_postcode}
+
+      <!-- ICP 证书{if $icp_number} -->
+      <a href="http://www.miibeian.gov.cn/" target="_blank">{$icp_number}</a>
+      <!-- 结束ICP 证书{/if} -->
+      {if $stats_code}{$stats_code}{/if}
+      </p>
+        <p class="nav_bottom">
+        <!-- {if $navigator_list.bottom} -->
+      <!-- {foreach name=nav_bottom_list from=$navigator_list.bottom item=nav} -->
+      <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} -->target="_blank"<!-- {/if} --> <!-- {if $smarty.foreach.nav_bottom_list.first} --> class="noborder" <!-- {/if} -->>{$nav.name}</a>
+         <!-- {/foreach} -->
+      <!-- {/if} -->
+      </p>
+      <!--{if $txt_links }--> 
+        <p>友情链接：
+    <!--开始文字类型的友情链接{foreach from=$txt_links item=link name=name}-->
+   <a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}</a>
+    <!--结束文字类型的友情链接{/foreach}-->
+        </p>
+        <!-- {/if} -->
+      <!--{if $img_links }--> 
+        <p class="img_links">
+        <!--开始图片类型的友情链接{foreach from=$img_links item=link}-->
+        <a href="{$link.url}" target="_blank" title="{$link.name}"><img src="{$link.logo}" border=0></a>
+        <!--结束图片类型的友情链接{/foreach}-->
+        </p>
+        <!-- {/if} -->
+      </div>      
+    </div>    
+  </div>
+  
+  <div class="footer_service">
+    <div class="container wrapper">
+      <ul>
+        <li class="s1">
+          <b>精选大牌</b>
+          <span>优质品牌 品质呈现</span></li>
+        <li class="s2">
+          <b>正品保证</b>
+          <span>品牌授权 买得放心</span></li>
+        <li class="s3">
+          <b>闪电发货</b>
+          <span>极速发货 快速到家</span></li>
+        <li class="s4">
+          <b>售后无忧</b>
+          <span>无条件 退换货</span></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+</div>
+{include file='library/right_sidebar.lbi'}
+<script type="text/javascript">
+$("img").lazyload({
+	effect: "fadeIn",
+	threshold: 100,
+	failure_limit: 25,
+	skip_invisible: false
+});
+</script>

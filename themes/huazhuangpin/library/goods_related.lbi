@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $related_goods} -->
+	  	<div class="tabs_bar_right">
+			<div class="tabs_bar2">你可能还喜欢</div>
+		</div>
+	  	<div class="hot_box">
+			<ul>
+				<!--{foreach from=$related_goods item=goods}-->
+				<li>
+					<a href="{$goods.url}" target="_self">
+						<img width="194px" height="194px" data-original="{$goods.goods_thumb}" src="images/spacer.gif" class="loading" />
+						<p>{$goods.goods_name}</p>
+						<p class="hot_price">
+							<!-- {if $goods.promote_price neq ""} -->
+          					{$goods.promote_price}
+          					<!-- {else}-->
+          					{$goods.shop_price}
+          					<!--{/if}-->
+						</p>
+					</a>
+				</li>
+				<!--{/foreach}-->
+			</ul>
+		</div>
+		<div class="h15"></div>
+<!-- {/if} -->

@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <div class="title_list">
+    <span class="tl_one">{$articles_cat.name|escape:html}</span>
+    <a class="more" href="{$articles_cat.url}">查看更多&gt;</a></div>
+  <div class="list2">
+  <!--{foreach from=$articles item=article_item name=article_item}-->
+    <div class="list_son"{if $smarty.foreach.article_item.iteration mod 4 eq 0} style="margin-right:0;"{/if}>
+      <div class="list_son_img">
+        <a href="{$article_item.url}">
+	  <img data-original="{$article_item.pic}" src="images/spacer.gif" alt="{$article_item.title|escape:html}" title="{$article_item.title|escape:html}" class="loading">
+        </a>
+      </div>
+      <div class="list_son_desc">
+        <p class="title">{$article_item.short_title}</p>
+        <p class="time">{$article_item.add_time}</p>
+        <p class="desc">{if $article_item.description}[摘要]{$article_item.description|truncate:40}{/if}</p></div>
+    </div>
+  <!--{/foreach}-->
+  </div>

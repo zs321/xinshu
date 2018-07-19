@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $goods_article_list} -->
+	  	<div class="tabs_bar_right">
+			<div class="tabs_bar2">资讯信息</div>
+		</div>
+	  	<div class="hot_box">
+			<ul>
+				<!-- {foreach from=$goods_article_list item=article name=article} 相关文章 -->
+				{if $smarty.foreach.article.iteration < 10}
+				<li>
+					<a href="{$article.url}" title="{$article.title|escape:html}" target="blank">
+						<p>{$article.short_title|escape:html}</p>
+					</a>
+				</li>
+				{/if}
+				<!--{/foreach}-->
+			</ul>
+		</div>
+		<div class="h15"></div>
+<!-- {/if} -->
