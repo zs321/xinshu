@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:62:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/index.dwt";i:1;s:76:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/page_header.lbi";i:2;s:73:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/index_ad.lbi";i:3;s:78:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/recommend_new.lbi";i:4;s:79:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/recommend_best.lbi";i:5;s:78:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/recommend_hot.lbi";i:6;s:74:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/cat_goods.lbi";i:7;s:77:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/cat_articles.lbi";i:8;s:76:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/page_footer.lbi";i:9;s:78:"D:/phpstudy/PHPTutorial/WWW/shop/themes/huazhuangpin/library/right_sidebar.lbi";}s:7:"expires";i:1531910376;s:8:"maketime";i:1531908576;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:64:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/index.dwt";i:1;s:78:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/index_ad.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_new.lbi";i:4;s:81:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_best.lbi";i:5;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_hot.lbi";i:6;s:76:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/cat_goods.lbi";i:7;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/cat_articles.lbi";i:8;s:78:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/page_footer.lbi";i:9;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/right_sidebar.lbi";}s:7:"expires";i:1531995734;s:8:"maketime";i:1531993934;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -230,8 +230,7 @@ var _hmt = _hmt || [];
 		            </ul>
         </div>    
     </div>
-</div>
-<script type="text/javascript" src="themes/huazhuangpin/js/lizi_index.js"></script>
+</div><script type="text/javascript" src="themes/huazhuangpin/js/lizi_index.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$(".j-hotTab").find("li:first").addClass('on');
@@ -246,7 +245,7 @@ $(document).ready(function() {
 <div class="index-banner">
     <div class="index-slide" id="index-slide">
 	
-	    <ul class="slidepic">
+	<ul class="slidepic">
         	  <li style="background-image: url(data/afficheimg/20170723ncmtmc.jpg);"> <a target="_blank" href="pre_spike.php" ></a> </li>
 		  <li style="background-image: url(data/afficheimg/20170723atjfhj.jpg);"> <a target="_blank" href="pre_spike.php" ></a> </li>
 		  <li style="background-image: url(data/afficheimg/20170723ulcizx.jpg);"> <a target="_blank" href="pre_spike.php" ></a> </li>
@@ -261,8 +260,7 @@ $(document).ready(function() {
 		  <li></li>
 		  <li></li>
 		</ul>
-    </div>
- 
+    </div> 
 	 
     </div>
 </div>
@@ -599,8 +597,7 @@ $(document).ready(function() {
 		  <a href="affiche.php?ad_id=29&uri=" target="_blank"><img data-original="data/afficheimg/1499061243666672507.jpg" src="themes/huazhuangpin/images/spacer.gif" class="loading"></a>
 		</div>
       
-</div>
-<div class="cn-laytit">
+</div><div class="cn-laytit">
 	<div class="title" style="background:url(data/cat_ico/) 0 center no-repeat; background-size:20px 20px">
 		<h3 class="floor_h2"></h3>
 	</div>
@@ -760,7 +757,7 @@ $(document).ready(function() {
 </div>
 	
 <div class="w-main panel-wrapper">
-  <div class="title_list">
+<div class="title_list">
     <span class="tl_one">最新资讯</span>
     <a class="more" href="article_cat.php?id=16">查看更多&gt;</a></div>
   <div class="list2">
@@ -924,7 +921,7 @@ $(document).ready(function() {
                                         <img src="themes/huazhuangpin/images/people.gif" />
                                     </div>
                                     <div class="user-info">
-                                    	<p>用户名：jh6955173</p>
+                                    	<p>用户名：useradmin</p>
                                     </div>
                                 </div>
                                 <p class="mt10">
@@ -1093,8 +1090,7 @@ $("img").lazyload({
 	failure_limit: 25,
 	skip_invisible: false
 });
-</script>
-<div class="add_ok" id="cart_show">
+</script><div class="add_ok" id="cart_show">
     <div class="tip">
         <i class="iconfont"></i>商品已成功加入购物车
     </div>

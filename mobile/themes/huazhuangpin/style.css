@@ -735,8 +735,8 @@ Template Type: type_0
 	.filter{width:100%;text-align:center; height:2.4rem;background:#fff;border-bottom:1px solid #ebeced;}
 	.filter ul{display:table;width:100%;margin:0;padding:0;border-collapse:collapse}
 	.filter ul li{display:table-cell; padding:0.5rem 0}
-	.filter ul li.filter-cur{border-bottom:1px solid #EC5196}
-	.filter ul li.filter-cur a{color:#EC5196}
+	.filter ul li.filter-cur{border-bottom:1px solid green}
+	.filter ul li.filter-cur a{color:green}
 	.filter a{display:inline-block;width:100%; font-size:0.9rem;color:#666;text-decoration:none}
 	.filter a span{position:relative}
 	.filter a:hover{text-decoration:none}
@@ -746,8 +746,8 @@ Template Type: type_0
 	.filter .f-ico-triangle-mt,.filter .f-ico-triangle-mb{border-width:0.33rem;border-style:solid;border-color:transparent;height:0;width:0}
 	.filter .f-ico-triangle-mt{border-bottom-color:#666;top:-0.2rem}
 	.filter .f-ico-triangle-mb{border-top-color:#666;top:0.6rem}
-	.filter .filter-cur .f-ico-triangle-mt.f-ico-triangle-slctd{border-bottom-color:#EC5196}
-	.filter .filter-cur .f-ico-triangle-mb.f-ico-triangle-slctd{border-top-color:#EC5196}
+	.filter .filter-cur .f-ico-triangle-mt.f-ico-triangle-slctd{border-bottom-color:green	}
+	.filter .filter-cur .f-ico-triangle-mb.f-ico-triangle-slctd{border-top-color:green}
 	.filter .filter-navBtn{padding:0} 
 	.filter .filter-navBtn a{border:1px solid #e2e2e2;border-radius:3px;width:80%;padding:0.13rem 0;color:#333}
 	/* 弹出筛选样式 */
@@ -1256,7 +1256,7 @@ Template Type: type_0
 	.toolbar .selcartgoods {width:20%;height:2.67rem;line-height:2.67rem;padding-left:0.5rem;display:inline-block;}
 	.toolbar .selcartgoods > label {height:2.67rem;}
 	.toolbar p {width:50%;height:2.67rem; line-height:2.67rem; display:inline-block;text-align:right;}
-	.toolbar a{display:block; text-align:center; line-height:2.67rem;position: absolute;right: 0;top:0; width: 25%;height: 100%;border: 0;font-size: 1rem;border-radius: 1px;-webkit-border-radius: 1px;color: #FFF; background:#ec3e7d}
+	.toolbar a{display:block; text-align:center; line-height:2.67rem;position: absolute;right: 0;top:0; width: 25%;height: 100%;border: 0;font-size: 1rem;border-radius: 1px;-webkit-border-radius: 1px;color: #FFF; background:green}
 	/* 购物车商品列表 */
 	.itemlist{ padding:0.8rem 0.3rem;    border:1px solid #ddd; background:#FFF}
 	.itemlist li{position:relative; border-bottom:1px solid #ddd;margin-top:1rem;padding-bottom:0.6rem;}

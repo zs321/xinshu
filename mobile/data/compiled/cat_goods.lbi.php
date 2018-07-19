@@ -1,3 +1,5 @@
+<!--<div style="display:none;">-->
+
 
 <?php
 $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
@@ -20,22 +22,22 @@ if ($this->_foreach['index_image']['total'] > 0):
 		  <div class="cat_ad"><a href="<?php echo $this->_var['ad']['url']; ?>" target="_blank"><img src="<?php echo $this->_var['ad']['image']; ?>" ></a></div>
     <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
     <div class="flex flex-f-row">
-        <?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_72638400_1531907062');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
+        <?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_18650800_1531989482');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['goods']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_72638400_1531907062']):
+    foreach ($_from AS $this->_var['goods_0_18650800_1531989482']):
         $this->_foreach['goods']['iteration']++;
 ?>
         <div class="goodsItem flex_in">
-            <a href="<?php echo $this->_var['goods_0_72638400_1531907062']['url']; ?>">
-                <img src="/<?php echo $this->_var['goods_0_72638400_1531907062']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_72638400_1531907062']['name']); ?>" />
+            <a href="<?php echo $this->_var['goods_0_18650800_1531989482']['url']; ?>">
+                <img src="/<?php echo $this->_var['goods_0_18650800_1531989482']['thumb']; ?>" alt="<?php echo htmlspecialchars($this->_var['goods_0_18650800_1531989482']['name']); ?>" />
             </a>
             <div class="goods_center">
-				<?php if ($this->_var['goods_0_72638400_1531907062']['promote_price'] != ""): ?> 
-				<span class="price_s"> <?php echo $this->_var['goods_0_72638400_1531907062']['promote_price']; ?> <a href="javascript:;" onclick="categoryaddToCart2(<?php echo $this->_var['goods_0_72638400_1531907062']['id']; ?>)" class="catbuybtn"></a></span> 
+				<?php if ($this->_var['goods_0_18650800_1531989482']['promote_price'] != ""): ?> 
+				<span class="price_s"> <?php echo $this->_var['goods_0_18650800_1531989482']['promote_price']; ?> <a href="javascript:;" onclick="categoryaddToCart2(<?php echo $this->_var['goods_0_18650800_1531989482']['id']; ?>)" class="catbuybtn"></a></span> 
 				<?php else: ?> 
-				<span class="price_s"> <?php echo $this->_var['goods_0_72638400_1531907062']['shop_price']; ?> <a href="javascript:;" onclick="categoryaddToCart2(<?php echo $this->_var['goods_0_72638400_1531907062']['id']; ?>)" class="catbuybtn"></a></span> 
+				<span class="price_s"> <?php echo $this->_var['goods_0_18650800_1531989482']['shop_price']; ?> <a href="javascript:;" onclick="categoryaddToCart2(<?php echo $this->_var['goods_0_18650800_1531989482']['id']; ?>)" class="catbuybtn"></a></span> 
 				<?php endif; ?>
-				<p class="goods_tit"><?php echo sub_str(htmlspecialchars($this->_var['goods_0_72638400_1531907062']['name']),12); ?></p>
+				<p class="goods_tit"><?php echo sub_str(htmlspecialchars($this->_var['goods_0_18650800_1531989482']['name']),12); ?></p>
             </div>
         </div>
          <?php if ($this->_foreach['goods']['iteration'] % 2 == 0): ?></div><div class="flex flex-f-row"><?php endif; ?>
@@ -55,3 +57,6 @@ if ($this->_foreach['f']['total'] > 0):
         <?php endif; ?>
     </div>
 </section>
+
+
+<!--</div>-->

@@ -240,36 +240,6 @@ function register()
 		</div>		
 	</div>
 
-	
-	<?php if ($this->_var['qq_login'] || $this->_var['weibo_login'] || $this->_var['alipay_login'] || $this->_var['weixin_login']): ?>
-	<div class="login-others">
-		<div class="login-others-title">
-			<div class="line"></div>
-			<span>其他方式登录</span>
-			<div class="line"></div>
-		</div>
-		<ul>
-			<?php if ($this->_var['qq_login']): ?>
-			<li>
-			<a href="user.php?act=oath&type=qq">
-			<i class="qq-ico"></i>
-			<span>QQ</span>
-			</a>
-			</li>
-			<?php endif; ?>
-
-			<?php if ($this->_var['is_wechat_browser'] && $this->_var['weixin_login']): ?>
-			<li>
-			<a href="user.php?act=oath&type=weixin">
-			<i class="wx-ico"></i>
-			<span>微信</span></a>
-			</li>
-			<?php endif; ?>
-			<?php if ($this->_var['weibo_login']): ?><li><a href="user.php?act=oath&type=weibo"><i class="wb-ico"></i><span>微博</span></a></li><?php endif; ?>
-			<?php if ($this->_var['alipay_login']): ?><li><a href="user.php?act=oath&type=alipay"><i class="zfb-ico"></i><span>支付宝</span></a></li><?php endif; ?>
-		</ul>
-	</div>
-	<?php endif; ?>
 </div>
 <script type="text/javascript">
 jQuery(function($){
@@ -422,22 +392,7 @@ jQuery(function($){
 		</div>
 	</div>
 	<?php endif; ?>
-	
-	<?php if ($this->_var['qq_login'] || $this->_var['weibo_login'] || $this->_var['alipay_login'] || $this->_var['weixin_login']): ?>
-	<div class="login-others">
-		<div class="login-others-title">
-			<div class="line"></div>
-			<span>其他方式登录</span>
-			<div class="line"></div>
-		</div>
-		<ul>
-			<?php if ($this->_var['qq_login']): ?><li><a href="user.php?act=oath&type=qq"><i class="qq-ico"></i><span>QQ</span></a></li><?php endif; ?>
-			<?php if ($this->_var['is_wechat_browser'] && $this->_var['weixin_login']): ?><li><a href="user.php?act=oath&type=weixin"><i class="wx-ico"></i><span>微信</span></a></li><?php endif; ?>
-			<?php if ($this->_var['weibo_login']): ?><li><a href="user.php?act=oath&type=weibo"><i class="wb-ico"></i><span>微博</span></a></li><?php endif; ?>
-			<?php if ($this->_var['alipay_login']): ?><li><a href="user.php?act=oath&type=alipay"><i class="zfb-ico"></i><span>支付宝</span></a></li><?php endif; ?>
-		</ul>
-	</div>
-	<?php endif; ?>
+
 </div>
 <?php endif; ?> 
  

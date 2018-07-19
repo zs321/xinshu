@@ -1,6 +1,6 @@
 
 <div class="f_title_attr">
-<img  id="ECS_GOODS_ATTR_THUMB" src="<?php echo $this->_var['site_url']; ?><?php echo $this->_var['goods']['goods_thumb']; ?>" style=" float:left;">
+<img  id="ECS_GOODS_ATTR_THUMB" src="/<?php echo $this->_var['goods']['goods_thumb']; ?>" style=" float:left;">
 <div class="f_title_arr_r">
 <span>价格：<i id="ECS_GOODS_AMOUNT">0</i></span>
 <?php if ($this->_var['goods']['goods_number'] != "" && $this->_var['cfg']['show_goodsnumber']): ?> 
@@ -38,7 +38,7 @@
                       <a href="javascript:" <?php if ($this->_var['value']['disabled']): ?>class="wuxiao"<?php else: ?><?php if ($this->_var['value']['selected_key_mb5'] == '1'): ?>class="cattsel"<?php endif; ?><?php endif; ?> onclick="<?php if ($this->_var['value']['disabled']): ?><?php else: ?>show_attr_status(this,<?php echo $this->_var['goods']['goods_id']; ?><?php if ($this->_var['attr_id']): ?>,<?php echo $this->_var['attr_id']; ?><?php endif; ?>);<?php if ($this->_var['spec_key'] == $this->_var['attr_id']): ?>get_gallery_attr(<?php echo $this->_var['id']; ?>, <?php echo $this->_var['value']['id']; ?>);<?php endif; ?><?php endif; ?>" name="<?php echo $this->_var['value']['id']; ?>" id="xuan_a_<?php echo $this->_var['value']['id']; ?>">
 		      <p <?php if ($this->_var['value']['thumb_url']): ?>class="padd"<?php elseif ($this->_var['value']['hex_color'] != ''): ?>style="background:#<?php echo $this->_var['value']['hex_color']; ?>; height:40px; width:40px"<?php else: ?>style="padding:6px 10px;"<?php endif; ?> title="<?php echo $this->_var['value']['label']; ?>">
 		      <?php if ($this->_var['value']['thumb_url']): ?>
-		      <img src="<?php echo $this->_var['site_url']; ?><?php echo $this->_var['value']['img_url']; ?>" id="spec_img_<?php echo $this->_var['value']['id']; ?>" width="40" height="40" alt="<?php echo $this->_var['value']['label']; ?>">
+		      <img src="/<?php echo $this->_var['value']['img_url']; ?>" id="spec_img_<?php echo $this->_var['value']['id']; ?>" width="40" height="40" alt="<?php echo $this->_var['value']['label']; ?>">
 		      <?php elseif ($this->_var['value']['hex_color']): ?>
 		      <?php else: ?>
                       <em><?php echo $this->_var['value']['label']; ?></em>

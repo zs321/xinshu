@@ -1,4 +1,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--<div style="display:none;">-->
+
 <!--循环分类下商品 begin-->
 <?php
 $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
@@ -45,3 +47,5 @@ $GLOBALS['smarty']->assign('index_image',get_advlist($catname, 1));
     </div>
 </section>
 <!--循环分类下商品end-->
+
+<!--</div>-->

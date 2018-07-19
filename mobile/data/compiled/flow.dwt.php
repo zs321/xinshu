@@ -56,7 +56,7 @@
         <div class="selcartgoods new-tbl-cell"> <input type="checkbox" <?php if (! $this->_var['goods']['is_cansel']): ?> disabled <?php else: ?> checked=checked <?php endif; ?> autocomplete="off" name="sel_cartgoods[]" value="<?php echo $this->_var['goods']['rec_id']; ?>" id="sel_cartgoods_<?php echo $this->_var['goods']['rec_id']; ?>" onclick="select_cart_goods();"><label for="sel_cartgoods_<?php echo $this->_var['goods']['rec_id']; ?>"></label> </div>
         <div class="itemlist_l new-tbl-cell" style="width:30%;"> 
           <?php if ($this->_var['goods']['goods_id'] > 0 && $this->_var['goods']['extension_code'] != 'package_buy'): ?> 
-          <a  href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>" target="_blank"> <img class="lazy" src="<?php echo $this->_var['site_url']; ?><?php echo $this->_var['goods']['goods_thumb']; ?>" border="0" title="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>" /> </a> 
+          <a  href="goods.php?id=<?php echo $this->_var['goods']['goods_id']; ?>" target="_blank"> <img class="lazy" src="/<?php echo $this->_var['goods']['goods_thumb']; ?>" border="0" title="<?php echo htmlspecialchars($this->_var['goods']['goods_name']); ?>" /> </a> 
           <?php if ($this->_var['goods']['parent_id'] > 0): ?> 
           <span style="color:#FF0000">（<?php echo $this->_var['lang']['accessories']; ?>）</span> 
           <?php endif; ?> 

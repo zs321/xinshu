@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:72:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/category.dwt";i:1;s:82:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/goods_list.lbi";i:2;s:83:"D:/phpstudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531901477;s:8:"maketime";i:1531899677;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:74:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/category.dwt";i:1;s:84:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/goods_list.lbi";i:2;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531991879;s:8:"maketime";i:1531990079;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -31,12 +31,7 @@
     <div class="header_r header_search"> <a class="switchBtn switchBtn-list" href="javascript:void(0);"  onclick="changeCl(this)" style="opacity: 1;"> 切换 </a> </div>
   </header>
   <div class="categoryleve clearfix">
-									<a  href="category.php?id=502">杏仁油</a>
-							<a  href="category.php?id=500">杏仁干果</a>
-							<a  href="category.php?id=498">杏仁醋</a>
-							<a  href="category.php?id=497">杏子果酱</a>
-							<a  href="category.php?id=495">杏仁食用油</a>
-					</div>
+							</div>
 <div class="filter" style="position:static; top:0px; width:100%;">
   <form method="GET" class="sort" name="listform">
     <ul class="filter-inner">

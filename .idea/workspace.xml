@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0132275-113b-4e25-8cb5-7207dd771b17" name="Default" comment="" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,34 +23,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sitemaps.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sitemaps.php">
+      <file leaf-file-name="exchange_tree.dwt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_tree.dwt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="4050">
-              <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
-              <folding>
-                <element signature="e#7#447#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="goods.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goods.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="8190" max-vertical-offset="26310">
-              <caret line="284" column="38" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.58219177" vertical-offset="0" max-vertical-offset="876">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goods_choose_attr.lbi.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mobile/data/compiled/goods_choose_attr.lbi.php">
+      <file leaf-file-name="pre_sale_list.lbi" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_sale_list.lbi">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2520">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.733334" vertical-offset="13838" max-vertical-offset="83160">
+              <caret line="471" column="66" selection-start-line="471" selection-start-column="45" selection-end-line="471" selection-end-column="66" />
+              <folding>
+                <marker date="1531963360720" expanded="true" signature="104014:104060" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +65,12 @@
       <list>
         <option value="$PROJECT_DIR$/sitemaps.php" />
         <option value="$PROJECT_DIR$/goods.php" />
+        <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_list.dwt" />
+        <option value="$PROJECT_DIR$/data/config.php" />
+        <option value="$PROJECT_DIR$/pre_sale.php" />
+        <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_sale_list.lbi" />
+        <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.dwt" />
+        <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_tree.dwt" />
       </list>
     </option>
   </component>
@@ -102,17 +112,107 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop 2018-07-18备份" />
+              <option name="myItemId" value="shop" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huazhuangpin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="huazhuangpin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -120,6 +220,16 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\PHPTutorial\WWW\shop\mobile\themes\huazhuangpin\library" />
+      <recent name="D:\phpStudy\PHPTutorial\WWW\shop\mobile\themes\huazhuangpin" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,6 +244,26 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -154,28 +284,28 @@
     <option name="totallyTimeSpent" value="2953000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,6 +338,52 @@
           <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
           <folding>
             <element signature="e#7#447#0#PHP" expanded="true" />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT artic..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8190" max-vertical-offset="26310">
+          <caret line="284" column="38" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
+          <folding>
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT max(g..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="select goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT sales..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT produ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/data/compiled/goods_choose_attr.lbi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemaps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="4050">
+          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+          <folding>
+            <element signature="e#7#447#0#PHP" expanded="true" />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT artic..." />
           </folding>
         </state>
       </provider>
@@ -216,17 +392,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26310">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT max(g..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="select goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT sales..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT produ..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sitemaps.php">
+    <entry file="file://$PROJECT_DIR$/mobile/data/compiled/goods_choose_attr.lbi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#447#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.62283736" vertical-offset="0" max-vertical-offset="3540">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -234,14 +420,376 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="8190" max-vertical-offset="26310">
           <caret line="284" column="38" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
+          <folding>
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT max(g..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="select goods..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT sales..." />
+            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT produ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemaps.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45454547" vertical-offset="3170" max-vertical-offset="4050">
+          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+          <folding>
+            <element signature="e#7#447#0#PHP" expanded="true" />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT artic..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/exchange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.521739" vertical-offset="30" max-vertical-offset="43260">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding>
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT eg.go..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT max(e..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT keywo..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5384616" vertical-offset="0" max-vertical-offset="1200">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/data/compiled/goods_choose_attr.lbi.php">
+    <entry file="file://$PROJECT_DIR$/pre_sale.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
+        <state vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="38910">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select goods..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select goods..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT s.sup..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select a.*, ..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT ga.ac..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT AVG(c..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT AVG(s..." />
+            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select paren..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/pre_sale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.521739" vertical-offset="30" max-vertical-offset="39900">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select goods..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select goods..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT s.sup..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select a.*, ..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT ga.ac..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT AVG(c..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT AVG(s..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select paren..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select * fro..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/data/caches/6/pre_sale_list_E1FFE847.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5882353" vertical-offset="450" max-vertical-offset="10740">
+          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pages.lbi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1590">
+          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/localhost.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="447960">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/recommend_best.lbi">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_spike_list.lbi">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.4838705" vertical-offset="0" max-vertical-offset="2520">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_list.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1500">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_goods.dwt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4262295" vertical-offset="360" max-vertical-offset="14160">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_spike_list.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_sale_list.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_wechat.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_weibo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/quicklogin/zhifubao.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/quicklogin/weixin.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/quicklogin/weibo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_alipay.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/images/upload/image/201606.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.633333" vertical-offset="221" max-vertical-offset="1110">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_facebook.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_tqq.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/consignee.lbi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="3060">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/b1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/back_order_img.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/bonus_bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/border1.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/c_cancel.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/fee.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/filter.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/watermark_promote.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/watermark_hot_small.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/watermark_best_small.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/user_center_bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/watermark_hot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/watermark_new.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/get_avatar.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/watermark_promote_small.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.733334" vertical-offset="13838" max-vertical-offset="83160">
+          <caret line="471" column="66" selection-start-line="471" selection-start-column="45" selection-end-line="471" selection-end-column="66" />
+          <folding>
+            <marker date="1531963360720" expanded="true" signature="104014:104060" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5429815" vertical-offset="191" max-vertical-offset="1110">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_sale_list.lbi">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_tree.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.58219177" vertical-offset="0" max-vertical-offset="876">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding />
         </state>
       </provider>
