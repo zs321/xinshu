@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:71:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/index.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:86:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:93:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:88:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531997417;s:8:"maketime";i:1531995617;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:71:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/index.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:86:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:93:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:88:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532068107;s:8:"maketime";i:1532066307;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -313,16 +313,26 @@ TouchSlide({
     </h3>
     <div class="flex flex-f-row">
                 <div class="goodsItem flex_in">
-            <a href="goods.php?id=132&u=257">
-                <img src="/images/201807/thumb_img/132_thumb_G_1531875210507.jpg" alt="杏仁果酱" />
+            <a href="goods.php?id=127&u=257">
+                <img src="/images/201807/thumb_img/127_thumb_G_1531873402178.jpg" alt="高硒杏饮品" />
             </a>
             <div class="goods_center">
 				 
-				<span class="price_s"> ￥<span>8.80</span> <a href="javascript:;" onclick="categoryaddToCart2(132)" class="catbuybtn"></a></span> 
-								<p class="goods_tit">杏仁果酱</p>
+				<span class="price_s"> ￥<span>4.50</span> <a href="javascript:;" onclick="categoryaddToCart2(127)" class="catbuybtn"></a></span> 
+								<p class="goods_tit">高硒杏饮品</p>
             </div>
         </div>
                          <div class="goodsItem flex_in">
+            <a href="goods.php?id=128&u=257">
+                <img src="/images/201807/thumb_img/128_thumb_G_1531873698307.jpg" alt="杏满园饮品" />
+            </a>
+            <div class="goods_center">
+				 
+				<span class="price_s"> ￥<span>4.50</span> <a href="javascript:;" onclick="categoryaddToCart2(128)" class="catbuybtn"></a></span> 
+								<p class="goods_tit">杏满园饮品</p>
+            </div>
+        </div>
+         </div><div class="flex flex-f-row">                <div class="goodsItem flex_in">
             <a href="goods.php?id=129&u=257">
                 <img src="/images/201807/thumb_img/129_thumb_G_1531873754135.jpg" alt="杏仁果酒" />
             </a>
@@ -332,7 +342,7 @@ TouchSlide({
 								<p class="goods_tit">杏仁果酒</p>
             </div>
         </div>
-         </div><div class="flex flex-f-row">                <div class="goodsItem flex_in">
+                         <div class="goodsItem flex_in">
             <a href="goods.php?id=130&u=257">
                 <img src="/images/201807/thumb_img/130_thumb_G_1531873807209.jpg" alt="杏仁粉" />
             </a>
@@ -340,16 +350,6 @@ TouchSlide({
 				 
 				<span class="price_s"> ￥<span>8.80</span> <a href="javascript:;" onclick="categoryaddToCart2(130)" class="catbuybtn"></a></span> 
 								<p class="goods_tit">杏仁粉</p>
-            </div>
-        </div>
-                         <div class="goodsItem flex_in">
-            <a href="goods.php?id=131&u=257">
-                <img src="/images/201807/thumb_img/131_thumb_G_1531873845056.jpg" alt="杏仁醋" />
-            </a>
-            <div class="goods_center">
-				 
-				<span class="price_s"> ￥<span>9.98</span> <a href="javascript:;" onclick="categoryaddToCart2(131)" class="catbuybtn"></a></span> 
-								<p class="goods_tit">杏仁醋</p>
             </div>
         </div>
          </div><div class="flex flex-f-row">            </div>
@@ -363,16 +363,26 @@ TouchSlide({
     </h3>
     <div class="flex flex-f-row">
                 <div class="goodsItem flex_in">
-            <a href="goods.php?id=132&u=257">
-                <img src="/images/201807/thumb_img/132_thumb_G_1531875210507.jpg" alt="杏仁果酱" />
+            <a href="goods.php?id=127&u=257">
+                <img src="/images/201807/thumb_img/127_thumb_G_1531873402178.jpg" alt="高硒杏饮品" />
             </a>
             <div class="goods_center">
 				 
-				<span class="price_s"> ￥<span>8.80</span> <a href="javascript:;" onclick="categoryaddToCart2(132)" class="catbuybtn"></a></span> 
-								<p class="goods_tit">杏仁果酱</p>
+				<span class="price_s"> ￥<span>4.50</span> <a href="javascript:;" onclick="categoryaddToCart2(127)" class="catbuybtn"></a></span> 
+								<p class="goods_tit">高硒杏饮品</p>
             </div>
         </div>
                          <div class="goodsItem flex_in">
+            <a href="goods.php?id=128&u=257">
+                <img src="/images/201807/thumb_img/128_thumb_G_1531873698307.jpg" alt="杏满园饮品" />
+            </a>
+            <div class="goods_center">
+				 
+				<span class="price_s"> ￥<span>4.50</span> <a href="javascript:;" onclick="categoryaddToCart2(128)" class="catbuybtn"></a></span> 
+								<p class="goods_tit">杏满园饮品</p>
+            </div>
+        </div>
+         </div><div class="flex flex-f-row">                <div class="goodsItem flex_in">
             <a href="goods.php?id=129&u=257">
                 <img src="/images/201807/thumb_img/129_thumb_G_1531873754135.jpg" alt="杏仁果酒" />
             </a>
@@ -382,7 +392,7 @@ TouchSlide({
 								<p class="goods_tit">杏仁果酒</p>
             </div>
         </div>
-         </div><div class="flex flex-f-row">                <div class="goodsItem flex_in">
+                         <div class="goodsItem flex_in">
             <a href="goods.php?id=130&u=257">
                 <img src="/images/201807/thumb_img/130_thumb_G_1531873807209.jpg" alt="杏仁粉" />
             </a>
@@ -390,16 +400,6 @@ TouchSlide({
 				 
 				<span class="price_s"> ￥<span>8.80</span> <a href="javascript:;" onclick="categoryaddToCart2(130)" class="catbuybtn"></a></span> 
 								<p class="goods_tit">杏仁粉</p>
-            </div>
-        </div>
-                         <div class="goodsItem flex_in">
-            <a href="goods.php?id=131&u=257">
-                <img src="/images/201807/thumb_img/131_thumb_G_1531873845056.jpg" alt="杏仁醋" />
-            </a>
-            <div class="goods_center">
-				 
-				<span class="price_s"> ￥<span>9.98</span> <a href="javascript:;" onclick="categoryaddToCart2(131)" class="catbuybtn"></a></span> 
-								<p class="goods_tit">杏仁醋</p>
             </div>
         </div>
          </div><div class="flex flex-f-row">            </div>
@@ -413,16 +413,26 @@ TouchSlide({
     </h3>
     <div class="flex flex-f-row">
                 <div class="goodsItem flex_in">
-            <a href="goods.php?id=132&u=257">
-                <img src="/images/201807/thumb_img/132_thumb_G_1531875210507.jpg" alt="杏仁果酱" />
+            <a href="goods.php?id=127&u=257">
+                <img src="/images/201807/thumb_img/127_thumb_G_1531873402178.jpg" alt="高硒杏饮品" />
             </a>
             <div class="goods_center">
 				 
-				<span class="price_s"> ￥<span>8.80</span> <a href="javascript:;" onclick="categoryaddToCart2(132)" class="catbuybtn"></a></span> 
-								<p class="goods_tit">杏仁果酱</p>
+				<span class="price_s"> ￥<span>4.50</span> <a href="javascript:;" onclick="categoryaddToCart2(127)" class="catbuybtn"></a></span> 
+								<p class="goods_tit">高硒杏饮品</p>
             </div>
         </div>
                          <div class="goodsItem flex_in">
+            <a href="goods.php?id=128&u=257">
+                <img src="/images/201807/thumb_img/128_thumb_G_1531873698307.jpg" alt="杏满园饮品" />
+            </a>
+            <div class="goods_center">
+				 
+				<span class="price_s"> ￥<span>4.50</span> <a href="javascript:;" onclick="categoryaddToCart2(128)" class="catbuybtn"></a></span> 
+								<p class="goods_tit">杏满园饮品</p>
+            </div>
+        </div>
+         </div><div class="flex flex-f-row">                <div class="goodsItem flex_in">
             <a href="goods.php?id=129&u=257">
                 <img src="/images/201807/thumb_img/129_thumb_G_1531873754135.jpg" alt="杏仁果酒" />
             </a>
@@ -432,7 +442,7 @@ TouchSlide({
 								<p class="goods_tit">杏仁果酒</p>
             </div>
         </div>
-         </div><div class="flex flex-f-row">                <div class="goodsItem flex_in">
+                         <div class="goodsItem flex_in">
             <a href="goods.php?id=130&u=257">
                 <img src="/images/201807/thumb_img/130_thumb_G_1531873807209.jpg" alt="杏仁粉" />
             </a>
@@ -440,16 +450,6 @@ TouchSlide({
 				 
 				<span class="price_s"> ￥<span>8.80</span> <a href="javascript:;" onclick="categoryaddToCart2(130)" class="catbuybtn"></a></span> 
 								<p class="goods_tit">杏仁粉</p>
-            </div>
-        </div>
-                         <div class="goodsItem flex_in">
-            <a href="goods.php?id=131&u=257">
-                <img src="/images/201807/thumb_img/131_thumb_G_1531873845056.jpg" alt="杏仁醋" />
-            </a>
-            <div class="goods_center">
-				 
-				<span class="price_s"> ￥<span>9.98</span> <a href="javascript:;" onclick="categoryaddToCart2(131)" class="catbuybtn"></a></span> 
-								<p class="goods_tit">杏仁醋</p>
             </div>
         </div>
          </div><div class="flex flex-f-row">            </div>
@@ -632,9 +632,9 @@ $(function() {
   wx.config({
     debug: false,
     appId: '111',
-    timestamp: 1531995624,
-    nonceStr: 't3pSOCfm3DwA35ix',
-    signature: 'a34b31e6e0d656344435f2f8700acd1eea9c9d38',
+    timestamp: 1532066311,
+    nonceStr: '9dmw9lgipLvFQJg4',
+    signature: '51311ba58822e5e9357b8a19a0814532de08b1e3',
     jsApiList: [
         'onMenuShareTimeline',
         'onMenuShareAppMessage' 
@@ -645,7 +645,7 @@ $(function() {
     wx.onMenuShareAppMessage({
       title: '杏树商城',
       desc: '杏树商城',
-      link: 'http://www.test777.com/mobile/index.php?u=257',
+      link: 'http://www.test666.com/mobile/index.php?u=257',
       imgUrl: '/mobile/home.jpg',
       trigger: function (res) {
 		
@@ -653,7 +653,7 @@ $(function() {
 				
       },
       success: function (res) {
-		        window.location.href="http://www.test777.com/mobile/re_url.php?user_id=257&type=1"; 
+		        window.location.href="http://www.test666.com/mobile/re_url.php?user_id=257&type=1"; 
 		      },
       cancel: function (res) {
         alert('很遗憾，您已取消分享');
@@ -665,14 +665,14 @@ $(function() {
 	//分享到朋友圈青蜂网络
     wx.onMenuShareTimeline({
       title: '杏树商城',
-      link: 'http://www.test777.com/mobile/index.php?u=257',
+      link: 'http://www.test666.com/mobile/index.php?u=257',
       imgUrl: '/mobile/home.jpg',
       trigger: function (res) {
 			
         			alert('恭喜！分享可以获取提成哦！');
 		      },
       success: function (res) {
-       	        window.location.href="http://www.test777.com/mobile/re_url.php?user_id=257&type=2"; 
+       	        window.location.href="http://www.test666.com/mobile/re_url.php?user_id=257&type=2"; 
 		      },
       cancel: function (res) {
          alert('很遗憾，您已取消分享');

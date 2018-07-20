@@ -93,11 +93,11 @@ h5 span {
 	height:24px;
 	line-height:16px;
 	_line-height:18px;
-	border:1px solid #F62648;
+	border:1px solid green;
 	border-radius:3px;
 	font-size:100%;
 	color:#fff;
-	background-color:#F62648;
+	background-color:green;
 	overflow:hidden;
 	vertical-align:middle;
 	cursor:pointer

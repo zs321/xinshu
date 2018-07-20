@@ -58,9 +58,9 @@
 	  <div class="blank3"></div>
 	  
   <div class="list_box padd1 radius10" style="padding-top:0;padding-bottom:0;"> 
-  <a  href="tel:<?php echo $this->_var['service_phone']; ?>" class="clearfix"> <span>呼叫客服</span><i></i> </a>
+  <!--<a  href="tel:<?php echo $this->_var['service_phone']; ?>" class="clearfix"> <span>呼叫客服</span><i></i> </a>
   <a href="user.php?act=profile" class="clearfix"> <span><?php echo $this->_var['lang']['label_profile']; ?></span><i></i> </a>
-  <a href="accountbind.php?act=accountbind" class="clearfix"> <span>授权管理</span><i></i> </a>
+  <a href="accountbind.php?act=accountbind" class="clearfix"> <span>授权管理</span><i></i> </a>-->
   <a href="user.php?act=qrcode"  class="clearfix"> <span>我的二维码</span><i></i> </a> <a href="user.php?act=order_list" class="clearfix"> <span><?php echo $this->_var['lang']['label_order']; ?></span><i></i> </a> <a href="user.php?act=back_list" class="clearfix"> <span>售后管理</span><i></i> </a> <a href="user.php?act=address_list"  class="clearfix"> <span><?php echo $this->_var['lang']['label_address']; ?></span><i></i> </a> <a href="user.php?act=collection_list"  class="clearfix"> <span><?php echo $this->_var['lang']['label_collection']; ?></span><i></i> </a> </div>
   <div class="blank3"></div>
   <div class="list_box padd1 radius10" style="padding-top:0;padding-bottom:0;"> <a href="user.php?act=message_list" class="clearfix"> <span><?php echo $this->_var['lang']['label_message']; ?></span><i></i> </a>  <a href="user.php?act=comment_list"  class="clearfix"> <span><?php echo $this->_var['lang']['label_comment']; ?></span><i></i> </a>
@@ -150,6 +150,7 @@ jQuery(function($){
 </script>
 <?php endif; ?> 
  
+
  
 <?php if ($this->_var['action'] == 'comment_list'): ?>
 <header id="header">

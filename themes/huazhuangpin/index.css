@@ -46,7 +46,7 @@ html {
 .index-slide .num { overflow:hidden; width: 970px; height: 24px; position: absolute; bottom:10px; left: 50%;margin: 0 auto 0 0px; zoom:1; z-index:3;text-align:left; }
 .index-slide .num ul { display: inline-block; }
 .index-slide .num li {display:inline-block;width:16px;height:16px; border:solid 4px #CCCCCC; line-height:16px; border-radius:50%; text-align:center;overflow:hidden;_zoom:1;background:#666;filter:alpha(opacity=80);opacity:0.8;cursor:pointer;font-size:14px;color:#fff;float:left;margin-left:10px;}
-.index-slide .num li.on {background:#ee2a7b; border:solid 4px #FBEDF5; filter:alpha(opacity=80);opacity:0.8;}
+.index-slide .num li.on {background:green; border:solid 4px #FBEDF5; filter:alpha(opacity=80);opacity:0.8;}
 
 
 .w-main {
@@ -125,7 +125,7 @@ background-position-y: -30px;
 
 #promenu_con{ width:1200px; height:315px; border-top:none}
 .promenutag{ overflow:hidden;}
-#promenu #pronav li .selected{ color:#f94480;}
+#promenu #pronav li .selected{ color:green;}
 /* Productlist */
 .primeProductList {
 	margin-top: 11px;
@@ -162,7 +162,7 @@ background-position-y: -30px;
     width: 190px;
 }
 .primeProductList li p{ text-align:center;}
-.primeProductList li p .shop_price{ font-size:16px; color:#F62648}
+.primeProductList li p .shop_price{ font-size:16px; color:green}
 .primeProductList li p .market_price{ font-size:14px; color:#666; text-decoration:line-through}
 /*首页促销*/
 .tescol{ width:1200px; margin:0 auto; overflow: hidden; padding:10px 0 0 0;}
@@ -396,7 +396,7 @@ span.t-num{ font-family: "microsoft yahei"; color: #999;}
 .cn-laytit .link a:hover{color:#fe7db5}
 .cn-laytit .link span{padding:0 20px;color:#ff9800}
 
-.cn-fruit{width:1200px;margin:auto;overflow:hidden; padding-top:10px; border-top:3px solid #fe7db5;}
+.cn-fruit{width:1200px;margin:auto;overflow:hidden; padding-top:10px; border-top:3px solid green;} /*border-top:3px solid #fe7db5;*/
 .cn-fruit .banner{width:360px;height:460px;position:relative;float:left;}
 .cn-fruit .banner .ban{height:460px;overflow:hidden;}
 .cn-fruit .banner .ban img{width:360px;height:460px;overflow:hidden;}

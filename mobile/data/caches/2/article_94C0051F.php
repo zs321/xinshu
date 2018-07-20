@@ -1,8 +1,8 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/pre_sale_list.dwt";i:1;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/exchange_tree.dwt";i:2;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532070433;s:8:"maketime";i:1532068633;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:2:{i:0;s:73:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/article.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532056758;s:8:"maketime";i:1532054958;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
-<title>预售活动_杏树商城</title>
+<title>法国GELLÉ FRÈRES婕珞芙“谜样重生”巴黎发布会_最新资讯_杏树商城</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -10,32 +10,38 @@
 <link href="themes/huazhuangpin/images/touch-icon.png" rel="apple-touch-icon-precomposed" />
 <link href="themes/huazhuangpin/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <link href="themes/huazhuangpin/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.min.js"></script> 
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.json.js"></script> 
-<script type="text/javascript" src="themes/huazhuangpin/js/transport_jquery.js"></script>
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.countdown-2.5.3.min.js"></script> 
 </head>
 <body>
-<div id="page" style="right: 0px; left: 0px; display: block;">
-  <header id="header" style="z-index:1">
-    <div class="header_l"> <a class="ico_10" href="cat_all.php"> 返回 </a> </div>
-    <h1> 杏树认购 </h1>
-  </header>
-  <div id="ground" style="min-width:320px;min-height:568px;width:100%;height:auto;background-image:url('themes/huazhuangpin/images/oauth/sns_tqq.png'); background-size: 100% 100%;">
-</div>
-<script language="javascript">
-var ss;
-window.onload=function()
-{
-var h=document.documentElement.clientHeight;//可见区域高度
-ss=document.getElementById('ground');
-ss.style.height=h+"px";
-console.log(h);
-}
-$(function(){
-    console.log(12313);
-})
-</script></div>
+<header id="header" >
+  <div class="header_l header_return"> <a class="ico_10"  href="javascript:history.back(-1)"> 返回 </a> </div>
+  <h1> 文章详情 </h1>
+  <div class="header_r"> <a class="ico_15" href="ectouch.php?act=share&content=法国GELLÉ FRÈRES婕珞芙“谜样重生”巴黎发布会"> 分享 </a> </div>
+</header>
+<div class="blank3"></div>
+<section class="wrap">
+  <div class="art_content radius10">
+    <h2><span>法国GELLÉ FRÈRES婕珞芙“谜样重生”巴黎发布会</span> 2017-04-11</h2>
+    <div>
+      <p> 百年法国GELLÉ FRÈRES婕珞芙“谜样重生”名流云集
+<p>
+	　　法国GELLÉ 
+FRÈRE婕珞芙（简称GF，音译“婕珞芙”）品牌创建于1826年，凭借独特的植物萃取、蒸馏调配和芳疗能力，成为历史上第一个被同时称为调香世家和芳疗世家的品牌，在世界美容护肤、时尚届有着举足轻重的地位。此次2015“谜样重生”品牌发布会，既是一次法国GELLÉ
+ FRÈRES婕珞芙品牌溯源之旅，也标志着法国GELLÉ FRÈRES婕珞芙未来市场新战略的开启，将影响世界美容护肤市场的新格局。
+</p>
+<p>
+	　　发布会邀请了著名调香师Isabelle Gellé（Gellé家族传人），时任法国GELLÉ 
+FRÈRE婕珞芙品牌主席、兼任香水协会主席Lecaron先生的曾孙女Pauline 
+Demedeiros女士，法国乐尔福集团总裁Sabata先生，法国Centedegree设计集团CEO 
+EliePapiernik先生，法国GELLÉ
+</p>
+<p>
+	　　FRÈRES婕珞芙集团总裁Simon Menard先生以及法国GELLÉ 
+FRÈRE婕珞芙集团中国区总裁何健先生联袂出席盛会。同时，中国人气女星陈妍希，新生代“谋女郎”张慧雯等众多中法两国化妆品界、时尚界、新闻界人士亦前往法国巴黎助阵，一同见证法国GELLÉ
+ FRÈRES婕珞芙的重要时刻。
+</p> </p>
+    </div>
+  </div>
+</section>
 <div id="content" class="footer mr-t20">
   
     <p class="region">&copy; 2012-2018 杏树商城 版权所有，并保留所有权利。 </p>
@@ -142,8 +148,5 @@ function get_search_box(){
 		document.getElementById('keywordfoot').focus();
  	}
 }
-</script> </div>
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.more.js"></script> 
-<script type="text/javascript" src="themes/huazhuangpin/js/ectouch.js"></script> 
-</body>
+</script></body>
 </html>

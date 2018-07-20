@@ -1,8 +1,8 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/pre_sale_list.dwt";i:1;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/exchange_tree.dwt";i:2;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532070433;s:8:"maketime";i:1532068633;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:2:{i:0;s:73:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/article.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532056759;s:8:"maketime";i:1532054959;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
-<title>预售活动_杏树商城</title>
+<title>中国明星陈妍希、张慧雯助阵，百年历史的美妆品牌_最新资讯_杏树商城</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -10,32 +10,22 @@
 <link href="themes/huazhuangpin/images/touch-icon.png" rel="apple-touch-icon-precomposed" />
 <link href="themes/huazhuangpin/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <link href="themes/huazhuangpin/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.min.js"></script> 
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.json.js"></script> 
-<script type="text/javascript" src="themes/huazhuangpin/js/transport_jquery.js"></script>
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.countdown-2.5.3.min.js"></script> 
 </head>
 <body>
-<div id="page" style="right: 0px; left: 0px; display: block;">
-  <header id="header" style="z-index:1">
-    <div class="header_l"> <a class="ico_10" href="cat_all.php"> 返回 </a> </div>
-    <h1> 杏树认购 </h1>
-  </header>
-  <div id="ground" style="min-width:320px;min-height:568px;width:100%;height:auto;background-image:url('themes/huazhuangpin/images/oauth/sns_tqq.png'); background-size: 100% 100%;">
-</div>
-<script language="javascript">
-var ss;
-window.onload=function()
-{
-var h=document.documentElement.clientHeight;//可见区域高度
-ss=document.getElementById('ground');
-ss.style.height=h+"px";
-console.log(h);
-}
-$(function(){
-    console.log(12313);
-})
-</script></div>
+<header id="header" >
+  <div class="header_l header_return"> <a class="ico_10"  href="javascript:history.back(-1)"> 返回 </a> </div>
+  <h1> 文章详情 </h1>
+  <div class="header_r"> <a class="ico_15" href="ectouch.php?act=share&content=中国明星陈妍希、张慧雯助阵，百年历史的美妆品牌"> 分享 </a> </div>
+</header>
+<div class="blank3"></div>
+<section class="wrap">
+  <div class="art_content radius10">
+    <h2><span>中国明星陈妍希、张慧雯助阵，百年历史的美妆品牌</span> 2017-04-11</h2>
+    <div>
+      <p> 2015年9月27日，法国巴黎，海报编编受邀前往巴黎参加美妆品牌GELLÉ FRÈRE婕珞芙新品全球发布会。在这场主题为“谜样重生”的发布会上，我们见证了GELLÉ FRÈRE婕珞芙品牌200年历史，皇家御用调香师，同时发布了5个古老的神秘配方，并称之为“ELIXIR魔药”。“魔药”系列的面世见证着品牌从专注于个人美容沙龙护肤将回归大众精油护肤领域，并即将携“魔药”进军全球市场。 </p>
+    </div>
+  </div>
+</section>
 <div id="content" class="footer mr-t20">
   
     <p class="region">&copy; 2012-2018 杏树商城 版权所有，并保留所有权利。 </p>
@@ -142,8 +132,5 @@ function get_search_box(){
 		document.getElementById('keywordfoot').focus();
  	}
 }
-</script> </div>
-<script type="text/javascript" src="themes/huazhuangpin/js/jquery.more.js"></script> 
-<script type="text/javascript" src="themes/huazhuangpin/js/ectouch.js"></script> 
-</body>
+</script></body>
 </html>

@@ -11,11 +11,11 @@ $logo = str_replace("..", ".", $_CFG['erweima_logo']);	// 中间那logo图
 $errorCorrectionLevel = 'L';//容错级别  
 $matrixPointSize = 6;//生成图片大小  
 $qr_root_path=ROOT_PATH.'images/qrcode/goods/';
-//生成二维码图片  
+//生成二维码图片
 if(!is_dir($qr_root_path)){
-	if(!mkdir($qr_root_path, 0777, true)){
-		echo '创建目录失败';
-	}
+    if(!mkdir($qr_root_path, 0777, true)){
+        echo '创建目录失败';
+    }
 }
 
 QRcode::png($data, $qr_root_path.$id.'.png', $errorCorrectionLevel, $matrixPointSize, 2);

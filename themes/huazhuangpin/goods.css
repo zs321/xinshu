@@ -74,7 +74,7 @@
 	display:block
 }
 .item-thumbs li.current {
-	border-color:#F62648
+	border-color:green
 }
 .item-thumbs .bd {
 	width:330px;
@@ -2371,7 +2371,7 @@ p.hot_price {
     text-align: center;
 }
 .itemAddCart {
-    background-color: #F62648;
+    background-color: green;
     width: 200px;
 }
 .itemtaocan {
@@ -2396,9 +2396,9 @@ p.hot_price {
 .itemContentHead li{float:left;height:47px;line-height:47px;padding:0 40px;}
 .itemContentHead a:link,
 .itemContentHead a:visited{font-size:18px;}
-.itemContentHeadFocus{border-bottom:2px solid #F62648;}
+.itemContentHeadFocus{border-bottom:2px solid green;}
 .itemContentHeadFocus a:link,
-.itemContentHeadFocus a:visited{color:#F62648;}
+.itemContentHeadFocus a:visited{color:green;}
 
 .itemMin{float:left;width:240px;margin-top:7px;}
 .itemMin p{color:#999;font-size:12px;line-height:20px;}

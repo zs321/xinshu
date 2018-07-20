@@ -404,7 +404,7 @@ a.nextpage {
 	padding:4px 26px 4px 15px;
 	background-position:right -101px;
 	+background-position:right -99px;
-	color:#F62648;
+	color:green;
 	text-shadow:1px 1px 1px #fff
 }
 .sort .curr .search_ASC {

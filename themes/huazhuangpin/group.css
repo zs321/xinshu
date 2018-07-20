@@ -1,5 +1,5 @@
 .bg_c {
-    background-color: #F62648;
+    background-color: green;
     transition: all 0.5s ease-in-out 0s;
 }
 .qg_table_end .bg_c {
@@ -7,7 +7,7 @@
     transition: all 0.5s ease-in-out 0s;
 }
 .word_c {
-    color: #F62648;
+    color: green;
 }
 .qgitem{ margin:15px 15px 0px 0px; background:#FFF; }
 .qgitem_w{ float:left; width:33.3%; *width:33.3%}

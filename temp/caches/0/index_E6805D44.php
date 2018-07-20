@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:64:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/index.dwt";i:1;s:78:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/index_ad.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_new.lbi";i:4;s:81:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_best.lbi";i:5;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_hot.lbi";i:6;s:76:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/cat_goods.lbi";i:7;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/cat_articles.lbi";i:8;s:78:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/page_footer.lbi";i:9;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/right_sidebar.lbi";}s:7:"expires";i:1531995734;s:8:"maketime";i:1531993934;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:64:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/index.dwt";i:1;s:78:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/page_header.lbi";i:2;s:75:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/index_ad.lbi";i:3;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_new.lbi";i:4;s:81:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_best.lbi";i:5;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/recommend_hot.lbi";i:6;s:76:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/cat_goods.lbi";i:7;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/cat_articles.lbi";i:8;s:78:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/page_footer.lbi";i:9;s:80:"D:/phpStudy/PHPTutorial/WWW/xinshu/themes/huazhuangpin/library/right_sidebar.lbi";}s:7:"expires";i:1532067965;s:8:"maketime";i:1532066165;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -287,11 +287,23 @@ $(document).ready(function() {
   <ul class="prolist cls">
 	
       <li>
-      <div class="img"> <a target="_blank" href="goods.php?id=132"> <img alt="杏仁果酱" src="images/201807/thumb_img/132_thumb_G_1531875210507.jpg"></a> </div>
-      <p class="tit"> <a title="杏仁果酱" target="_blank" href="goods.php?id=132">杏仁果酱</a> </p>
+      <div class="img"> <a target="_blank" href="goods.php?id=127"> <img alt="高硒杏饮品" src="images/201807/thumb_img/127_thumb_G_1531873402178.jpg"></a> </div>
+      <p class="tit"> <a title="高硒杏饮品" target="_blank" href="goods.php?id=127">高硒杏饮品</a> </p>
       <p class="GoodsItem">
-	  	<span class="shop_price"><font>￥8.80</font></span>  
-        <span class="market_price"><font>￥11.76</font></span>
+	  	<span class="shop_price"><font>￥4.50</font></span>  
+        <span class="market_price"><font>￥5.40</font></span>
+	  </p>
+	  <p><span class="p-time">销量：0 件</span></p>
+	  
+	  
+    </li>
+	
+      <li>
+      <div class="img"> <a target="_blank" href="goods.php?id=128"> <img alt="杏满园饮品" src="images/201807/thumb_img/128_thumb_G_1531873698307.jpg"></a> </div>
+      <p class="tit"> <a title="杏满园饮品" target="_blank" href="goods.php?id=128">杏满园饮品</a> </p>
+      <p class="GoodsItem">
+	  	<span class="shop_price"><font>￥4.50</font></span>  
+        <span class="market_price"><font>￥5.40</font></span>
 	  </p>
 	  <p><span class="p-time">销量：0 件</span></p>
 	  
@@ -328,18 +340,6 @@ $(document).ready(function() {
       <p class="GoodsItem">
 	  	<span class="shop_price"><font>￥9.98</font></span>  
         <span class="market_price"><font>￥11.98</font></span>
-	  </p>
-	  <p><span class="p-time">销量：0 件</span></p>
-	  
-	  
-    </li>
-	
-      <li>
-      <div class="img"> <a target="_blank" href="goods.php?id=127"> <img alt="高硒杏饮品" src="images/201807/thumb_img/127_thumb_G_1531873402178.jpg"></a> </div>
-      <p class="tit"> <a title="高硒杏饮品" target="_blank" href="goods.php?id=127">高硒杏饮品</a> </p>
-      <p class="GoodsItem">
-	  	<span class="shop_price"><font>￥4.50</font></span>  
-        <span class="market_price"><font>￥5.40</font></span>
 	  </p>
 	  <p><span class="p-time">销量：0 件</span></p>
 	  
@@ -354,11 +354,23 @@ $(document).ready(function() {
   <ul class="prolist cls">
 	
       <li>
-      <div class="img"> <a target="_blank" href="goods.php?id=132"> <img alt="杏仁果酱" src="images/201807/thumb_img/132_thumb_G_1531875210507.jpg"></a> </div>
-      <p class="tit"> <a title="杏仁果酱" target="_blank" href="goods.php?id=132">杏仁果酱</a> </p>
+      <div class="img"> <a target="_blank" href="goods.php?id=127"> <img alt="高硒杏饮品" src="images/201807/thumb_img/127_thumb_G_1531873402178.jpg"></a> </div>
+      <p class="tit"> <a title="高硒杏饮品" target="_blank" href="goods.php?id=127">高硒杏饮品</a> </p>
       <p class="GoodsItem">
-	  	<span class="shop_price"><font>￥8.80</font></span>  
-        <span class="market_price"><font>￥11.76</font></span>
+	  	<span class="shop_price"><font>￥4.50</font></span>  
+        <span class="market_price"><font>￥5.40</font></span>
+	  </p>
+	  <p><span class="p-time">销量：0 件</span></p>
+	  
+	  
+    </li>
+	
+      <li>
+      <div class="img"> <a target="_blank" href="goods.php?id=128"> <img alt="杏满园饮品" src="images/201807/thumb_img/128_thumb_G_1531873698307.jpg"></a> </div>
+      <p class="tit"> <a title="杏满园饮品" target="_blank" href="goods.php?id=128">杏满园饮品</a> </p>
+      <p class="GoodsItem">
+	  	<span class="shop_price"><font>￥4.50</font></span>  
+        <span class="market_price"><font>￥5.40</font></span>
 	  </p>
 	  <p><span class="p-time">销量：0 件</span></p>
 	  
@@ -395,18 +407,6 @@ $(document).ready(function() {
       <p class="GoodsItem">
 	  	<span class="shop_price"><font>￥9.98</font></span>  
         <span class="market_price"><font>￥11.98</font></span>
-	  </p>
-	  <p><span class="p-time">销量：0 件</span></p>
-	  
-	  
-    </li>
-	
-      <li>
-      <div class="img"> <a target="_blank" href="goods.php?id=127"> <img alt="高硒杏饮品" src="images/201807/thumb_img/127_thumb_G_1531873402178.jpg"></a> </div>
-      <p class="tit"> <a title="高硒杏饮品" target="_blank" href="goods.php?id=127">高硒杏饮品</a> </p>
-      <p class="GoodsItem">
-	  	<span class="shop_price"><font>￥4.50</font></span>  
-        <span class="market_price"><font>￥5.40</font></span>
 	  </p>
 	  <p><span class="p-time">销量：0 件</span></p>
 	  
@@ -421,11 +421,23 @@ $(document).ready(function() {
   <ul class="prolist cls">
 	
       <li>
-      <div class="img"> <a target="_blank" href="goods.php?id=132"> <img alt="杏仁果酱" src="images/201807/thumb_img/132_thumb_G_1531875210507.jpg"></a> </div>
-      <p class="tit"> <a title="杏仁果酱" target="_blank" href="goods.php?id=132">杏仁果酱</a> </p>
+      <div class="img"> <a target="_blank" href="goods.php?id=127"> <img alt="高硒杏饮品" src="images/201807/thumb_img/127_thumb_G_1531873402178.jpg"></a> </div>
+      <p class="tit"> <a title="高硒杏饮品" target="_blank" href="goods.php?id=127">高硒杏饮品</a> </p>
       <p class="GoodsItem">
-	  	<span class="shop_price"><font>￥8.80</font></span>  
-        <span class="market_price"><font>￥11.76</font></span>
+	  	<span class="shop_price"><font>￥4.50</font></span>  
+        <span class="market_price"><font>￥5.40</font></span>
+	  </p>
+	  <p><span class="p-time">销量：0 件</span></p>
+	  
+	  
+    </li>
+	
+      <li>
+      <div class="img"> <a target="_blank" href="goods.php?id=128"> <img alt="杏满园饮品" src="images/201807/thumb_img/128_thumb_G_1531873698307.jpg"></a> </div>
+      <p class="tit"> <a title="杏满园饮品" target="_blank" href="goods.php?id=128">杏满园饮品</a> </p>
+      <p class="GoodsItem">
+	  	<span class="shop_price"><font>￥4.50</font></span>  
+        <span class="market_price"><font>￥5.40</font></span>
 	  </p>
 	  <p><span class="p-time">销量：0 件</span></p>
 	  
@@ -462,18 +474,6 @@ $(document).ready(function() {
       <p class="GoodsItem">
 	  	<span class="shop_price"><font>￥9.98</font></span>  
         <span class="market_price"><font>￥11.98</font></span>
-	  </p>
-	  <p><span class="p-time">销量：0 件</span></p>
-	  
-	  
-    </li>
-	
-      <li>
-      <div class="img"> <a target="_blank" href="goods.php?id=127"> <img alt="高硒杏饮品" src="images/201807/thumb_img/127_thumb_G_1531873402178.jpg"></a> </div>
-      <p class="tit"> <a title="高硒杏饮品" target="_blank" href="goods.php?id=127">高硒杏饮品</a> </p>
-      <p class="GoodsItem">
-	  	<span class="shop_price"><font>￥4.50</font></span>  
-        <span class="market_price"><font>￥5.40</font></span>
 	  </p>
 	  <p><span class="p-time">销量：0 件</span></p>
 	  
@@ -764,7 +764,7 @@ $(document).ready(function() {
       <div class="list_son">
       <div class="list_son_img">
         <a href="article.php?id=146">
-	  <img data-original="data/article/1531874953610745690.jpg" src="themes/huazhuangpin/images/spacer.gif" alt="杏福梅林" title="杏福梅林" class="loading">
+	  <img data-original="data/article/1531879771566089435.jpg" src="themes/huazhuangpin/images/spacer.gif" alt="杏福梅林" title="杏福梅林" class="loading">
         </a>
       </div>
       <div class="list_son_desc">
@@ -968,7 +968,7 @@ $(document).ready(function() {
                         <div class="sidebar-service quick-sidebar">
                         	<i class="arrow-right"></i>
 												<div class="customer-service">
-				    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2897483365&site=qq&menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-qq"></span>QQ客服</a>
+				    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2516121514&site=qq&menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-qq"></span>QQ客服</a>
 				</div>
 																				<div class="customer-service">
 				    <a target="_blank" href="http://amos1.taobao.com/msg.ww?v=2&uid=%E6%9D%8F%E7%A6%8F%E6%A2%85%E6%9E%97&s=2" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-ww"></span>旺旺客服</a>

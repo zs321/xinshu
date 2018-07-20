@@ -589,7 +589,7 @@ $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
     <div class="list_son"{if $smarty.foreach.article_item.iteration mod 4 eq 0} style="margin-right:0;"{/if}>
       <div class="list_son_img">
         <a href="{$article_item.url}">
-	  <img data-original="{$article_item.pic}" src="images/spacer.gif" alt="{$article_item.title|escape:html}" title="{$article_item.title|escape:html}" class="loading">
+	  <img data-original="images/spacer.gif" src="{$article_item.pic}" alt="{$article_item.title|escape:html}" title="{$article_item.title|escape:html}" class="loading">
         </a>
       </div>
       <div class="list_son_desc">

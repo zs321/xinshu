@@ -1,26 +1,4 @@
 <?php
-/*
- * FCKeditor - The text editor for Internet - http://www.fckeditor.net
- * Copyright (C) 2003-2008 Frederico Caldeira Knabben
- *
- * == BEGIN LICENSE ==
- *
- * Licensed under the terms of any of the following licenses at your
- * choice:
- *
- *  - GNU General Public License Version 2 or later (the "GPL")
- *    http://www.gnu.org/licenses/gpl.html
- *
- *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
- *    http://www.gnu.org/licenses/lgpl.html
- *
- *  - Mozilla Public License Version 1.1 or later (the "MPL")
- *    http://www.mozilla.org/MPL/MPL-1.1.html
- *
- * == END LICENSE ==
- *
- * This is the File Manager Connector for PHP.
- */
 
 function GetFolders( $resourceType, $currentFolder )
 {
@@ -222,13 +200,13 @@ function FileUpload( $resourceType, $currentFolder, $sCommand )
                     //判断并给符合条件图片加上水印
                     if ($sExtension == 'jpg' || $sExtension == 'jpeg' || $sExtension == 'png' || $sExtension == 'gif' || $sExtension == 'bmp' )
                     {
-                        require_once(ROOT_PATH . '/includes/cls_image.php');
+                        /*require_once(ROOT_PATH . '/includes/cls_image.php');
                         $image = new cls_image($GLOBALS['_CFG']['bgcolor']);
 
                         if (intval($GLOBALS['_CFG']['watermark_place']) > 0 && !empty($GLOBALS['_CFG']['watermark']))
                         {
                             $image->add_watermark($sFilePath,'','../../../../../'.$GLOBALS['_CFG']['watermark'], $GLOBALS['_CFG']['watermark_place'], $GLOBALS['_CFG']['watermark_alpha']);
-                        }
+                        }*/
                     }
 
                     if ( is_file( $sFilePath ) )

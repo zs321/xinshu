@@ -54,19 +54,6 @@ $data = array (
   ),
   4 => 
   array (
-    'cat_id' => '5',
-    'cat_name' => '新手上路 ',
-    'cat_type' => '5',
-    'keywords' => '',
-    'cat_desc' => '',
-    'sort_order' => '50',
-    'show_in_nav' => '0',
-    'parent_id' => '3',
-    'has_children' => '0',
-    'aricle_num' => '3',
-  ),
-  5 => 
-  array (
     'cat_id' => '7',
     'cat_name' => '配送方式 ',
     'cat_type' => '5',
@@ -78,7 +65,7 @@ $data = array (
     'has_children' => '0',
     'aricle_num' => '3',
   ),
-  6 => 
+  5 => 
   array (
     'cat_id' => '8',
     'cat_name' => '售后服务',
@@ -91,7 +78,7 @@ $data = array (
     'has_children' => '0',
     'aricle_num' => '4',
   ),
-  7 => 
+  6 => 
   array (
     'cat_id' => '9',
     'cat_name' => '关于我们 ',
@@ -104,10 +91,23 @@ $data = array (
     'has_children' => '0',
     'aricle_num' => '1',
   ),
-  8 => 
+  7 => 
   array (
     'cat_id' => '10',
     'cat_name' => '购物指南',
+    'cat_type' => '5',
+    'keywords' => '',
+    'cat_desc' => '',
+    'sort_order' => '50',
+    'show_in_nav' => '0',
+    'parent_id' => '3',
+    'has_children' => '0',
+    'aricle_num' => '3',
+  ),
+  8 => 
+  array (
+    'cat_id' => '5',
+    'cat_name' => '新手上路 ',
     'cat_type' => '5',
     'keywords' => '',
     'cat_desc' => '',
