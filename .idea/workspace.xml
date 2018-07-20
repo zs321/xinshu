@@ -23,36 +23,206 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="exchange_tree.dwt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="exchange_tree.dwt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_tree.dwt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58219177" vertical-offset="0" max-vertical-offset="876">
-              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+              <caret line="0" column="25" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pre_sale_list.lbi" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_sale_list.lbi">
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
+      <file leaf-file-name="pre_sale.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile/pre_sale.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2520">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.733334" vertical-offset="13838" max-vertical-offset="83160">
-              <caret line="471" column="66" selection-start-line="471" selection-start-column="45" selection-end-line="471" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.26164874" vertical-offset="2391" max-vertical-offset="31650">
+              <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
               <folding>
-                <marker date="1531963360720" expanded="true" signature="104014:104060" placeholder="{...}" />
+                <marker date="1532077889023" expanded="true" signature="2321:2338" placeholder="UPDATE users..." />
+                <marker date="1532077889023" expanded="true" signature="2321:2365" placeholder="UPDATE users..." />
+                <marker date="1532077889023" expanded="true" signature="2321:2368" placeholder="UPDATE users..." />
+                <marker date="1532077889023" expanded="true" signature="2321:2384" placeholder="UPDATE users..." />
+                <marker date="1532077889023" expanded="true" signature="2321:2385" placeholder="UPDATE users..." />
+                <marker date="1532077889023" expanded="true" signature="6847:7347" placeholder="select a.*, ..." />
+                <marker date="1532077889023" expanded="true" signature="13450:13683" placeholder="SELECT user_..." />
+                <marker date="1532077889023" expanded="true" signature="24945:25049" placeholder="SELECT SUM(a..." />
+                <marker date="1532077889023" expanded="true" signature="25304:25825" placeholder="SELECT pg.go..." />
+                <marker date="1532077889023" expanded="true" signature="26192:27015" placeholder="SELECT pg.pa..." />
+                <marker date="1532077889023" expanded="true" signature="27559:27821" placeholder="SELECT ga.go..." />
+                <marker date="1532077889023" expanded="true" signature="29042:29449" placeholder="SELECT ga.ac..." />
+                <marker date="1532077889023" expanded="true" signature="29850:30688" placeholder="SELECT pg.pa..." />
+                <marker date="1532077889023" expanded="true" signature="31547:31809" placeholder="SELECT ga.go..." />
+                <marker date="1532077889023" expanded="true" signature="34782:34871" placeholder="SELECT * FRO..." />
+                <marker date="1532077889023" expanded="true" signature="35085:35298" placeholder="SELECT AVG(c..." />
+                <marker date="1532077889023" expanded="true" signature="35418:35663" placeholder="SELECT AVG(s..." />
+                <marker date="1532077889023" expanded="true" signature="37404:37491" placeholder="select paren..." />
+                <marker date="1532077889023" expanded="true" signature="37629:37741" placeholder="SELECT count..." />
+                <marker date="1532077889023" expanded="true" signature="37899:38075" placeholder="SELECT cat_i..." />
+                <marker date="1532077889023" expanded="true" signature="38639:38718" placeholder="select * fro..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activity.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5652174" vertical-offset="432" max-vertical-offset="4170">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+              <folding>
+                <marker date="1531963357281" expanded="true" signature="1329:1360" placeholder="SELECT rank_..." />
+                <marker date="1531963357281" expanded="true" signature="1551:1648" placeholder="SELECT * FRO..." />
+                <marker date="1531963357281" expanded="true" signature="2410:2514" placeholder="SELECT cat_i..." />
+                <marker date="1531963357281" expanded="true" signature="2743:2850" placeholder="SELECT brand..." />
+                <marker date="1531963357281" expanded="true" signature="3044:3151" placeholder="SELECT goods..." />
+                <marker date="1531963357281" expanded="true" signature="3786:3874" placeholder="SELECT goods..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/lang/zh_cn/common.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.347826" vertical-offset="990" max-vertical-offset="45150">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding>
+                <element signature="e#9#499#0#PHP" expanded="true" />
+                <marker date="1532075570000" expanded="true" signature="21364:21401" placeholder="..." />
+                <marker date="1532075570000" expanded="true" signature="21573:21587" placeholder="..." />
+                <marker date="1532075570000" expanded="true" signature="21742:21756" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib_main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/lib_main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.4347825" vertical-offset="34962" max-vertical-offset="65010">
+              <caret line="1182" column="65" selection-start-line="1182" selection-start-column="61" selection-end-line="1182" selection-end-column="65" />
+              <folding>
+                <marker date="1531963370189" expanded="true" signature="1751:1846" placeholder="SELECT speci..." />
+                <marker date="1531963370189" expanded="true" signature="2318:2488" placeholder="SELECT rank_..." />
+                <marker date="1531963370189" expanded="true" signature="2934:3041" placeholder="SELECT rank_..." />
+                <marker date="1531963370189" expanded="true" signature="10525:10565" placeholder="SELECT cat_i..." />
+                <marker date="1531963370189" expanded="true" signature="12310:12491" placeholder="SELECT id, n..." />
+                <marker date="1531963370189" expanded="true" signature="13675:13769" placeholder="SELECT cat_n..." />
+                <marker date="1531963370189" expanded="true" signature="26140:26308" placeholder="SELECT SUM(o..." />
+                <marker date="1531963370189" expanded="true" signature="35228:35686" placeholder="INSERT INTO ..." />
+                <marker date="1531963370189" expanded="true" signature="48857:49028" placeholder="select rec_i..." />
+                <marker date="1531963370189" expanded="true" signature="49043:49220" placeholder="select goods..." />
+                <marker date="1531963370189" expanded="true" signature="49584:49653" placeholder="delete from ..." />
+                <marker date="1531963370189" expanded="true" signature="49965:50076" placeholder="DELETE FROM ..." />
+                <marker date="1531963370189" expanded="true" signature="50332:50486" placeholder="SELECT COUNT..." />
+                <marker date="1531963370189" expanded="true" signature="50671:50862" placeholder="SELECT * FRO..." />
+                <marker date="1531963370189" expanded="true" signature="51810:51890" placeholder="SELECT headi..." />
+                <marker date="1531963370189" expanded="true" signature="52049:52147" placeholder="SELECT * FRO..." />
+                <marker date="1531963370189" expanded="true" signature="57490:57571" placeholder="SELECT user_..." />
+                <marker date="1531963370189" expanded="true" signature="57938:58030" placeholder="SELECT paren..." />
+                <marker date="1531963370189" expanded="true" signature="58227:58324" placeholder="SELECT count..." />
+                <marker date="1531963370189" expanded="true" signature="60342:60382" placeholder="SELECT cat_i..." />
+                <marker date="1531963370189" expanded="true" signature="61623:61825" placeholder="SELECT libra..." />
+                <marker date="1531963370189" expanded="true" signature="62857:62965" placeholder="SELECT * FRO..." />
+                <marker date="1531963370189" expanded="true" signature="65938:66353" placeholder="select ap.ad..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lib_main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/include/lib_main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.51282" vertical-offset="86368" max-vertical-offset="127980">
+              <caret line="2912" column="65" selection-start-line="2912" selection-start-column="61" selection-end-line="2912" selection-end-column="65" />
+              <folding>
+                <marker date="1531963362164" expanded="true" signature="1809:1904" placeholder="SELECT speci..." />
+                <marker date="1531963362164" expanded="true" signature="2389:2559" placeholder="SELECT rank_..." />
+                <marker date="1531963362164" expanded="true" signature="3020:3127" placeholder="SELECT rank_..." />
+                <marker date="1531963362164" expanded="true" signature="10306:10346" placeholder="SELECT cat_i..." />
+                <marker date="1531963362164" expanded="true" signature="12187:12375" placeholder="SELECT id, n..." />
+                <marker date="1531963362164" expanded="true" signature="13598:13692" placeholder="SELECT cat_n..." />
+                <marker date="1531963362164" expanded="true" signature="26423:26592" placeholder="SELECT SUM(o..." />
+                <marker date="1531963362164" expanded="true" signature="35885:36348" placeholder="INSERT INTO ..." />
+                <marker date="1531963362164" expanded="true" signature="49855:50026" placeholder="select rec_i..." />
+                <marker date="1531963362164" expanded="true" signature="50041:50218" placeholder="select goods..." />
+                <marker date="1531963362164" expanded="true" signature="50582:50651" placeholder="delete from ..." />
+                <marker date="1531963362164" expanded="true" signature="50964:51076" placeholder="DELETE FROM ..." />
+                <marker date="1531963362164" expanded="true" signature="51347:51502" placeholder="SELECT COUNT..." />
+                <marker date="1531963362164" expanded="true" signature="51692:51885" placeholder="SELECT * FRO..." />
+                <marker date="1531963362164" expanded="true" signature="52402:52480" placeholder="SELECT * FRO..." />
+                <marker date="1531963362164" expanded="true" signature="52614:52711" placeholder="SELECT nickn..." />
+                <marker date="1531963362164" expanded="true" signature="53300:53399" placeholder="SELECT * FRO..." />
+                <marker date="1531963362164" expanded="true" signature="53983:54061" placeholder="SELECT * FRO..." />
+                <marker date="1531963362164" expanded="true" signature="54195:54281" placeholder="SELECT nickn..." />
+                <marker date="1531963362164" expanded="true" signature="57641:57741" placeholder="select regio..." />
+                <marker date="1531963362164" expanded="true" signature="60520:60601" placeholder="SELECT user_..." />
+                <marker date="1531963362164" expanded="true" signature="60992:61084" placeholder="SELECT paren..." />
+                <marker date="1531963362164" expanded="true" signature="61294:61391" placeholder="SELECT count..." />
+                <marker date="1531963362164" expanded="true" signature="63471:63511" placeholder="SELECT cat_i..." />
+                <marker date="1531963362164" expanded="true" signature="64811:65021" placeholder="SELECT libra..." />
+                <marker date="1531963362164" expanded="true" signature="66102:66217" placeholder="SELECT * FRO..." />
+                <marker date="1531963362164" expanded="true" signature="69388:69688" placeholder="select ap.ad..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aa.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/aa.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pre_sale_list.dwt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.dwt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.633333" vertical-offset="941" max-vertical-offset="1890">
+              <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transport.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/js/transport.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-134.0" vertical-offset="15120" max-vertical-offset="23940">
+              <caret line="638" column="17" selection-start-line="638" selection-start-column="17" selection-end-line="638" selection-end-column="17" />
+              <folding>
+                <marker date="1532060241456" expanded="true" signature="6847:6880" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goods.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mobile/goods.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0434785" vertical-offset="5121" max-vertical-offset="48480">
+              <caret line="202" column="22" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="22" />
+              <folding>
+                <marker date="1532058871602" expanded="true" signature="8950:9247" placeholder="SELECT type_..." />
+                <marker date="1532058871602" expanded="true" signature="10539:10733" placeholder="SELECT goods..." />
+                <marker date="1532058871602" expanded="true" signature="10991:11178" placeholder="SELECT max(g..." />
+                <marker date="1532058871602" expanded="true" signature="11933:12044" placeholder="SELECT goods..." />
+                <marker date="1532058871602" expanded="true" signature="12327:12458" placeholder="select goods..." />
+                <marker date="1532058871602" expanded="true" signature="14648:14759" placeholder="SELECT * FRO..." />
+                <marker date="1532058871602" expanded="true" signature="16865:16881" placeholder="SELECT * FRO..." />
+                <marker date="1532058871602" expanded="true" signature="17360:17482" placeholder="SELECT user_..." />
+                <marker date="1532058871602" expanded="true" signature="17515:17612" placeholder="SELECT cfg_v..." />
+                <marker date="1532058871602" expanded="true" signature="17760:17852" placeholder="SELECT `qr_p..." />
+                <marker date="1532058871602" expanded="true" signature="27726:27839" placeholder="SELECT SUM(a..." />
+                <marker date="1532058871602" expanded="true" signature="28104:28633" placeholder="SELECT pg.go..." />
+                <marker date="1532058871602" expanded="true" signature="29017:29860" placeholder="SELECT pg.pa..." />
+                <marker date="1532058871602" expanded="true" signature="30421:30683" placeholder="SELECT ga.go..." />
+                <marker date="1532058871602" expanded="true" signature="33233:33320" placeholder="SELECT count..." />
+                <marker date="1532058871602" expanded="true" signature="34293:34512" placeholder="SELECT produ..." />
               </folding>
             </state>
           </provider>
@@ -66,11 +236,19 @@
         <option value="$PROJECT_DIR$/sitemaps.php" />
         <option value="$PROJECT_DIR$/goods.php" />
         <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_list.dwt" />
-        <option value="$PROJECT_DIR$/data/config.php" />
         <option value="$PROJECT_DIR$/pre_sale.php" />
         <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_sale_list.lbi" />
-        <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.dwt" />
+        <option value="$PROJECT_DIR$/data/config.php" />
+        <option value="$PROJECT_DIR$/mobile/pre_sale.txt" />
+        <option value="$PROJECT_DIR$/adminlogin/js/common.js" />
+        <option value="$PROJECT_DIR$/adminlogin/js/transport.js" />
+        <option value="$PROJECT_DIR$/mobile/goods.php" />
+        <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/js/transport.js" />
         <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_tree.dwt" />
+        <option value="$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.dwt" />
+        <option value="$PROJECT_DIR$/mobile/aa.txt" />
+        <option value="$PROJECT_DIR$/mobile/lang/zh_cn/common.php" />
+        <option value="$PROJECT_DIR$/mobile/pre_sale.php" />
       </list>
     </option>
   </component>
@@ -112,107 +290,41 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
+              <option name="myItemId" value="xinshu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
+              <option name="myItemId" value="xinshu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
+              <option name="myItemId" value="xinshu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
+              <option name="myItemId" value="xinshu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
+              <option name="myItemId" value="xinshu" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="huazhuangpin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="huazhuangpin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,11 +336,17 @@
     <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\PHPTutorial\WWW\xinshu\data\afficheimg" />
       <recent name="D:\phpStudy\PHPTutorial\WWW\shop\mobile\themes\huazhuangpin\library" />
       <recent name="D:\phpStudy\PHPTutorial\WWW\shop\mobile\themes\huazhuangpin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\PHPTutorial\WWW\xinshu\mobile" />
+      <recent name="D:\phpStudy\PHPTutorial\WWW\xinshu\mobile\themes\huazhuangpin\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -262,6 +380,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <list size="0" />
@@ -290,7 +414,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35021096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -332,361 +456,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sitemaps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="4050">
-          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#447#0#PHP" expanded="true" />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT artic..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8190" max-vertical-offset="26310">
-          <caret line="284" column="38" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
-          <folding>
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT max(g..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="select goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT sales..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT produ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/data/compiled/goods_choose_attr.lbi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sitemaps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="4050">
-          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#447#0#PHP" expanded="true" />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT artic..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="26310">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT max(g..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="select goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT sales..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT produ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/data/compiled/goods_choose_attr.lbi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62283736" vertical-offset="0" max-vertical-offset="3540">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goods.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="8190" max-vertical-offset="26310">
-          <caret line="284" column="38" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
-          <folding>
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT max(g..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="select goods..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT sales..." />
-            <marker date="1531963357301" expanded="true" signature="-1:-1" placeholder="SELECT produ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sitemaps.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45454547" vertical-offset="3170" max-vertical-offset="4050">
-          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#447#0#PHP" expanded="true" />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963357321" expanded="true" signature="-1:-1" placeholder="SELECT artic..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/exchange.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.521739" vertical-offset="30" max-vertical-offset="43260">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-          <folding>
-            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT eg.go..." />
-            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT max(e..." />
-            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT keywo..." />
-            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5384616" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre_sale.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="38910">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select goods..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select goods..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT s.sup..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select a.*, ..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT ga.ac..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT AVG(c..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="SELECT AVG(s..." />
-            <marker date="1531984923159" expanded="true" signature="-1:-1" placeholder="select paren..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/pre_sale.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.521739" vertical-offset="30" max-vertical-offset="39900">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select goods..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select goods..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT s.sup..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select a.*, ..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT SUM(a..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT ga.ac..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT pg.pa..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT AVG(c..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT AVG(s..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select paren..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
-            <marker date="1531963360620" expanded="true" signature="-1:-1" placeholder="select * fro..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/data/caches/6/pre_sale_list_E1FFE847.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5882353" vertical-offset="450" max-vertical-offset="10740">
-          <caret line="32" column="66" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pages.lbi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1590">
-          <caret line="45" column="12" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/localhost.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="447960">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/recommend_best.lbi">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_spike_list.lbi">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.4838705" vertical-offset="0" max-vertical-offset="2520">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_list.dwt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1500">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_goods.dwt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4262295" vertical-offset="360" max-vertical-offset="14160">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_spike_list.dwt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/pre_sale_list.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_wechat.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_weibo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/quicklogin/zhifubao.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/quicklogin/weixin.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/quicklogin/weibo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_alipay.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/images/upload/image/201606.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.dwt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.633333" vertical-offset="221" max-vertical-offset="1110">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_facebook.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/oauth/sns_tqq.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/consignee.lbi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="3060">
-          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/b1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/images/back_order_img.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -759,11 +528,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.733334" vertical-offset="13838" max-vertical-offset="83160">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13838" max-vertical-offset="83160">
           <caret line="471" column="66" selection-start-line="471" selection-start-column="45" selection-end-line="471" selection-end-column="66" />
-          <folding>
-            <marker date="1531963360720" expanded="true" signature="104014:104060" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5429815" vertical-offset="191" max-vertical-offset="1110">
           <caret line="23" column="52" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,11 +552,508 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45454547" vertical-offset="320" max-vertical-offset="1200">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/lib_common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4810811" vertical-offset="22362" max-vertical-offset="91110">
+          <caret line="729" column="19" selection-start-line="729" selection-start-column="19" selection-end-line="729" selection-end-column="19" />
+          <folding>
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT paren..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT regio..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT confi..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT code,..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT code,..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT brand..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT act_i..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT act_i..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT templ..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT order..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT card_..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT order..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT card_..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT ext_i..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT a.att..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT a.att..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT pg.go..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT goods..." />
+            <marker date="1531963370185" expanded="true" signature="-1:-1" placeholder="SELECT ga.go..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/brand_goods.lbi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/library/ad_position.lbi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03264418" vertical-offset="0" max-vertical-offset="919">
+          <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/adminlogin/attribute.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.318841" vertical-offset="17117" max-vertical-offset="21180">
+          <caret line="614" column="46" selection-start-line="614" selection-start-column="46" selection-end-line="614" selection-end-column="46" />
+          <folding>
+            <marker date="1531963366213" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963366213" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1531963366213" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1531963366213" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1531963366213" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1531963366213" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminlogin/templates/attribute_info.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0726644" vertical-offset="3420" max-vertical-offset="5880">
+          <caret line="145" column="14" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/adminlogin/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1449275" vertical-offset="85805" max-vertical-offset="161700">
+          <caret line="2894" column="13" selection-start-line="2894" selection-start-column="13" selection-end-line="2894" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/users_invite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.153847" vertical-offset="2250" max-vertical-offset="46020">
+          <caret line="118" column="24" selection-start-line="118" selection-start-column="24" selection-end-line="118" selection-end-column="24" />
+          <folding>
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT rank_..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT min_p..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963360638" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.4871793" vertical-offset="2678" max-vertical-offset="3930">
+          <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/js/transport_jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.575758" vertical-offset="23286" max-vertical-offset="23880">
+          <caret line="448" column="2" selection-start-line="448" selection-start-column="2" selection-end-line="448" selection-end-column="2" />
+          <folding>
+            <marker date="1531963360847" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminlogin/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3146625" vertical-offset="6983" max-vertical-offset="7590">
+          <caret line="105" column="3" selection-start-line="105" selection-start-column="3" selection-end-line="105" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/accountbind.dwt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.387096" vertical-offset="577" max-vertical-offset="3840">
+          <caret line="31" column="59" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exchange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.153846" vertical-offset="7122" max-vertical-offset="18090">
+          <caret line="259" column="50" selection-start-line="259" selection-start-column="50" selection-end-line="259" selection-end-column="50" />
+          <folding>
+            <marker date="1531963357296" expanded="true" signature="-1:-1" placeholder="SELECT eg.go..." />
+            <marker date="1531963357296" expanded="true" signature="-1:-1" placeholder="SELECT max(e..." />
+            <marker date="1531963357296" expanded="true" signature="-1:-1" placeholder="SELECT keywo..." />
+            <marker date="1531963357296" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963357296" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminlogin/includes/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.512821" vertical-offset="15268" max-vertical-offset="25320">
+          <caret line="544" column="31" selection-start-line="544" selection-start-column="31" selection-end-line="544" selection-end-column="31" />
+          <folding>
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT rank_..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="{&quot;allowFileManager&quot;: true...}" />
+            <marker date="1531963378885" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT pay_i..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT attr_..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963378885" expanded="true" signature="-1:-1" placeholder="SELECT suppl..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminlogin/js/transport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.533334" vertical-offset="16004" max-vertical-offset="23880">
+          <caret line="542" column="0" selection-start-line="542" selection-start-column="0" selection-end-line="542" selection-end-column="0" />
+          <folding>
+            <marker date="1532058464804" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/transport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33112583" vertical-offset="0" max-vertical-offset="23880">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <marker date="1531963369808" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29801324" vertical-offset="0" max-vertical-offset="32280">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1531963369778" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963369778" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963369778" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/adminlogin/includes/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3754153" vertical-offset="33727" max-vertical-offset="50460">
+          <caret line="1150" column="9" selection-start-line="1150" selection-start-column="9" selection-end-line="1150" selection-end-column="9" />
+          <folding>
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT id FR..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT type_..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT rank_..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT user_..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="{&quot;allowFileManager&quot;: true...}" />
+            <marker date="1531963368295" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT cat_i..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT pay_i..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT attr_..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1531963368295" expanded="true" signature="-1:-1" placeholder="SELECT suppl..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/include/cls_json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5352273" vertical-offset="2071" max-vertical-offset="35820">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_goods.dwt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.9508195" vertical-offset="8667" max-vertical-offset="9930">
+          <caret line="301" column="125" selection-start-line="301" selection-start-column="2" selection-end-line="301" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/js/transport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-134.0" vertical-offset="15120" max-vertical-offset="23940">
+          <caret line="638" column="17" selection-start-line="638" selection-start-column="17" selection-end-line="638" selection-end-column="17" />
+          <folding>
+            <marker date="1532060241456" expanded="true" signature="6847:6880" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/pre_sale_list.dwt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.633333" vertical-offset="941" max-vertical-offset="1890">
+          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/goods.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0434785" vertical-offset="5121" max-vertical-offset="48480">
+          <caret line="202" column="22" selection-start-line="202" selection-start-column="21" selection-end-line="202" selection-end-column="22" />
+          <folding>
+            <marker date="1532058871602" expanded="true" signature="8950:9247" placeholder="SELECT type_..." />
+            <marker date="1532058871602" expanded="true" signature="10539:10733" placeholder="SELECT goods..." />
+            <marker date="1532058871602" expanded="true" signature="10991:11178" placeholder="SELECT max(g..." />
+            <marker date="1532058871602" expanded="true" signature="11933:12044" placeholder="SELECT goods..." />
+            <marker date="1532058871602" expanded="true" signature="12327:12458" placeholder="select goods..." />
+            <marker date="1532058871602" expanded="true" signature="14648:14759" placeholder="SELECT * FRO..." />
+            <marker date="1532058871602" expanded="true" signature="16865:16881" placeholder="SELECT * FRO..." />
+            <marker date="1532058871602" expanded="true" signature="17360:17482" placeholder="SELECT user_..." />
+            <marker date="1532058871602" expanded="true" signature="17515:17612" placeholder="SELECT cfg_v..." />
+            <marker date="1532058871602" expanded="true" signature="17760:17852" placeholder="SELECT `qr_p..." />
+            <marker date="1532058871602" expanded="true" signature="27726:27839" placeholder="SELECT SUM(a..." />
+            <marker date="1532058871602" expanded="true" signature="28104:28633" placeholder="SELECT pg.go..." />
+            <marker date="1532058871602" expanded="true" signature="29017:29860" placeholder="SELECT pg.pa..." />
+            <marker date="1532058871602" expanded="true" signature="30421:30683" placeholder="SELECT ga.go..." />
+            <marker date="1532058871602" expanded="true" signature="33233:33320" placeholder="SELECT count..." />
+            <marker date="1532058871602" expanded="true" signature="34293:34512" placeholder="SELECT produ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/accountbind.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14640">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/pre_sale.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41095892" vertical-offset="540" max-vertical-offset="39930">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mobile/themes/huazhuangpin/exchange_tree.dwt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58219177" vertical-offset="0" max-vertical-offset="876">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/_superglobals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3068182" vertical-offset="0" max-vertical-offset="6960">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/exchange.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.782608" vertical-offset="0" max-vertical-offset="43260">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT eg.go..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT max(e..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT keywo..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1531963360304" expanded="true" signature="-1:-1" placeholder="SELECT count..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/aa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/include/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.51282" vertical-offset="86368" max-vertical-offset="127980">
+          <caret line="2912" column="65" selection-start-line="2912" selection-start-column="61" selection-end-line="2912" selection-end-column="65" />
+          <folding>
+            <marker date="1531963362164" expanded="true" signature="1809:1904" placeholder="SELECT speci..." />
+            <marker date="1531963362164" expanded="true" signature="2389:2559" placeholder="SELECT rank_..." />
+            <marker date="1531963362164" expanded="true" signature="3020:3127" placeholder="SELECT rank_..." />
+            <marker date="1531963362164" expanded="true" signature="10306:10346" placeholder="SELECT cat_i..." />
+            <marker date="1531963362164" expanded="true" signature="12187:12375" placeholder="SELECT id, n..." />
+            <marker date="1531963362164" expanded="true" signature="13598:13692" placeholder="SELECT cat_n..." />
+            <marker date="1531963362164" expanded="true" signature="26423:26592" placeholder="SELECT SUM(o..." />
+            <marker date="1531963362164" expanded="true" signature="35885:36348" placeholder="INSERT INTO ..." />
+            <marker date="1531963362164" expanded="true" signature="49855:50026" placeholder="select rec_i..." />
+            <marker date="1531963362164" expanded="true" signature="50041:50218" placeholder="select goods..." />
+            <marker date="1531963362164" expanded="true" signature="50582:50651" placeholder="delete from ..." />
+            <marker date="1531963362164" expanded="true" signature="50964:51076" placeholder="DELETE FROM ..." />
+            <marker date="1531963362164" expanded="true" signature="51347:51502" placeholder="SELECT COUNT..." />
+            <marker date="1531963362164" expanded="true" signature="51692:51885" placeholder="SELECT * FRO..." />
+            <marker date="1531963362164" expanded="true" signature="52402:52480" placeholder="SELECT * FRO..." />
+            <marker date="1531963362164" expanded="true" signature="52614:52711" placeholder="SELECT nickn..." />
+            <marker date="1531963362164" expanded="true" signature="53300:53399" placeholder="SELECT * FRO..." />
+            <marker date="1531963362164" expanded="true" signature="53983:54061" placeholder="SELECT * FRO..." />
+            <marker date="1531963362164" expanded="true" signature="54195:54281" placeholder="SELECT nickn..." />
+            <marker date="1531963362164" expanded="true" signature="57641:57741" placeholder="select regio..." />
+            <marker date="1531963362164" expanded="true" signature="60520:60601" placeholder="SELECT user_..." />
+            <marker date="1531963362164" expanded="true" signature="60992:61084" placeholder="SELECT paren..." />
+            <marker date="1531963362164" expanded="true" signature="61294:61391" placeholder="SELECT count..." />
+            <marker date="1531963362164" expanded="true" signature="63471:63511" placeholder="SELECT cat_i..." />
+            <marker date="1531963362164" expanded="true" signature="64811:65021" placeholder="SELECT libra..." />
+            <marker date="1531963362164" expanded="true" signature="66102:66217" placeholder="SELECT * FRO..." />
+            <marker date="1531963362164" expanded="true" signature="69388:69688" placeholder="select ap.ad..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/lib_main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4347825" vertical-offset="34962" max-vertical-offset="65010">
+          <caret line="1182" column="65" selection-start-line="1182" selection-start-column="61" selection-end-line="1182" selection-end-column="65" />
+          <folding>
+            <marker date="1531963370189" expanded="true" signature="1751:1846" placeholder="SELECT speci..." />
+            <marker date="1531963370189" expanded="true" signature="2318:2488" placeholder="SELECT rank_..." />
+            <marker date="1531963370189" expanded="true" signature="2934:3041" placeholder="SELECT rank_..." />
+            <marker date="1531963370189" expanded="true" signature="10525:10565" placeholder="SELECT cat_i..." />
+            <marker date="1531963370189" expanded="true" signature="12310:12491" placeholder="SELECT id, n..." />
+            <marker date="1531963370189" expanded="true" signature="13675:13769" placeholder="SELECT cat_n..." />
+            <marker date="1531963370189" expanded="true" signature="26140:26308" placeholder="SELECT SUM(o..." />
+            <marker date="1531963370189" expanded="true" signature="35228:35686" placeholder="INSERT INTO ..." />
+            <marker date="1531963370189" expanded="true" signature="48857:49028" placeholder="select rec_i..." />
+            <marker date="1531963370189" expanded="true" signature="49043:49220" placeholder="select goods..." />
+            <marker date="1531963370189" expanded="true" signature="49584:49653" placeholder="delete from ..." />
+            <marker date="1531963370189" expanded="true" signature="49965:50076" placeholder="DELETE FROM ..." />
+            <marker date="1531963370189" expanded="true" signature="50332:50486" placeholder="SELECT COUNT..." />
+            <marker date="1531963370189" expanded="true" signature="50671:50862" placeholder="SELECT * FRO..." />
+            <marker date="1531963370189" expanded="true" signature="51810:51890" placeholder="SELECT headi..." />
+            <marker date="1531963370189" expanded="true" signature="52049:52147" placeholder="SELECT * FRO..." />
+            <marker date="1531963370189" expanded="true" signature="57490:57571" placeholder="SELECT user_..." />
+            <marker date="1531963370189" expanded="true" signature="57938:58030" placeholder="SELECT paren..." />
+            <marker date="1531963370189" expanded="true" signature="58227:58324" placeholder="SELECT count..." />
+            <marker date="1531963370189" expanded="true" signature="60342:60382" placeholder="SELECT cat_i..." />
+            <marker date="1531963370189" expanded="true" signature="61623:61825" placeholder="SELECT libra..." />
+            <marker date="1531963370189" expanded="true" signature="62857:62965" placeholder="SELECT * FRO..." />
+            <marker date="1531963370189" expanded="true" signature="65938:66353" placeholder="select ap.ad..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/lang/zh_cn/common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.347826" vertical-offset="990" max-vertical-offset="45150">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#9#499#0#PHP" expanded="true" />
+            <marker date="1532075570000" expanded="true" signature="21364:21401" placeholder="..." />
+            <marker date="1532075570000" expanded="true" signature="21573:21587" placeholder="..." />
+            <marker date="1532075570000" expanded="true" signature="21742:21756" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5652174" vertical-offset="432" max-vertical-offset="4170">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding>
+            <marker date="1531963357281" expanded="true" signature="1329:1360" placeholder="SELECT rank_..." />
+            <marker date="1531963357281" expanded="true" signature="1551:1648" placeholder="SELECT * FRO..." />
+            <marker date="1531963357281" expanded="true" signature="2410:2514" placeholder="SELECT cat_i..." />
+            <marker date="1531963357281" expanded="true" signature="2743:2850" placeholder="SELECT brand..." />
+            <marker date="1531963357281" expanded="true" signature="3044:3151" placeholder="SELECT goods..." />
+            <marker date="1531963357281" expanded="true" signature="3786:3874" placeholder="SELECT goods..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile/pre_sale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26164874" vertical-offset="2391" max-vertical-offset="31650">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding>
+            <marker date="1532077889023" expanded="true" signature="2321:2338" placeholder="UPDATE users..." />
+            <marker date="1532077889023" expanded="true" signature="2321:2365" placeholder="UPDATE users..." />
+            <marker date="1532077889023" expanded="true" signature="2321:2368" placeholder="UPDATE users..." />
+            <marker date="1532077889023" expanded="true" signature="2321:2384" placeholder="UPDATE users..." />
+            <marker date="1532077889023" expanded="true" signature="2321:2385" placeholder="UPDATE users..." />
+            <marker date="1532077889023" expanded="true" signature="6847:7347" placeholder="select a.*, ..." />
+            <marker date="1532077889023" expanded="true" signature="13450:13683" placeholder="SELECT user_..." />
+            <marker date="1532077889023" expanded="true" signature="24945:25049" placeholder="SELECT SUM(a..." />
+            <marker date="1532077889023" expanded="true" signature="25304:25825" placeholder="SELECT pg.go..." />
+            <marker date="1532077889023" expanded="true" signature="26192:27015" placeholder="SELECT pg.pa..." />
+            <marker date="1532077889023" expanded="true" signature="27559:27821" placeholder="SELECT ga.go..." />
+            <marker date="1532077889023" expanded="true" signature="29042:29449" placeholder="SELECT ga.ac..." />
+            <marker date="1532077889023" expanded="true" signature="29850:30688" placeholder="SELECT pg.pa..." />
+            <marker date="1532077889023" expanded="true" signature="31547:31809" placeholder="SELECT ga.go..." />
+            <marker date="1532077889023" expanded="true" signature="34782:34871" placeholder="SELECT * FRO..." />
+            <marker date="1532077889023" expanded="true" signature="35085:35298" placeholder="SELECT AVG(c..." />
+            <marker date="1532077889023" expanded="true" signature="35418:35663" placeholder="SELECT AVG(s..." />
+            <marker date="1532077889023" expanded="true" signature="37404:37491" placeholder="select paren..." />
+            <marker date="1532077889023" expanded="true" signature="37629:37741" placeholder="SELECT count..." />
+            <marker date="1532077889023" expanded="true" signature="37899:38075" placeholder="SELECT cat_i..." />
+            <marker date="1532077889023" expanded="true" signature="38639:38718" placeholder="select * fro..." />
+          </folding>
         </state>
       </provider>
     </entry>

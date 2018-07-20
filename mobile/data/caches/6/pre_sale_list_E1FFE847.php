@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:77:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/pre_sale_list.dwt";i:1;s:77:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/exchange_tree.dwt";i:2;s:83:"D:/phpStudy/PHPTutorial/WWW/shop/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1531994918;s:8:"maketime";i:1531993118;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:3:{i:0;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/pre_sale_list.dwt";i:1;s:79:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/exchange_tree.dwt";i:2;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532056727;s:8:"maketime";i:1532054927;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -21,21 +21,9 @@
     <div class="header_l"> <a class="ico_10" href="cat_all.php"> 返回 </a> </div>
     <h1> 杏树认购 </h1>
   </header>
-  <div id="ground" style="min-width:320px;min-height:568px;width:100%;height:auto;background-image:url('themes/huazhuangpin/images/oauth/sns_tqq.png'); background-size: 100% 100%;">
+  <div id="ground" style="min-width:320px;min-height:420px;width:100%;height:auto;background-image:url('themes/huazhuangpin/images/ground.png'); background-size: 100% 100%;">
 </div>
-<script language="javascript">
-var ss;
-window.onload=function()
-{
-var h=document.documentElement.clientHeight;//可见区域高度
-ss=document.getElementById('ground');
-ss.style.height=h+"px";
-console.log(h);
-}
-$(function(){
-    console.log(12313);
-})
-</script></div>
+</div>
 <div id="content" class="footer mr-t20">
   
     <p class="region">&copy; 2012-2018 杏树商城 版权所有，并保留所有权利。 </p>
@@ -147,3 +135,30 @@ function get_search_box(){
 <script type="text/javascript" src="themes/huazhuangpin/js/ectouch.js"></script> 
 </body>
 </html>
+<script language="javascript">
+var ss;
+window.onload=function()
+{
+var h=document.documentElement.clientHeight;//可见区域高度
+var header_h = $("#header").height();
+var footer_h = $(".global-nav").height();
+ss=document.getElementById('ground');
+ss.style.height= (parseInt(h) - parseInt(header_h) - parseInt(footer_h)) +"px";
+console.log(parseInt(h) - parseInt(header_h) - parseInt(footer_h));
+console.log(footer_h);
+}
+$(function(){
+    $('#ground').on('click',function(){
+        $.ajax({
+            url:'',
+            type:'post',
+            data:{},
+            success:function(){
+            },
+            error:function(){
+                alert('Error code:500 server error');
+            }
+        })
+    })
+})
+</script>

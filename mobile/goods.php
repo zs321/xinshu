@@ -648,7 +648,7 @@ if (!$smarty->is_cached('goods.dwt', $cache_id))
 
         $tag_array = get_tags($goods_id);
 
-        $smarty->assign('tags',                $tag_array);                                       // 商品的标记
+        $smarty->assign('tags',$tag_array);                                       // 商品的标记
 
 
 

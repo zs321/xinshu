@@ -30,3 +30,29 @@
 <script type="text/javascript" src="{$ectouch_themes}/js/ectouch.js"></script> 
 </body>
 </html>
+
+<script language="javascript">
+var ss;
+window.onload=function()
+{
+var h=document.documentElement.clientHeight;//可见区域高度
+var header_h = $("#header").height();
+var footer_h = $(".global-nav").height();
+
+ss=document.getElementById('ground');
+ss.style.height= (parseInt(h) - parseInt(header_h) - parseInt(footer_h)) +"px";
+console.log(parseInt(h) - parseInt(header_h) - parseInt(footer_h));
+console.log(footer_h);
+
+
+}
+
+   function ajaxChange(){
+        Ajax.call('pre_sale.php', 'act=tree_change', changeResponse, 'GET', 'JSON');
+   }
+
+   function changeResponse(data){
+         console.log(data);
+   }
+
+</script>
