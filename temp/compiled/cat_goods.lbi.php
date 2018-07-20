@@ -45,24 +45,24 @@ if ($this->_foreach['index_image']['total'] > 0):
   </div>
   <div class="goods">
     <ul>
-    <?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_39250800_1531993934');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
+    <?php $_from = $this->_var['cat_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_50800000_1532066171');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['goods']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_39250800_1531993934']):
+    foreach ($_from AS $this->_var['goods_0_50800000_1532066171']):
         $this->_foreach['goods']['iteration']++;
 ?>
 	
-      <li id="li_<?php echo $this->_var['goods_0_39250800_1531993934']['id']; ?>"  <?php if (($this->_foreach['goods']['iteration'] - 1) < 3): ?>style="margin-bottom:10px;"<?php endif; ?>>
+      <li id="li_<?php echo $this->_var['goods_0_50800000_1532066171']['id']; ?>"  <?php if (($this->_foreach['goods']['iteration'] - 1) < 3): ?>style="margin-bottom:10px;"<?php endif; ?>>
         <div class="item">
           <div class="img">
-            <a href="<?php echo $this->_var['goods_0_39250800_1531993934']['url']; ?>">
-              <img data-original="<?php echo $this->_var['goods_0_39250800_1531993934']['thumb']; ?>" src="themes/huazhuangpin/images/spacer.gif" class="loading pic_img_<?php echo $this->_var['goods_0_39250800_1531993934']['id']; ?>" height="150" width="150"></a>
+            <a href="<?php echo $this->_var['goods_0_50800000_1532066171']['url']; ?>">
+              <img data-original="<?php echo $this->_var['goods_0_50800000_1532066171']['thumb']; ?>" src="themes/huazhuangpin/images/spacer.gif" class="loading pic_img_<?php echo $this->_var['goods_0_50800000_1532066171']['id']; ?>" height="150" width="150"></a>
           </div>
           <div class="tit">
-            <a href="<?php echo $this->_var['goods_0_39250800_1531993934']['url']; ?>"><?php echo sub_str($this->_var['goods_0_39250800_1531993934']['name'],12); ?></a></div>
+            <a href="<?php echo $this->_var['goods_0_50800000_1532066171']['url']; ?>"><?php echo sub_str($this->_var['goods_0_50800000_1532066171']['name'],12); ?></a></div>
           <div class="btns">
             <div class="pri j_comPrice">
-              <b class="j_sellPrice"><?php if ($this->_var['goods_0_39250800_1531993934']['promote_price'] != ""): ?><?php echo $this->_var['goods_0_39250800_1531993934']['promote_price']; ?><?php else: ?><?php echo $this->_var['goods_0_39250800_1531993934']['shop_price']; ?><?php endif; ?></b></div>
-			<a href="javascript:addToCart(<?php echo $this->_var['goods_0_39250800_1531993934']['id']; ?>)"><span class="t-btn">加入购物车<i class="r-arrow"></i></span></a>
+              <b class="j_sellPrice"><?php if ($this->_var['goods_0_50800000_1532066171']['promote_price'] != ""): ?><?php echo $this->_var['goods_0_50800000_1532066171']['promote_price']; ?><?php else: ?><?php echo $this->_var['goods_0_50800000_1532066171']['shop_price']; ?><?php endif; ?></b></div>
+			<a href="javascript:addToCart(<?php echo $this->_var['goods_0_50800000_1532066171']['id']; ?>)"><span class="t-btn">加入购物车<i class="r-arrow"></i></span></a>
 			
 			
 			</div>
@@ -77,15 +77,15 @@ if ($this->_foreach['goods']['total'] > 0):
 		<dt>热门畅销</dt>
 		<dd>
 			<ul>
-				<?php $_from = $this->_var['goods_cat']['top_10']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'top_goods_0_39350800_1531993934');$this->_foreach['top_10'] = array('total' => count($_from), 'iteration' => 0);
+				<?php $_from = $this->_var['goods_cat']['top_10']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'top_goods_0_50800000_1532066171');$this->_foreach['top_10'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['top_10']['total'] > 0):
-    foreach ($_from AS $this->_var['top_goods_0_39350800_1531993934']):
+    foreach ($_from AS $this->_var['top_goods_0_50800000_1532066171']):
         $this->_foreach['top_10']['iteration']++;
 ?>
 					<li>
-						<a class="thumb" href="<?php echo $this->_var['top_goods_0_39350800_1531993934']['url']; ?>" target="_blank"><img data-original="<?php echo $this->_var['top_goods_0_39350800_1531993934']['thumb']; ?>" src="themes/huazhuangpin/images/spacer.gif" class="loading"></a>
-						<p class="name"><a href="<?php echo $this->_var['top_goods_0_39350800_1531993934']['url']; ?>" target="_blank"><?php echo sub_str($this->_var['top_goods_0_39350800_1531993934']['short_name'],10); ?></a></p>
-						<p class="txt"><?php if ($this->_var['top_goods_0_39350800_1531993934']['promote_price'] != ""): ?><?php echo $this->_var['top_goods_0_39350800_1531993934']['promote_price']; ?><?php else: ?><?php echo $this->_var['top_goods_0_39350800_1531993934']['shop_price']; ?><?php endif; ?></p>
+						<a class="thumb" href="<?php echo $this->_var['top_goods_0_50800000_1532066171']['url']; ?>" target="_blank"><img data-original="<?php echo $this->_var['top_goods_0_50800000_1532066171']['thumb']; ?>" src="themes/huazhuangpin/images/spacer.gif" class="loading"></a>
+						<p class="name"><a href="<?php echo $this->_var['top_goods_0_50800000_1532066171']['url']; ?>" target="_blank"><?php echo sub_str($this->_var['top_goods_0_50800000_1532066171']['short_name'],10); ?></a></p>
+						<p class="txt"><?php if ($this->_var['top_goods_0_50800000_1532066171']['promote_price'] != ""): ?><?php echo $this->_var['top_goods_0_50800000_1532066171']['promote_price']; ?><?php else: ?><?php echo $this->_var['top_goods_0_50800000_1532066171']['shop_price']; ?><?php endif; ?></p>
 					</li>
 				<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 			</ul>

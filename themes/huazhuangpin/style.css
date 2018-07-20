@@ -220,7 +220,7 @@ canvas {
 	width: 130px;
 	color: #fff;
 	margin-top: 15px;
-	background: #F62648;
+	background: green;
 	display: inline-block;
 	height: 38px;
 	padding: 0;
@@ -466,20 +466,20 @@ canvas {
 .search-tab .search-form .so-hover { overflow:visible;}
 .search-tab .search-form .so-hover i { background-position:-15px -5px;}
 .search-tab .search-form .so-hover ul { border-left:#e6e6e6 1px solid; border-bottom:#e6e6e6 1px solid;}
-.logo-search .search-form .so-input-box .soinput { float:left; background: #fff; border:2px solid #F62648; border-radius:5px 0 0 5px; height:26px; line-height:26px; padding:5px 0 5px 10px; font-size:12px; color:#999; width:320px;}
+.logo-search .search-form .so-input-box .soinput { float:left; background: #fff; border:2px solid green; border-radius:5px 0 0 5px; height:26px; line-height:26px; padding:5px 0 5px 10px; font-size:12px; color:#999; width:320px;}
 .logo-search .search-form .so-input-box .fcinput { color:#666;}
 .logo-search .search-form .sobtn { float:left; display:inline; text-align:center; width:82px; height:40px; line-height:40px; border-radius: 0 5px 5px 0 ; font:400 14px "microsoft yahei"; color:#fff; border:none; margin-right:1px; cursor:pointer;}
-.logo-search .search-form .sogoods { background:#F62648;}
+.logo-search .search-form .sogoods { background:green;}
 .logo-search .search-form .soshop { background:#ff7f00;}
 .logo-search .search-form .soshop:hover { background:#ff9500;}
 .logo-search .search-tags { width:517px; height:18px; line-height:18px; overflow:hidden; color:#666; margin-top:5px;}
 .logo-search .search-tags span { float:left; display:inline; margin-right:10px;}
-.logo-search .search-tags a { float:left; display:inline; margin-right:10px; color:#F62648}
+.logo-search .search-tags a { float:left; display:inline; margin-right:10px; color:green}
 .logo-search .topbar-cart { float:right; width:150px; margin:10px 0 0 0;position:relative;_display:inline;height:40px;}
 .logo-search .topbar-cart-active .cart-mini {
-	color: #F62648;
+	color: green;
 	background: #fff;
-	border: 1px solid #F62648;
+	border: 1px solid green;
 	border-bottom:none;
 }
 .logo-search .cart-menu {
@@ -494,7 +494,7 @@ canvas {
 	width: 316px;
 	color: #424242;
 	background: #fff;
-	border: 1px solid #F62648;
+	border: 1px solid green;
 }
 .logo-search .cart-menu .loading_top {
 	text-align: center;
@@ -558,7 +558,7 @@ canvas {
 }
 .logo-search .count .total strong {
 	display: block;
-	color: #F62648;
+	color: green;
 	font-weight: 400;
 }
 .logo-search .count .total strong em {
@@ -585,7 +585,7 @@ canvas {
 	background-color: #FFF;
 	border: 1px solid #bbb;
 }
-.logo-search .cart-mini .mini-cart-num{  color:#F62648}
+.logo-search .cart-mini .mini-cart-num{  color:#f40}
 .logo-search .cart-mini-filled {
 	color: #fff;
 	background: #F62648;
@@ -600,7 +600,7 @@ canvas {
 	margin-left: -4px
 }
 
-.new_header .w-nav { width:100%; height:40px;margin:0 auto;background:#F62648;} 
+.new_header .w-nav { width:100%; height:40px;margin:0 auto;background:green;} 
 .t-nav .nav-categorys { float:left; position:relative; z-index:40;}
 .t-nav .nav-categorys .catetit { width:230px; line-height:40px;}
 .t-nav .nav-categorys .catetit a { background:#262626; font:14px/40px '\5FAE\8F6F\96C5\9ED1'; color:#fff; display:block; height:40px; line-height:40px; text-decoration:none; text-align:center; text-indent:-15px; cursor:default;position:relative;}
@@ -773,7 +773,7 @@ background-size:40px 40px;
 text-indent:45px;
 text-align:left;
 font: bold 25px/40px Georgia;
-color: #B80E5E;
+color: green;
 }
 .site-footer .col-contact dd.email{ margin:10px 0; height:20px; line-height:20px; text-align:left; font-size:12px; color:#666; background:url(images/email.png) 0 0 no-repeat;background-size:20px 20px; text-indent:30px;}
 .site-footer .col-contact dd.address{ margin:10px 0; height:20px; line-height:20px; text-align:left; font-size:12px; color:#666; background:url(images/address.png) 0 0 no-repeat;background-size:20px 20px; text-indent:30px;}
@@ -992,18 +992,18 @@ a.nextpage:hover i {
 	height:16px;
 	line-height:16px;
 	_line-height:18px;
-	border:1px solid #F62648;
+	border:1px solid green;
 	border-radius:3px;
 	font-size:100%;
 	color:#fff;
-	background-color:#F62648;
+	background-color:green;
 	overflow:hidden;
 	vertical-align:middle
 }
 .btn:hover,.btn-css3:hover {
 	text-decoration:none;
 	color:#fff;
-	background:#F62648
+	background:green
 }
 .btn img,.btn-css3 img {
 	vertical-align:middle

@@ -4,32 +4,32 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '132',
+      'goods_id' => '127',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '129',
+      'goods_id' => '128',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '130',
+      'goods_id' => '129',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '131',
+      'goods_id' => '130',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '127',
+      'goods_id' => '131',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '128',
+      'goods_id' => '132',
       'sort_order' => '100',
     ),
   ),
@@ -37,32 +37,32 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '132',
+      'goods_id' => '127',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '129',
+      'goods_id' => '128',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '130',
+      'goods_id' => '129',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '131',
+      'goods_id' => '130',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '127',
+      'goods_id' => '131',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '128',
+      'goods_id' => '132',
       'sort_order' => '100',
     ),
   ),
@@ -70,32 +70,32 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '132',
+      'goods_id' => '127',
       'sort_order' => '100',
     ),
     1 => 
     array (
-      'goods_id' => '129',
+      'goods_id' => '128',
       'sort_order' => '100',
     ),
     2 => 
     array (
-      'goods_id' => '130',
+      'goods_id' => '129',
       'sort_order' => '100',
     ),
     3 => 
     array (
-      'goods_id' => '131',
+      'goods_id' => '130',
       'sort_order' => '100',
     ),
     4 => 
     array (
-      'goods_id' => '127',
+      'goods_id' => '131',
       'sort_order' => '100',
     ),
     5 => 
     array (
-      'goods_id' => '128',
+      'goods_id' => '132',
       'sort_order' => '100',
     ),
   ),
