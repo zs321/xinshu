@@ -23,12 +23,12 @@ if ($this->_foreach['foo']['total'] > 0):
 				  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 				  <dl class="col-links">
 					<dt>微信关注我们</dt>
-					  <?php $_from = get_advlist_position_name_pc(微信二维码,0,1); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'ad_0_37200000_1532066173');$this->_foreach['index_image'] = array('total' => count($_from), 'iteration' => 0);
+					  <?php $_from = get_advlist_position_name_pc(微信二维码,0,1); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'ad');$this->_foreach['index_image'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['index_image']['total'] > 0):
-    foreach ($_from AS $this->_var['ad_0_37200000_1532066173']):
+    foreach ($_from AS $this->_var['ad']):
         $this->_foreach['index_image']['iteration']++;
 ?>
-						<dd><img src="<?php echo $this->_var['ad_0_37200000_1532066173']['image']; ?>" width=85 height=85><br>微信扫一扫</dd>
+						<dd><img src="<?php echo $this->_var['ad']['image']; ?>" width=85 height=85><br>微信扫一扫</dd>
 					  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 				   
 					
@@ -63,12 +63,12 @@ if ($this->_foreach['index_image']['total'] > 0):
       </p>
         <p class="nav_bottom">
         <?php if ($this->_var['navigator_list']['bottom']): ?>
-      <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_37200000_1532066173');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
+      <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_74400000_1532338091');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['nav_bottom_list']['total'] > 0):
-    foreach ($_from AS $this->_var['nav_0_37200000_1532066173']):
+    foreach ($_from AS $this->_var['nav_0_74400000_1532338091']):
         $this->_foreach['nav_bottom_list']['iteration']++;
 ?>
-      <a href="<?php echo $this->_var['nav_0_37200000_1532066173']['url']; ?>" <?php if ($this->_var['nav_0_37200000_1532066173']['opennew'] == 1): ?>target="_blank"<?php endif; ?> <?php if (($this->_foreach['nav_bottom_list']['iteration'] <= 1)): ?> class="noborder" <?php endif; ?>><?php echo $this->_var['nav_0_37200000_1532066173']['name']; ?></a>
+      <a href="<?php echo $this->_var['nav_0_74400000_1532338091']['url']; ?>" <?php if ($this->_var['nav_0_74400000_1532338091']['opennew'] == 1): ?>target="_blank"<?php endif; ?> <?php if (($this->_foreach['nav_bottom_list']['iteration'] <= 1)): ?> class="noborder" <?php endif; ?>><?php echo $this->_var['nav_0_74400000_1532338091']['name']; ?></a>
          <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
       <?php endif; ?>
       </p>

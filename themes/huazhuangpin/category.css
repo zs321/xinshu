@@ -285,7 +285,7 @@ a.more-btn,.rmb,.search-selected a.item,.sort .bd a span {
 	font-size:16px;
 	height:30px;
 	line-height:30px;
-	color:#F62648;
+	color:green;
 }
 .search-options dd {
 	position:relative;
@@ -427,7 +427,7 @@ a.more-btn,.rmb,.search-selected a.item,.sort .bd a span {
 	padding:4px 26px 4px 15px;
 	background-position:right -101px;
 	+background-position:right -99px;
-	color:#F62648;
+	color:green;
 	text-shadow:1px 1px 1px #fff
 }
 .sort .curr .search_ASC {

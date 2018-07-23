@@ -6,19 +6,19 @@
 <div id="J_miniCartList" class="cart-menu">
 	<?php if ($this->_var['cart_list']): ?>
     <ul>
-    	<?php $_from = $this->_var['cart_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_05600000_1532066174');$this->_foreach['ioo'] = array('total' => count($_from), 'iteration' => 0);
+    	<?php $_from = $this->_var['cart_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['ioo'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['ioo']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_05600000_1532066174']):
+    foreach ($_from AS $this->_var['goods']):
         $this->_foreach['ioo']['iteration']++;
 ?>
     	<li class="clearfix <?php if (($this->_foreach['ioo']['iteration'] <= 1)): ?>first<?php endif; ?>">
         	<div class="cart-item">
-              <a class="thumb" target="_blank" href="<?php echo $this->_var['goods_0_05600000_1532066174']['url']; ?>">
-                  <img src="<?php if ($this->_var['goods_0_05600000_1532066174']['goods_thumb'] == 'package_img'): ?>themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/ico_cart_package.gif<?php else: ?><?php echo $this->_var['goods_0_05600000_1532066174']['goods_thumb']; ?><?php endif; ?>">
+              <a class="thumb" target="_blank" href="<?php echo $this->_var['goods']['url']; ?>">
+                  <img src="<?php if ($this->_var['goods']['goods_thumb'] == 'package_img'): ?>themes/<?php echo $GLOBALS['_CFG']['template']; ?>/images/ico_cart_package.gif<?php else: ?><?php echo $this->_var['goods']['goods_thumb']; ?><?php endif; ?>">
               </a>
-              <a class="name" target="_blank" href="<?php echo $this->_var['goods_0_05600000_1532066174']['url']; ?>"><?php echo $this->_var['goods_0_05600000_1532066174']['short_name']; ?></a>
-              <span class="price"><?php echo $this->_var['goods_0_05600000_1532066174']['shop_price']; ?>元 x <?php echo $this->_var['goods_0_05600000_1532066174']['goods_number']; ?></span>
-              <a class="btn-del delItem" href="javascript:deleteCartGoods(<?php echo $this->_var['goods_0_05600000_1532066174']['rec_id']; ?>);">
+              <a class="name" target="_blank" href="<?php echo $this->_var['goods']['url']; ?>"><?php echo $this->_var['goods']['short_name']; ?></a>
+              <span class="price"><?php echo $this->_var['goods']['shop_price']; ?>元 x <?php echo $this->_var['goods']['goods_number']; ?></span>
+              <a class="btn-del delItem" href="javascript:deleteCartGoods(<?php echo $this->_var['goods']['rec_id']; ?>);">
                   <i class="iconfont">&#xe60e;</i>
               </a>
             </div>

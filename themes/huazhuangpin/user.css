@@ -49,10 +49,10 @@ color: #B0B0B0;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 34px;
-	color: #F62648;
+	color: green;
 	margin-top:20px;
 	margin-bottom:20px;
-	border-left:solid 5px #F62648;
+	border-left:solid 5px green;
 	text-indent:15px;
 }
 
@@ -71,7 +71,7 @@ color: #B0B0B0;
 	padding: 5px 0 5px 15px;
 	font-size: 16px;
 	color:#FFF;
-	background:#F62648
+	background:green
 }
 .slidebar .root_node i {
 	color: #ccc;
@@ -290,7 +290,7 @@ opacity:1
 
 /*°´Å¥ ÎÄ±¾¿ò*/
 .btn-primary {
-    background-color: #F62648;
+    background-color: green;
 	border:none;
     color: #fff;
     cursor: pointer;

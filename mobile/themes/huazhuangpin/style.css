@@ -1582,7 +1582,7 @@ Template Type: type_0
 	width:auto;}
 	.table_box2  input.radio.on {
   background-color: #05abe0;}
-	.table_box2 .span1{ font-size:0.8rem; background:#EC5196; color:#FFF; display:inline-block; padding:0 0.2rem}
+	.table_box2 .span1{ font-size:0.8rem; background:green; color:#FFF; display:inline-block; padding:0 0.2rem}
 	.table_box2 .dd3{ text-align:right}
 	
 	.table_box2  i{	background-image: -webkit-linear-gradient(left,transparent 70%,#666 70%,#666 100%),-webkit-linear-gradient(top,transparent 70%,#666 70%,#666 100%);
@@ -1612,11 +1612,11 @@ Template Type: type_0
 		
 	/* 订单确认页表格_底部模块 */	
 	.table_box3 .dd1{ text-align:left}		
-	.table_box3 .dd1 a{ color:#EC5196}
+	.table_box3 .dd1 a{ color:green}
 	.table_box3 .dd2{ text-align:center}		
 	.table_box3 .dd3{ text-align:right}	
-	  .modify{ background:#EC5196; color:#FFF; display:inline-block; padding:0 0.5rem; float:right; }	
-	.f4_b{ color: #EC5196;display: inline-block; }
+	  .modify{ background:green; color:#FFF; display:inline-block; padding:0 0.5rem; float:right; }	
+	.f4_b{ color: green;display: inline-block; }
 	
 	.select_city select{}
 	

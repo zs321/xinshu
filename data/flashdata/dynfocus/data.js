@@ -1,7 +1,7 @@
-imgUrl1="data/afficheimg/20170723ncmtmc.jpg";
+imgUrl1="data/afficheimg/20180723joopbo.jpg";
 imgtext1="";
 imgLink1=escape("pre_spike.php");
-imgUrl2="data/afficheimg/20170723atjfhj.jpg";
+imgUrl2="data/afficheimg/20180723rnyiew.jpg";
 imgtext2="";
 imgLink2=escape("pre_spike.php");
 imgUrl3="data/afficheimg/20170723ulcizx.jpg";

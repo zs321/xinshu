@@ -16,7 +16,7 @@ input[type="text"],input[type="password"],textarea,button{outline-style:none;-we
 .clearfix{*zoom:1;}
 .clearfix:after{display:block;overflow:hidden;clear:both;height:0;visibility:hidden;content:".";}
 a,area{blr:expression(this.onFocus=this.blur());}
-a{color:#F62648;text-decoration:none;}
+a{color:green;text-decoration:none;}
 a:hover{text-decoration: none;}
 a:focus{outline:none;}
 input:focus{outline:none;}
@@ -43,13 +43,13 @@ html body{ min-height:600px;}
 .logo_link{display:block; width:400px;}
 .logo_link img{display:block;max-height:100px;}
 .reg_login_link{height:22px; line-height:20px; margin-top:36px; text-align:right;}
-.login_link{display:block;width:49px; height:22px; background:#F62648;border-radius:2px; color:#fff; margin-left:6px; display:inline;}
+.login_link{display:block;width:49px; height:22px; background:green;border-radius:2px; color:#fff; margin-left:6px; display:inline;}
 .login_link:hover{text-decoration:none; color:#fff;}
 /* content */
 .reg_main{width:980px; border-radius:5px; background:#fff; box-shadow: 1px 1px 5px rgba(98,105,109,0.5);margin-top:50px;}
 .reg_nav{width:980px;}
 .reg_nav li{float:left; height:56px; line-height:56px;border-bottom:1px solid #ddd; color:#8a8a8a;}
-.reg_nav li.on{border-bottom:1px solid #F62648;color:#F62648;}
+.reg_nav li.on{border-bottom:1px solid green;color:green;}
 .user_reg{width:100%;}
 .login_user{border-right: 1px dashed #ddd;width: 489px;cursor: pointer;}
 .other-login-tit {height:50px;line-height:50px;font-size:14px;}
@@ -223,7 +223,7 @@ html body{ min-height:600px;}
 	background:#ccc
 }
 .register_infor ul li.lizi_law a {
-	color:#F62648
+	color:green;
 }
 .register_infor ul li.go2register a {
 	width:100%;

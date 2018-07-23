@@ -6,6 +6,8 @@ if($sortnum=='')
  $sortnum==0;
 }
 $sortnum=$sortnum+1;
+
+
 $GLOBALS['smarty']->assign('sortnum',$sortnum);
 $catid=$GLOBALS['smarty']->_var['goods_cat']['id'];
 $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
@@ -24,6 +26,7 @@ $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
 		<a title="{$goods_cat.name}" target="_blank" href="{$goods_cat.url}">更多....</a>
 	</div>
 </div>
+
 <div class="cn-fruit cn-fruit-{$sortnum}">
 
   <div class="banner">
@@ -96,5 +99,6 @@ $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
     {/foreach}
   
 </div>
+
 
 

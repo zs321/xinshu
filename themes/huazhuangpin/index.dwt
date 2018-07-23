@@ -297,6 +297,11 @@ if($sortnum=='')
  $sortnum==0;
 }
 $sortnum=$sortnum+1;
+
+if($sortnum >= 3){
+	$sortnum = 3;
+}
+
 $GLOBALS['smarty']->assign('sortnum',$sortnum);
 $catid=$GLOBALS['smarty']->_var['goods_cat']['id'];
 $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
@@ -617,3 +622,11 @@ $catname=$GLOBALS['smarty']->_var['goods_cat']['name'];
 </div>
 </body>
 </html>
+
+<script type="text/javascript">
+	$(function(){
+		$(".cn-laytit:gt(2)").hide();
+		$(".cn-fruit:gt(2)").hide();
+	})
+	
+</script>
