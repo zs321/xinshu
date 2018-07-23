@@ -2503,6 +2503,10 @@ elseif ($_REQUEST['step'] == 'done')
     /* 插入支付日志 */
     $order['log_id'] = insert_pay_log($new_order_id, $order['order_amount'], PAY_ORDER);
 
+    /*判断是否用户杏树资格是否增加*/
+    flow_tree($user_id,$order);
+
+
     /* 取得支付信息，生成支付代码 */
     if ($order['order_amount'] > 0)
     {

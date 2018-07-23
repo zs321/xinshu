@@ -4594,6 +4594,9 @@ elseif ($_REQUEST['step'] == 'done')
 
     $order['log_id'] = insert_pay_log($new_order_id, $order['order_amount'], PAY_ORDER);
 
+    /*判断是否用户杏树资格是否增加*/
+    flow_tree($user_id,$order);
+
 	if($payment['pay_code'] == 'wx_new_jspay')
 
     {

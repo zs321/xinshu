@@ -2696,7 +2696,46 @@ function get_goods_attr_info($arr, $type = 'pice')
 
 }
 
+/**
 
+ * 获得杏树认购资格
+
+ * @param   int     $user_id    用户id
+ * @param   array     $order    订单信息
+
+ * @return  array   用户信息
+
+ */
+
+function flow_tree($user_id,$order)
+
+{
+    $limit = 500;
+    if(empty($order['order_amount']) || $order['order_amount'] <$limit){
+        return;
+    }
+
+    //订单单笔消费500一棵树，可无限累加
+      $tree = array('tree_num'=>intval($order['order_amount']/$limit));
+
+       $GLOBALS['db']->autoExecute($GLOBALS['ecs']->table('users'),
+
+        $tree, 'UPDATE', "user_id = '$user_id'");
+
+    $tree_log = array(
+        'user_id'=>$user_id,
+        'order_id'=>$order['order_id'],
+        'order_amount'=>$order['order_amount'],
+        'flow_time'=>date('Y-m-d H:i:s')
+    );
+
+      $GLOBALS['db']->autoExecute($GLOBALS['ecs']->table('tree_log'),
+
+         $tree_log, 'insert', "user_id = '$user_id'");
+
+
+    return;
+}
 
 /**
 

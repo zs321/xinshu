@@ -32,27 +32,37 @@
 </html>
 
 <script language="javascript">
-var ss;
-window.onload=function()
-{
-var h=document.documentElement.clientHeight;//可见区域高度
-var header_h = $("#header").height();
-var footer_h = $(".global-nav").height();
+    var ss;
+    window.onload=function()
+    {
+    var h=document.documentElement.clientHeight;//可见区域高度
+    var header_h = $("#header").height();
+    var footer_h = $(".global-nav").height();
+    ss=document.getElementById('ground');
+    ss.style.height= (parseInt(h) - parseInt(header_h) - parseInt(footer_h)) +"px";
+    ss=document.getElementById('shade').style.lineHeight = h-footer_h+"px";
+    }
+    function ajaxChange(){
+        $.ajax({
+            url:'pre_sale.php',
+            type:'get',
+            beforeSend: function(){
+                 $('#shade').css('display','block');
+                },
+            complete: function(){
+             $('#shade').css('display','none');
+            },
+            data:{'act':'tree_change'},
+            success:function(data){
 
-ss=document.getElementById('ground');
-ss.style.height= (parseInt(h) - parseInt(header_h) - parseInt(footer_h)) +"px";
-console.log(parseInt(h) - parseInt(header_h) - parseInt(footer_h));
-console.log(footer_h);
-
-
-}
-
-   function ajaxChange(){
-        Ajax.call('pre_sale.php', 'act=tree_change', changeResponse, 'GET', 'JSON');
-   }
-
-   function changeResponse(data){
-         console.log(data);
-   }
-
+               var data = JSON.parse(data);
+               console.log(data);
+                    alert(data.content);
+                    if(data.code == 200){
+                        $('.trees').text("获取资格："+data.data.trees+"次");
+                        $('.tree_num').text("我的杏树："+data.data.tree_num+"棵");
+                    }
+            }
+        })
+    }
 </script>
