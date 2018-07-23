@@ -101,7 +101,7 @@ a {
 	transition:color .2s
 }
 a:hover {
-	color:#F62648
+	color:green
 }
 a:focus,area:focus {
 	outline:0
@@ -1761,7 +1761,7 @@ a.btn_cancel{
 
 .catalog-one{ width:1140px; margin:15px auto;}
 .catalog-one h2{ height:40px; line-height:40px;}
-.catalog-one h2 a{ font-size:18px; color:#F62648; line-height:40px;}
+.catalog-one h2 a{ font-size:18px; color:green; line-height:40px;}
 .catalog-one dl{ width:370px; float:left; margin-right:10px; padding:10px 0;} 
 .catalog-one dl dt{ width:370px; height:30px; line-height:30px; border-bottom:solid 1px #f1f1f1;}
 .catalog-one dl dt a{ font-weight:600; font-size:14px; color:#444;}

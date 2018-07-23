@@ -84,8 +84,8 @@ $(function(){
   </div>
   <div class="reg_main center">
     <ul class="reg_nav f18 t_c clearfix">
-      <li class="user_reg on login_user"><font class="iconfont">&#xe610;</font><font id="login_cat">会员登录</font></li>
-      <li class="reg_success login_card"><font class="iconfont">&#xe615;</font>手机动态密码登录</li>
+      <li class="user_reg on login_user" style="width:100%;"><font class="iconfont">&#xe610;</font><font id="login_cat">会员登录</font></li>
+      <!--<li class="reg_success login_card"><font class="iconfont">&#xe615;</font>手机动态密码登录</li>-->
     </ul>
     <div class="reg_cont reg_cont1 relative" style="">
       <div class="usertoputong"><a class="card_login" href="javascript:void(0)">进入会员卡登录</a></div>
@@ -133,17 +133,19 @@ $(function(){
               <input type="hidden" name="back_act" value="{$back_act}" />
               <input type="submit" name="submit" class="btn submit_btn" value="登 录"></li>
           </ul>
-	  {if $qq_login || $weibo_login || $alipay_login || $weixin_login}
-	  <div class="other-form">
-	    <div class="other-login-tit">使用第三方帐号登录</div>
-	    <div class="other-login">
-	      {if $qq_login}<a class="qq" href="user.php?act=oath&type=qq"></a>{/if}
-	      {if $weibo_login}<a class="sina" href="user.php?act=oath&type=weibo"></a>{/if}
-	      {if $alipay_login}<a class="alipay" href="user.php?act=oath&type=alipay"></a>{/if}
-	      {if $weixin_login}<a class="weixin" href="user.php?act=oath&type=weixin"></a>{/if}
-	    </div>
-	  </div>
-	  {/if}
+		  <!--
+		  {if $qq_login || $weibo_login || $alipay_login || $weixin_login}
+		  <div class="other-form">
+			<div class="other-login-tit">使用第三方帐号登录</div>
+			<div class="other-login">
+			  {if $qq_login}<a class="qq" href="user.php?act=oath&type=qq"></a>{/if}
+			  {if $weibo_login}<a class="sina" href="user.php?act=oath&type=weibo"></a>{/if}
+			  {if $alipay_login}<a class="alipay" href="user.php?act=oath&type=alipay"></a>{/if}
+			  {if $weixin_login}<a class="weixin" href="user.php?act=oath&type=weixin"></a>{/if}
+			</div>
+		  </div>
+		  {/if}
+		  -->
         </div>
       </form>
     </div>
@@ -187,6 +189,7 @@ $(function(){
               <input type="hidden" name="back_act" value="{$back_act}" />
               <input type="Submit" name="Submit" class="btn submit_btn" value="登 录" disabled=""></li>
           </ul>
+		  <!--
 	  {if $qq_login || $weibo_login || $alipay_login || $weixin_login}
 	  <div class="other-form">
 	    <div class="other-login-tit">使用第三方帐号登录</div>
@@ -198,6 +201,7 @@ $(function(){
 	    </div>
 	  </div>
 	  {/if}
+	  -->
         </div>
       </form>
     {else}
@@ -289,6 +293,7 @@ $(function(){
           <input name="Submit" type="submit" value="同意协议并注册" class="btn submit_btn">
           </li>
           </ul>
+		  <!--
 	  {if $qq_login || $weibo_login || $alipay_login || $weixin_login}
 	  <div class="other-form">
 	    <div class="other-login-tit">使用第三方帐号登录</div>
@@ -300,6 +305,7 @@ $(function(){
 	    </div>
 	  </div>
 	  {/if}
+	  -->
 	  </div>
       </form>
     <!-- {else} -->
@@ -362,6 +368,7 @@ $(function(){
              <input name="Submit" type="submit" value="同意协议并注册" class="btn submit_btn">
           </li>
           </ul>
+		  <!--
 	  {if $qq_login || $weibo_login || $alipay_login || $weixin_login}
 	  <div class="other-form">
 	    <div class="other-login-tit">使用第三方帐号登录</div>
@@ -373,6 +380,7 @@ $(function(){
 	    </div>
 	  </div>
 	  {/if}
+	  -->
 	  </div>
       </form>
     <!-- {/if} -->

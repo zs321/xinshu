@@ -210,7 +210,8 @@ elseif ($_REQUEST['act'] == 'edit')
         $rt['img_src'] = $rt['src'];
         $rt['img_txt'] = $rt['text'];
         $rt['img_sort'] = empty($rt['sort']) ? 0 : $rt['sort'];
-
+		
+		
         $rt['id'] = $id;
         $smarty->assign('action_link', array('text' => $_LANG['go_url'], 'href' => 'flashplay.php?act=list'));
         $smarty->assign('rt', $rt);
@@ -769,7 +770,7 @@ function put_flash_xml($flashdb)
         $xml = '<?xml version="1.0" encoding="' . EC_CHARSET . '"?><bcaster>';
         foreach ($flashdb as $key => $val)
         {
-            $xml .= '<item item_url="' . $val['src'] . '" link="' . $val['url'] . '" text="' . $val['text'] . '" sort="' . $val['sort'] . '"/>';
+            $xml .= '<item item_url="' . $val['src'] . '" link="' . $val['url'] . '" text="' . $val['text'] . '" sort="' . $val['sort'] . '" color=""/>';
         }
         $xml .= '</bcaster>';
         file_put_contents(ROOT_PATH . DATA_DIR . '/flash_data.xml', $xml);

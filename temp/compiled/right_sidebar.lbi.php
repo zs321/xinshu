@@ -98,12 +98,12 @@ echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
                     	<a class="quick-links-a" href="javascript:;"><i class="qr-code"></i></a>
                         <div class="sidebar-code quick-sidebar">
                         	<i class="arrow-right"></i>
-		  <?php $_from = get_advlist_position_name_pc(微信二维码,0,1); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'ad_0_58300000_1532066173');$this->_foreach['index_image'] = array('total' => count($_from), 'iteration' => 0);
+		  <?php $_from = get_advlist_position_name_pc(微信二维码,0,1); if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'ad_0_93800000_1532338091');$this->_foreach['index_image'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['index_image']['total'] > 0):
-    foreach ($_from AS $this->_var['ad_0_58300000_1532066173']):
+    foreach ($_from AS $this->_var['ad_0_93800000_1532338091']):
         $this->_foreach['index_image']['iteration']++;
 ?>
-            <img src="<?php echo $this->_var['ad_0_58300000_1532066173']['image']; ?>" width="130">
+            <img src="<?php echo $this->_var['ad_0_93800000_1532338091']['image']; ?>" width="130">
 		  <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>		
                         </div>
                     </li>

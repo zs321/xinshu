@@ -437,13 +437,13 @@ var card = document.getElementsByName('card');
       <div class="in">
         <div class="table_box table_box1">
           <dl>
-            <dd class="w50"><?php echo $this->_var['lang']['consignee_name']; ?> <span class="f1"><?php echo htmlspecialchars($this->_var['consignee']['consignee']); ?></span></dd>
+            <dd class="w50"><?php echo $this->_var['lang']['consignee_name']; ?><!-- <span class="f1"><?php echo htmlspecialchars($this->_var['consignee']['consignee']); ?></span>--></dd>
             <dd class="w50 c999">
               <div class="ico_14"></div>
               <?php echo $this->_var['consignee']['mobile']; ?> <a href="flow.php?step=consignee" class="modify radius5"><?php echo $this->_var['lang']['modify']; ?></a></dd>
           </dl>
           <dl>
-            <dd class="w50 b_no" ><?php echo $this->_var['lang']['detailed_address']; ?> <?php echo htmlspecialchars($this->_var['consignee']['address']); ?> </dd>
+            <dd class="w50 b_no" ><?php echo $this->_var['lang']['detailed_address']; ?> <!--<?php echo htmlspecialchars($this->_var['consignee']['address']); ?> --></dd>
           </dl>
         </div>
       </div>

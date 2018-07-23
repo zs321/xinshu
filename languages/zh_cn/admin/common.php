@@ -139,9 +139,9 @@ $_LANG['08_members'] = '会员管理';
 $_LANG['09_others'] = '杂项管理';
 $_LANG['10_priv_admin'] = '权限管理';
 $_LANG['11_system'] = '系统设置';
-$_LANG['12_template'] = '模板管理';
-$_LANG['13_backup'] = '数据库管理';
-$_LANG['14_sms'] = '短信管理';
+// $_LANG['12_template'] = '模板管理';
+// $_LANG['13_backup'] = '数据库管理';
+// $_LANG['14_sms'] = '短信管理';
 $_LANG['15_rec'] = '推荐管理';
 $_LANG['16_email_manage'] = '邮件群发管理';
 
@@ -308,7 +308,8 @@ $_LANG['attention_list'] = '关注管理';
 $_LANG['view_sendlist'] = '邮件队列管理';
 
 /* 积分兑换管理 */
-$_LANG['15_exchange_goods'] = '积分商城商品';
+$_LANG['15_tree'] = '杏树认购';
+// $_LANG['15_exchange_goods'] = '积分商城商品';
 $_LANG['15_exchange_goods_list'] = '积分商城商品列表';
 $_LANG['exchange_goods_add'] = '添加新商品';
 

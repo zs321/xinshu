@@ -200,9 +200,9 @@ class cls_template
                         {
                             @mkdir($hash_dir, 0777);
                         }
-                        if (file_put_contents($hash_dir . '/' . $cachename . '.php', '<?php exit;?>' . $data . $out, LOCK_EX) === false)
+                        if (@file_put_contents($hash_dir . '/' . $cachename . '.php', '<?php exit;?>' . $data . $out, LOCK_EX) === false)
                         {
-                            trigger_error('can\'t write:' . $hash_dir . '/' . $cachename . '.php');
+                            @trigger_error('can\'t write:' . $hash_dir . '/' . $cachename . '.php');
                         }
                         $this->template = array();
                     }
