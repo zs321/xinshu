@@ -25,32 +25,37 @@ if ($_REQUEST['act'] == 'list')
 {
     /* 检查权限 */
     admin_priv('users_manage');
-    $sql = "SELECT rank_id, rank_name, min_points FROM ".$ecs->table('user_rank')." ORDER BY min_points ASC ";
-    $rs = $db->query($sql);
+    $smarty->assign('ur_here',$_LANG['user_trees']);
+    $user_id = $_GET['id'];
+    if(empty($user_id)){
+        $lnk[] = array('text' => $_LANG['go_back'], 'href'=>'tree.php?act=list');
+        sys_msg(sprintf($_LANG['server_error']), 0, $lnk);
+    }
 
-    $smarty->assign('ur_here', $_LANG['tree_buy']);
+    $user_list = user_trees_list($user_id);
 
-
-    $user_list = user_list();
-
-
+    $smarty->assign('user_id',$user_id);
     $smarty->assign('user_list',    $user_list['user_list']);
     $smarty->assign('filter',       $user_list['filter']);
     $smarty->assign('record_count', $user_list['record_count']);
     $smarty->assign('page_count',   $user_list['page_count']);
     $smarty->assign('full_page',    1);
-    $smarty->assign('sort_user_id', '<img src="images/sort_desc.gif">');
+    $smarty->assign('sort_user_tree_id', '<img src="images/sort_desc.gif">');
 
     assign_query_info();
-    $smarty->display('treelist.htm');
+    $smarty->display('user_trees_list.htm');
 }
 
+
+
+
 /*------------------------------------------------------ */
-//-- ajax返回用户列表
+//-- ajax返回用户杏树列表
 /*------------------------------------------------------ */
 elseif ($_REQUEST['act'] == 'query')
 {
-    $user_list = user_list();
+    $user_list = user_trees_list();
+    $smarty->assign('user_id',$user_id);
     $smarty->assign('user_list',    $user_list['user_list']);
     $smarty->assign('filter',       $user_list['filter']);
     $smarty->assign('record_count', $user_list['record_count']);
@@ -59,40 +64,37 @@ elseif ($_REQUEST['act'] == 'query')
     $sort_flag  = sort_flag($user_list['filter']);
     $smarty->assign($sort_flag['tag'], $sort_flag['img']);
 
-    make_json_result($smarty->fetch('treelist.htm'), '', array('filter' => $user_list['filter'], 'page_count' => $user_list['page_count']));
+    make_json_result($smarty->fetch('user_trees_list.htm'), '', array('filter' => $user_list['filter'], 'page_count' => $user_list['page_count']));
 }
 
 
 
 
 
+
+
+
+
 /*------------------------------------------------------ */
-//-- 批量删除会员帐号
-/*------------------------------------------------------ */
+//-- 批量删除用户杏树
+/*------------------------- ----------------------------- */
 
 elseif ($_REQUEST['act'] == 'batch_remove')
 {
     /* 检查权限 */
     admin_priv('users_drop');
-
     if (isset($_POST['checkboxes']))
     {
-        $sql = "SELECT user_name FROM " . $ecs->table('users') . " WHERE user_id " . db_create_in($_POST['checkboxes']);
-        $col = $db->getCol($sql);
-        $usernames = implode(',',addslashes_deep($col));
-        $count = count($col);
-        /* 通过插件来删除用户 */
-        $users = init_users();
-        $users->remove_user($col);
+        $sql = "DELETE FROM ecs_user_tree WHERE user_tree_id ".db_create_in($_POST['checkboxes']);
+        $res = $db->query($sql);
+        admin_log('杏树', 'batch_remove', 'trees');
 
-        admin_log($usernames, 'batch_remove', 'users');
-
-        $lnk[] = array('text' => $_LANG['go_back'], 'href'=>'users.php?act=list');
+        $lnk[] = array('text' => $_LANG['go_back'], 'href'=>'trees.php?act=list&id='.$_POST['user_id']);
         sys_msg(sprintf($_LANG['batch_remove_success'], $count), 0, $lnk);
     }
     else
     {
-        $lnk[] = array('text' => $_LANG['go_back'], 'href'=>'users.php?act=list');
+        $lnk[] = array('text' => $_LANG['go_back'], 'href'=>'trees.php?act=list&id='.$_POST['user_id']);
         sys_msg($_LANG['no_select_user'], 0, $lnk);
     }
 }
@@ -102,23 +104,25 @@ elseif ($_REQUEST['act'] == 'batch_remove')
 
 
 /*------------------------------------------------------ */
-//-- 删除会员杏树
+//-- 删除杏树
 /*------------------------------------------------------ */
 
 elseif ($_REQUEST['act'] == 'remove')
 {
     /* 检查权限 */
-    admin_priv('users_drop');
+//    admin_priv('users_drop');
+    $id = intval($_GET['id']);   //杏树id
+    $user_id = intval($_GET['user_id']);
 
-    $sql = "SELECT user_name FROM " . $ecs->table('users') . " WHERE user_id = '" . $_GET['id'] . "'";
-
-    $username = $db->getOne($sql);
+//    DELETE FROM 表名称 WHERE 列名称 = 值
+    $sql = 'DELETE FROM ecs_user_tree WHERE user_tree_id='.$id;
+    $GLOBALS['db']->query($sql);
     /* 记录管理员操作 */
-    admin_log(addslashes($username), 'remove', 'users');
-
+    admin_log('杏树', 'remove', 'trees');
     /* 提示信息 */
-    $link[] = array('text' => $_LANG['go_back'], 'href'=>'users.php?act=list');
-    sys_msg(sprintf($_LANG['remove_success'], $username), 0, $link);
+    $lnk[] = array('text' => $_LANG['go_back'], 'href'=>'trees.php?act=list&id='.$user_id);
+    sys_msg(sprintf($_LANG['remove_success']), 0, $lnk);
+
 }
 
 
@@ -126,18 +130,21 @@ elseif ($_REQUEST['act'] == 'remove')
 
 
 /**
- *  返回拥有杏树资格和拥有杏树的用户列表数据
+ *  返回用户拥有的杏树列表数据
  *
  * @access  public
- * @param
+ * @param $user_id
  *
  * @return void
  */
-function user_list()
+function user_trees_list($user_id = '')
 {
     $result = get_filter();
+
     if ($result === false)
     {
+
+         $filter['user_id'] = $_REQUEST['user_id'] == '' ? $user_id : $_REQUEST['user_id'];
 
         /* 过滤条件 */
         $filter['keywords'] = empty($_REQUEST['keywords']) ? '' : trim($_REQUEST['keywords']);
@@ -147,22 +154,22 @@ function user_list()
             $filter['keywords'] = json_str_iconv($filter['keywords']);
         }
 
-        $filter['sort_by']    = empty($_REQUEST['sort_by'])    ? 'user_id' : trim($_REQUEST['sort_by']);
+
+        $filter['sort_by']    = empty($_REQUEST['sort_by'])    ? 'user_tree_id' : trim($_REQUEST['sort_by']);
         $filter['sort_order'] = empty($_REQUEST['sort_order']) ? 'DESC'     : trim($_REQUEST['sort_order']);
 
-        $ex_where = ' WHERE (tree_num > 0 OR trees > 0)';
+        $ex_where = ' WHERE user_id = '.$filter['user_id'];
         if ($filter['keywords'])
         {
-            $ex_where .= " AND user_name LIKE '%" . mysql_like_quote($filter['keywords']) ."%'";
+            $ex_where .= " AND user_tree_id LIKE '%" . mysql_like_quote($filter['keywords']) ."%'";
         }
 
-
-        $filter['record_count'] = $GLOBALS['db']->getOne("SELECT COUNT(*) FROM " . $GLOBALS['ecs']->table('users') . $ex_where);
+        $filter['record_count'] = $GLOBALS['db']->getOne("SELECT COUNT(*) FROM " . $GLOBALS['ecs']->table('user_tree') . $ex_where);
 
         /* 分页大小 */
         $filter = page_and_size($filter);
-        $sql = "SELECT user_id, user_name, mobile_phone, email,tree_num,trees".
-            " FROM " . $GLOBALS['ecs']->table('users') . $ex_where .
+        $sql = "SELECT user_id,user_tree_id,exchange_time".
+            " FROM " . $GLOBALS['ecs']->table('user_tree') . $ex_where .
             " ORDER by " . $filter['sort_by'] . ' ' . $filter['sort_order'] .
             " LIMIT " . $filter['start'] . ',' . $filter['page_size'];
 
@@ -179,13 +186,12 @@ function user_list()
 
     $arr = array('user_list' => $user_list, 'filter' => $filter,
         'page_count' => $filter['page_count'], 'record_count' => $filter['record_count']);
-
     return $arr;
 }
 
 
 function keep_array($content){
-    $fp = fopen('aa.txt','a+');
+    $fp = fopen('aa.txt','w+');
     fwrite($fp,var_export($content,true));
     fclose($fp);
 }

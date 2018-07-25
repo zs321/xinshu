@@ -46,7 +46,7 @@ function action_tree_change ()
     if($user_info['tree_num'] <= 0){
         json('201',$lang['ps_tree_num_empty']);
     }
-    $tree_data = ['user_id'=>$user_id,'exchange_time'=>date('Y-m-d H:i:s')];
+    $tree_data = array('user_id'=>$user_id,'exchange_time'=>date('Y-m-d H:i:s'));
     //点击土地生成兑换一颗
     $add_tree_res = $db->autoExecute($ecs->table('user_tree'),$tree_data , 'INSERT');
     if(!$add_tree_res) json(500,'数据异常，请稍后再试');
