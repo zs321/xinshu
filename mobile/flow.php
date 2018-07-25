@@ -2314,30 +2314,19 @@ elseif ($_REQUEST['step'] == 'checkout')
     }
 
 
-
 	foreach($payment_list  as    $key=>$value){
 
-	
-
 			if($value['pay_code']=="wx_new_jspay"){
-
+                //判断是否为微信浏览器
 				$is_wechat=is_wechat_browser();
-
-
 
 				if($is_wechat==false){
 
-
-
 					unset($payment_list[$key]);
-
 				}
 
 			}
-
 	}
-
-	
 
     $smarty->assign('payment_list', $payment_list);
 
@@ -4069,6 +4058,8 @@ elseif ($_REQUEST['step'] == 'done')
 
         $payment = payment_info($order['pay_id']);
 
+
+
         $order['pay_name'] = addslashes($payment['pay_name']);
 
     }
@@ -4601,10 +4592,6 @@ elseif ($_REQUEST['step'] == 'done')
 
     {
 
-		
-
-		/*www.0769web.net修复后台控制是否微信提醒订单*/
-
 		$sql ="select autoload from ". $GLOBALS['ecs']->table('weixin_order') ." where order_name='reorder'";
 
 		$autoload=$db->getOne($sql);
@@ -4650,8 +4637,6 @@ elseif ($_REQUEST['step'] == 'done')
         $payment = payment_info($order['pay_id']);
 
 		
-
-
 
         include_once('include/modules/payment/' . $payment['pay_code'] . '.php');
 

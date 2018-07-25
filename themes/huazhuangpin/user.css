@@ -98,11 +98,11 @@ color: #B0B0B0;
 	margin-right: 6px
 }
 .slidebar li a:hover, .slidebar li a.on {
-	color: #F62648;
+	color: green;
 	text-decoration: none
 }
 .slidebar li a:hover i, .slidebar li a.on i {
-	color: #F62648;
+	color: green;
 	-webkit-animation: pop_ico .5s
 }
 .slidebar .root_item {
@@ -154,7 +154,7 @@ opacity:1
 }
 .user-card .link {
 	font-size: 12px;
-	color: #F62648;
+	color: green;
 }
 .user-card .avatar {
 	position: absolute;
@@ -274,7 +274,7 @@ opacity:1
 	line-height:30px;
 }
 .portal-sub .info-list .num {
-	color: #F62648;
+	color: green;
 	font-size:14px;
 }
 .portal-sub .info-list .iconfont {

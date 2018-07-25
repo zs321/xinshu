@@ -809,7 +809,7 @@ Template Type: type_0
 	.srp .proIcons img{vertical-align:middle}
 	.srp .proCart{padding-left:10px;height:20px;overflow:hidden}
 	.srp .proSales{line-height:20px;margin-top:3px;overflow:hidden}
-	.srp .proSales span.sales{ color: #EC5196; padding: 0 2px; line-height:20px;}
+	.srp .proSales span.sales{ color: green; padding: 0 2px; line-height:20px;}
 	.srp.list{width:100%;padding:0;}
 	.srp.list .product{width:100%;padding:0;display:block;border-bottom:1px solid #f3f3f3;}
 	.srp.list .pro-inner{width:100%;background-color:#fff; padding-top:3px;border-radius:0;}
@@ -2402,7 +2402,7 @@ line-height:40px;
 	color: #333
 }
 
-.bought-table a.order_btn{display:inline-block;background:#FA5F5D;color:#fff; height:18px; line-height:18px; padding:3px 15px ;margin:3px 0px; border-radius:12px;}
+.bought-table a.order_btn{display:inline-block;background:green;color:#fff; height:18px; line-height:18px; padding:3px 15px ;margin:3px 0px; border-radius:12px;}
 
 .bought-table .col-name th {
 	border-bottom: 1px solid #E6E6E6;

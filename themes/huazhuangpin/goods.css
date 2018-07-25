@@ -1492,7 +1492,7 @@
 	color:#999999;
 }
 .z-detail-point-box-right div font {
-	color:#F62648;
+	color:green;
 }
 .z-detail-point-box-right div a.go_btn {
 	position:absolute;
@@ -2233,7 +2233,7 @@ label {
 	color:#999999;
 }
 .z-detail-point-box-left p font {
-	color:#F62648;
+	color:green;
 }
 .z-detail-right {
 	width:216px;

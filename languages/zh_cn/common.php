@@ -209,6 +209,9 @@ $_LANG['page_prev'] = '上一页';
 $_LANG['page_next'] = '下一页';
 $_LANG['page_last'] = '最末页';
 $_LANG['btn_display'] = '显示方式';
+$_LANG['ps_tree_num_empty'] = '对不起，您还没有杏树兑换资格！';
+
+
 
 /* 投票 */
 $_LANG['vote_times'] = '参与人次';

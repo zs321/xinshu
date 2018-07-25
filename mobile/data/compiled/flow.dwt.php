@@ -348,8 +348,8 @@
 <div class="blank3"></div>
 <div class="wrap"> 
    
-  <?php $_from = $this->_var['consignee_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('sn', 'consignee');if (count($_from)):
-    foreach ($_from AS $this->_var['sn'] => $this->_var['consignee']):
+  <?php $_from = $this->_var['consignee_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('sn', 'consignee_0_91240000_1532417540');if (count($_from)):
+    foreach ($_from AS $this->_var['sn'] => $this->_var['consignee_0_91240000_1532417540']):
 ?>
   <section class="order_box padd1 radius10" style="padding-top:0;padding-bottom:0;">
     <div class="table_box2 table_box">
@@ -437,13 +437,13 @@ var card = document.getElementsByName('card');
       <div class="in">
         <div class="table_box table_box1">
           <dl>
-            <dd class="w50"><?php echo $this->_var['lang']['consignee_name']; ?><!-- <span class="f1"><?php echo htmlspecialchars($this->_var['consignee']['consignee']); ?></span>--></dd>
+            <dd class="w50"><?php echo $this->_var['lang']['consignee_name']; ?> <span class="f1"><?php echo htmlspecialchars($this->_var['consignee']['consignee']); ?></span></dd>
             <dd class="w50 c999">
               <div class="ico_14"></div>
               <?php echo $this->_var['consignee']['mobile']; ?> <a href="flow.php?step=consignee" class="modify radius5"><?php echo $this->_var['lang']['modify']; ?></a></dd>
           </dl>
           <dl>
-            <dd class="w50 b_no" ><?php echo $this->_var['lang']['detailed_address']; ?> <!--<?php echo htmlspecialchars($this->_var['consignee']['address']); ?> --></dd>
+            <dd class="w50 b_no" ><?php echo $this->_var['lang']['detailed_address']; ?> <?php echo htmlspecialchars($this->_var['consignee']['address']); ?> </dd>
           </dl>
         </div>
       </div>
@@ -482,11 +482,12 @@ var card = document.getElementsByName('card');
     foreach ($_from AS $this->_var['payment']):
 ?>
 		  <p>
-           <input type="radio" class="radio" name="payment" id="payment_<?php echo $this->_var['payment']['pay_id']; ?>" value="<?php echo $this->_var['payment']['pay_id']; ?>" <?php if ($this->_var['order']['pay_id'] == $this->_var['payment']['pay_id']): ?>checked<?php endif; ?> isCod="<?php echo $this->_var['payment']['is_cod']; ?>" onclick="selectPayment(this)" <?php if ($this->_var['cod_disabled'] && $this->_var['payment']['is_cod'] == "1"): ?>disabled="true"<?php endif; ?> style="vertical-align:middle" /><label for="payment_<?php echo $this->_var['payment']['pay_id']; ?>"><?php echo $this->_var['payment']['pay_name']; ?> [<?php echo $this->_var['payment']['format_pay_fee']; ?>]</label>
-	   <?php if ($this->_var['payment']['pay_code'] == bank): ?>
-	   <br>
-	   【<?php echo $this->_var['payment']['pay_desc']; ?>】
-	   <?php endif; ?>
+           <input type="radio" class="radio" name="payment" id="payment_<?php echo $this->_var['payment']['pay_id']; ?>" value="<?php echo $this->_var['payment']['pay_id']; ?>" <?php if ($this->_var['order']['pay_id'] == $this->_var['payment']['pay_id']): ?>checked<?php endif; ?> isCod="<?php echo $this->_var['payment']['is_cod']; ?>" onclick="selectPayment(this)" <?php if ($this->_var['cod_disabled'] && $this->_var['payment']['is_cod'] == "1"): ?>disabled="true"<?php endif; ?> style="vertical-align:middle" />
+		   <label for="payment_<?php echo $this->_var['payment']['pay_id']; ?>"><?php echo $this->_var['payment']['pay_name']; ?> [<?php echo $this->_var['payment']['format_pay_fee']; ?>]</label>
+		   <?php if ($this->_var['payment']['pay_code'] == bank): ?>
+		   <br>
+		   【<?php echo $this->_var['payment']['pay_desc']; ?>】
+		   <?php endif; ?>
            </p>
             <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
 		</div>

@@ -1,6 +1,6 @@
 <?php
 // database host,�˴��мǱ�����ݿ�˿ڣ���:3306��һ�㲻���޸�
-$db_host   = "47.104.178.115:3306";
+$db_host   = "47.75.123.108:3306";
 
 // database name
 $db_name   = "testshop";
@@ -30,9 +30,4 @@ define('AUTH_KEY', 'this is a key');
 
 define('OLD_AUTH_KEY', '');
 
-
-<<<<<<< HEAD
-define('API_TIME', '2018-07-23 16:28:31');
-=======
-define('API_TIME', '2018-07-23 17:03:02');
->>>>>>> 472b4ff2cff822e85fb8c64bfaf7828e2cd2a2a8
+define('API_TIME', '2018-07-25 09:51:07');

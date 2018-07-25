@@ -464,11 +464,12 @@ var card = document.getElementsByName('card');
 		<div class="dl_box" id="payment" style="display:none">
 		  <!-- {foreach from=$payment_list item=payment} -->
 		  <p>
-           <input type="radio" class="radio" name="payment" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true"{/if} style="vertical-align:middle" /><label for="payment_{$payment.pay_id}">{$payment.pay_name} [{$payment.format_pay_fee}]</label>
-	   {if $payment.pay_code eq bank}
-	   <br>
-	   【{$payment.pay_desc}】
-	   {/if}
+           <input type="radio" class="radio" name="payment" id="payment_{$payment.pay_id}" value="{$payment.pay_id}" {if $order.pay_id eq $payment.pay_id}checked{/if} isCod="{$payment.is_cod}" onclick="selectPayment(this)" {if $cod_disabled and $payment.is_cod eq "1"}disabled="true"{/if} style="vertical-align:middle" />
+		   <label for="payment_{$payment.pay_id}">{$payment.pay_name} [{$payment.format_pay_fee}]</label>
+		   {if $payment.pay_code eq bank}
+		   <br>
+		   【{$payment.pay_desc}】
+		   {/if}
            </p>
             <!-- {/foreach} -->
 		</div>

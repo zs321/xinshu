@@ -5,21 +5,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="baidu-site-verification" content="ZDhT9AzCSE" />
 <meta name="360-site-verification" content="b3ec2eb637fb409d5e19c32e51f8f1f8" />
-<meta name="Keywords" content="{$keywords}" />
-<meta name="Description" content="{$description}" />
-<!-- TemplateBeginEditable name="doctitle" -->
-<title>{$page_title}</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
+<meta name="Keywords" content="<?php echo $this->_var['keywords']; ?>" />
+<meta name="Description" content="<?php echo $this->_var['description']; ?>" />
+
+<title><?php echo $this->_var['page_title']; ?></title>
+
+
+
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
-<link href="index.css" rel="stylesheet" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
-{* 包含脚本文件 *}
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<link href="<?php echo $this->_var['ecs_css_path']; ?>" rel="stylesheet" type="text/css" />
+<link href="themes/huazhuangpin/index.css" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|<?php echo $this->_var['page_title']; ?>" href="<?php echo $this->_var['feed_url']; ?>" />
+
+<script type="text/javascript" src="themes/huazhuangpin/js/common.js"></script>
+<script type="text/javascript" src="themes/huazhuangpin/js/index.js"></script>
+<script type="text/javascript" src="themes/huazhuangpin/js/jquery.min.js"></script>
 <script type="text/javascript">
   function getLocalTime(nS) {
     return new Date(parseInt(nS) * 1000).toLocaleString().replace(/:\d{1,2}$/, ' ');
@@ -75,11 +75,11 @@
   }
   _COMMON_UNIX_TIME();
 </script>
-{insert_scripts files='easydialog.min.js'}
+<?php echo $this->smarty_insert_scripts(array('files'=>'easydialog.min.js')); ?>
 </head>
 <body>
-<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-<script type="text/javascript" src="js/lizi_index.js"></script>
+<?php echo $this->fetch('library/page_header.lbi'); ?>
+<script type="text/javascript" src="themes/huazhuangpin/js/lizi_index.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	$(".j-hotTab").find("li:first").addClass('on');
@@ -93,23 +93,23 @@ $(document).ready(function() {
 </script>
 <div class="index-banner">
     <div class="index-slide" id="index-slide">
-	<!--Banner切换-->
-	<!-- #BeginLibraryItem "/library/index_ad.lbi" --><!-- #EndLibraryItem --> 
-	<!--Banner切换 END --> 
+	
+	<?php echo $this->fetch('library/index_ad.lbi'); ?> 
+	 
     </div>
 </div>
 
 <script type="text/javascript">
-   var btn_buy = "{$lang.btn_buy}";
-   var is_cancel = "{$lang.is_cancel}";
-   var select_spe = "{$lang.select_spe}";
+   var btn_buy = "<?php echo $this->_var['lang']['btn_buy']; ?>";
+   var is_cancel = "<?php echo $this->_var['lang']['is_cancel']; ?>";
+   var select_spe = "<?php echo $this->_var['lang']['select_spe']; ?>";
 </script>
 
 
 
 <div class="index_pro">
 	<div id="promenu">
-	<!--tag标题-->
+	
 		<ul id="pronav">
 			<div class="ico"></div>
 			<li><a href="javascript:void(0)" class="selected">新品上市</a></li>
@@ -118,16 +118,16 @@ $(document).ready(function() {
 			<div class="arr"></div>
 			<li><a href="javascript:void(0)" class="">热销商品</a></li>
 		</ul>
-	<!--二级菜单-->
+	
 		<div id="promenu_con">
 			<dl class="promenutag" style="display:block">
-				<!-- #BeginLibraryItem "/library/recommend_new.lbi" --><!-- #EndLibraryItem -->					
+				<?php echo $this->fetch('library/recommend_new.lbi'); ?>					
 			 </dl> 
 			<dl class="promenutag" style="display:none">
-				<!-- #BeginLibraryItem "/library/recommend_best.lbi" --><!-- #EndLibraryItem -->	   
+				<?php echo $this->fetch('library/recommend_best.lbi'); ?>	   
 			 </dl> 
 			<dl class="promenutag"  style="display:none">
-				<!-- #BeginLibraryItem "/library/recommend_hot.lbi" --><!-- #EndLibraryItem -->	
+				<?php echo $this->fetch('library/recommend_hot.lbi'); ?>	
 			</dl> 
 	</div>
 	</div>
@@ -190,60 +190,43 @@ $(document).ready(function() {
 		<span class="subTit">每天上新，天天低价，限时抢购</span></div>
 	<div class="tescolCon" id="JS_limit_table">
 		<ul>
-		<!-- {if $promotion_goods} -->
-		<!--{foreach from=$promotion_goods item=goods name=promotion_foreach}-->
+		<?php if ($this->_var['promotion_goods']): ?>
+		<?php $_from = $this->_var['promotion_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['promotion_foreach'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['promotion_foreach']['total'] > 0):
+    foreach ($_from AS $this->_var['goods']):
+        $this->_foreach['promotion_foreach']['iteration']++;
+?>
 					<li>
 				
-					<a href="{$goods.url}"><img alt="{$goods.name|escape:html}" src="{$goods.thumb}"></a>
-					<div title="{$goods.name|escape:html}" class="name">
-						<font color="red"></font><a href="{$goods.url}">{$goods.name|truncate:12:"...":true}</a>					</div>
+					<a href="<?php echo $this->_var['goods']['url']; ?>"><img alt="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" src="<?php echo $this->_var['goods']['thumb']; ?>"></a>
+					<div title="<?php echo htmlspecialchars($this->_var['goods']['name']); ?>" class="name">
+						<font color="red"></font><a href="<?php echo $this->_var['goods']['url']; ?>"><?php echo sub_str($this->_var['goods']['name'],12); ?></a>					</div>
 					<div class="timedjs">
-						<div class="JS_leaveTime" data-timeline="{$goods.end_date}"><em>00</em>天<em>00</em>时<em>00</em>分<em>00</em>秒</div>
+						<div class="JS_leaveTime" data-timeline="<?php echo $this->_var['goods']['end_date']; ?>"><em>00</em>天<em>00</em>时<em>00</em>分<em>00</em>秒</div>
 					</div>
 
 					<p class="price">
-						<b class="tahoma">{$goods.promote_price}</b><s>{$goods.market_price}</s></p>
+						<b class="tahoma"><?php echo $this->_var['goods']['promote_price']; ?></b><s><?php echo $this->_var['goods']['market_price']; ?></s></p>
 					<p class="tescol-btn">
-						<a href="{$goods.url}"><span class="t-btn">马上抢<i class="r-arrow"></i></span></a><span class="t-num">已售 <span class="color_pink">{$goods.sales_volume_base}</span> 件</span></p>
+						<a href="<?php echo $this->_var['goods']['url']; ?>"><span class="t-btn">马上抢<i class="r-arrow"></i></span></a><span class="t-num">已售 <span class="color_pink"><?php echo $this->_var['goods']['sales_volume_base']; ?></span> 件</span></p>
 				</li>
-		<!--{/foreach}-->
-		<!-- {/if} -->
+		<?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+		<?php endif; ?>
 		</ul>
 	</div>
 </div>
 
 
 
-<!-- 文章及评论 -->
+
 <div class="w-main panel-wrapper">
-<!-- TemplateBeginEditable name="首页图片文章列表" -->
-<!-- #BeginLibraryItem "/library/cat_articles.lbi" -->
 
-  <div class="title_list">
-    <span class="tl_one">{$articles_cat.name|escape:html}</span>
-    <a class="more" href="{$articles_cat.url}">查看更多&gt;</a></div>
-  <div class="list2">
-  <!--{foreach from=$articles item=article_item name=article_item}-->
-    <div class="list_son"{if $smarty.foreach.article_item.iteration mod 4 eq 0} style="margin-right:0;"{/if}>
-      <div class="list_son_img">
-        <a href="{$article_item.url}">
-	  <img data-original="images/spacer.gif" src="{$article_item.pic}" alt="{$article_item.title|escape:html}" title="{$article_item.title|escape:html}" class="loading">
-        </a>
-      </div>
-      <div class="list_son_desc">
-        <p class="title">{$article_item.short_title}</p>
-        <p class="time">{$article_item.add_time}</p>
-        <p class="desc">{if $article_item.description}[摘要]{$article_item.description|truncate:40}{/if}</p></div>
-    </div>
-  <!--{/foreach}-->
-  </div>
+<?php $this->assign('articles',$this->_var['articles_16']); ?><?php $this->assign('articles_cat',$this->_var['articles_cat_16']); ?><?php echo $this->fetch('library/cat_articles.lbi'); ?>
 
- <!-- #EndLibraryItem -->
-<!-- TemplateEndEditable -->
 </div>
-<!-- 文章及评论 END -->	
+	
 
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --> <!-- #EndLibraryItem -->
+<?php echo $this->fetch('library/page_footer.lbi'); ?>
 <div class="add_ok" id="cart_show">
     <div class="tip">
         <i class="iconfont"></i>商品已成功加入购物车

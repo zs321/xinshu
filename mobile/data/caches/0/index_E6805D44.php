@@ -1,4 +1,4 @@
-<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:71:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/index.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:86:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:93:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:88:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532327071;s:8:"maketime";i:1532325271;}<!DOCTYPE html>
+<?php exit;?>a:3:{s:8:"template";a:10:{i:0;s:71:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/index.dwt";i:1;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/ad_position.lbi";i:2;s:86:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/new_articles.lbi";i:3;s:93:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_promotion.lbi";i:4;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/group_buy.lbi";i:5;s:88:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_best.lbi";i:6;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_new.lbi";i:7;s:87:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/recommend_hot.lbi";i:8;s:83:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/cat_goods.lbi";i:9;s:85:"D:/phpStudy/PHPTutorial/WWW/xinshu/mobile/themes/huazhuangpin/library/page_footer.lbi";}s:7:"expires";i:1532429086;s:8:"maketime";i:1532427286;}<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -202,13 +202,7 @@ TouchSlide({
     <div class="rollTextMenus">
     <ul>
     	 <li><a href="article.php?id=146">杏福梅林</a></li>
-    	 <li><a href="article.php?id=143">Gellé Frères（婕珞芙...</a></li>
-    	 <li><a href="article.php?id=142">法国GELLÉ FRÈRES婕珞...</a></li>
-    	 <li><a href="article.php?id=141">中国明星陈妍希、张慧雯助阵，百年...</a></li>
-    	 <li><a href="article.php?id=140">婕珞芙携手陈妍希、张慧雯点亮巴黎...</a></li>
-    	 <li><a href="article.php?id=139">法国GELLé FRèRES婕珞...</a></li>
-    	 <li><a href="article.php?id=138">精油+面膜，保湿新玩法！</a></li>
-    	 <li><a href="article.php?id=137">亚洲人气女星唐嫣出任法国婕珞芙中...</a></li>
+    	 <li><a href="article.php?id=143">硒的作用</a></li>
         </ul>
     </div>
 </div>
@@ -576,15 +570,15 @@ function get_search_box(){
 </script> 
 <nav id="menu">
   <ul>
+        <li> <a href="category.php?id=3"> 饮料系列 </a>
+      <ul>
+              </ul>
+    </li>
         <li> <a href="category.php?id=1"> 家用系列 </a>
       <ul>
               </ul>
     </li>
         <li> <a href="category.php?id=2"> 保健品类 </a>
-      <ul>
-              </ul>
-    </li>
-        <li> <a href="category.php?id=3"> 饮料系列 </a>
       <ul>
               </ul>
     </li>
@@ -622,9 +616,9 @@ $(function() {
   wx.config({
     debug: false,
     appId: '111',
-    timestamp: 1532325277,
-    nonceStr: 'DCTLHwcaDcN0xM4a',
-    signature: '8aa752d5a6e7c9d3536328e1512a22ae4dd99206',
+    timestamp: 1532427293,
+    nonceStr: 'dwBbOkv8t7rItdpz',
+    signature: 'e5ed62be534eda1ecdf0a2327f51b914bc39f04a',
     jsApiList: [
         'onMenuShareTimeline',
         'onMenuShareAppMessage' 
@@ -635,7 +629,7 @@ $(function() {
     wx.onMenuShareAppMessage({
       title: '杏树商城',
       desc: '杏树商城',
-      link: 'http://www.test777.com/mobile/index.php?u=257',
+      link: 'http://www.test666.com/mobile/index.php?u=257',
       imgUrl: '/mobile/home.jpg',
       trigger: function (res) {
 		
@@ -643,7 +637,7 @@ $(function() {
 				
       },
       success: function (res) {
-		        window.location.href="http://www.test777.com/mobile/re_url.php?user_id=257&type=1"; 
+		        window.location.href="http://www.test666.com/mobile/re_url.php?user_id=257&type=1"; 
 		      },
       cancel: function (res) {
         alert('很遗憾，您已取消分享');
@@ -655,14 +649,14 @@ $(function() {
 	//分享到朋友圈青蜂网络
     wx.onMenuShareTimeline({
       title: '杏树商城',
-      link: 'http://www.test777.com/mobile/index.php?u=257',
+      link: 'http://www.test666.com/mobile/index.php?u=257',
       imgUrl: '/mobile/home.jpg',
       trigger: function (res) {
 			
         			alert('恭喜！分享可以获取提成哦！');
 		      },
       success: function (res) {
-       	        window.location.href="http://www.test777.com/mobile/re_url.php?user_id=257&type=2"; 
+       	        window.location.href="http://www.test666.com/mobile/re_url.php?user_id=257&type=2"; 
 		      },
       cancel: function (res) {
          alert('很遗憾，您已取消分享');

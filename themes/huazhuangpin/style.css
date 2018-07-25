@@ -655,8 +655,8 @@ canvas {
 .t-nav .nav-items { float:left;}
 .t-nav .nav-items li { float:left; display:inline; height:40px; line-height:40px; width:100px;text-align:center; position:relative;}
 .t-nav .nav-items li a { color:#fefefe; display:block; font-size:14px; text-decoration:none;} 
-.t-nav .nav-items li a:hover { color:#fff;background: #d62340;} 
-.t-nav .nav-items li a.cur { color:#fff;background: #d62340;} 
+.t-nav .nav-items li a:hover { color:#fff;background: darkgreen;} 
+.t-nav .nav-items li a.cur { color:#fff;background: darkgreen;} 
 
 #header_guanzhu {
 	background:url(images/guanzhu-ico.png) 72px 5px no-repeat;
@@ -751,7 +751,7 @@ canvas {
 	font-size: 12px
 }
 .site-footer .col-links dd a:hover {
-	color: #F62648
+	color: green
 }
 .site-footer .col-links-first {
 	margin-left: 0

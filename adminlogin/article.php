@@ -271,7 +271,7 @@ if ($_REQUEST['act'] =='update')
         @unlink(ROOT_PATH . $old_url);
     }
 
-    if ($exc->edit("title='$_POST[title]', cat_id='$_POST[article_cat]', article_type='$_POST[article_type]', is_open='$_POST[is_open]', author='$_POST[author]', author_email='$_POST[author_email]', keywords ='$_POST[keywords]', file_url ='$file_url', open_type='$open_type', content='$_POST[FCKeditor1]', link='$_POST[link_url]', description = '$_POST[description]'", $_POST['id']))
+    if ($exc->edit("title='$_POST[title]', cat_id='$_POST[article_cat]', article_type='$_POST[article_type]', is_open='$_POST[is_open]', author='$_POST[author]', author_email='$_POST[author_email]', keywords ='$_POST[keywords]', file_url ='$file_url', open_type='$open_type', content='$_POST[FCKeditor1]', link='$_POST[link_url]', description = '$_POST[description]',pic ='$file_url'", $_POST['id']))
     {
         $link[0]['text'] = $_LANG['back_list'];
         $link[0]['href'] = 'article.php?act=list&' . list_link_postfix();
